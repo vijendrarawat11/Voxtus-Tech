@@ -1,0 +1,11 @@
+Nuget Package Manager - 
+
+1 )Entity Framework Core
+2) EntityFrameworkCore.Tools
+3) EntityFrameworkCore.sqlserver
+
+
+Entity Framework Quries
+
+1) add-migration AddContactUsTable
+2) update-database

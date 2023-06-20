@@ -1,0 +1,160 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<main id="main">
+
+    <!-- ======= Blog Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Blog</h2>
+
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Blog</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Blog Section -->
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+
+                <div class="col-lg-8 entries">
+
+                    <article class="entry">
+
+                        <div class="entry-img">
+                           @* <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">*@
+                            <img src="images/logo/powerappslogo.png" alt="" class="img-fluid">
+                            @*<img src="~/images/logo/powerappslogo.png" />*@
+                        </div>
+
+                        <h2 class="entry-title">
+                            <a asp-controller="PowerApps" asp-action="Index">PowerApps Blogs</a>
+                             
+                        </h2>
+
+                        <div class="entry-meta">
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">Abhishek Kumar</a></li>
+                                <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">May 1, 2023</time></a></li>
+                                <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">0 Comments</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="entry-content">
+                            <p>
+                                What sets Abhishek apart is his ability to translate complex technical concepts into relatable and accessible content. Whether he's demystifying coding languages or delving into the intricacies of Microsoft Coud Platform PowerApps, Abhishek has a natural talent for breaking down complex ideas and presenting them in a way that resonates with readers from all backgrounds
+                            </p>
+                            <div class="read-more">
+                                <a href="blog-single.html">Read More</a>
+                            </div>
+                        </div>
+
+                    </article><!-- End blog entry -->
+
+                    <article class="entry">
+
+                        <div class="entry-img">
+                            <img src="images/logo/uipath.png" alt="" class="img-fluid">
+                           @* <img src="~/images/logo/uipath.png" />*@
+                        </div>
+
+                        <h2 class="entry-title">
+                            <a href="blog-single.html">UI Path Blogs</a>
+                        </h2>
+
+                        <div class="entry-meta">
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">Sumit</a></li>
+                                <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">May 20, 2023</time></a></li>
+                                <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">0 Comments</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="entry-content">
+                            <p>
+                                Introducing Sumit, an IT blogger who seamlessly combines his love for technology with his exceptional writing skills. With a keen eye for detail and a passion for staying at the forefront of the ever-evolving IT industry, Sumit brings a wealth of knowledge and expertise to his role as an IT blogger.
+                            </p>
+                            <div class="read-more">
+                                <a href="blog-single.html">Read More</a>
+                            </div>
+                        </div>
+
+                    </article><!-- End blog entry -->
+
+
+
+                    <div class="blog-pagination">
+                        <ul class="justify-content-center">
+                            <li class="active"><a href="#">1</a></li>
+                           @* <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>*@
+                        </ul>
+                    </div>
+
+                </div><!-- End blog entries list -->
+
+                <div class="col-lg-4">
+
+                    <div class="sidebar">
+
+                        <h3 class="sidebar-title">Search</h3>
+                        <div class="sidebar-item search-form">
+                            <form action="">
+                                <input type="text">
+                                <button type="submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div><!-- End sidebar search formn-->
+
+                        <h3 class="sidebar-title">Categories</h3>
+                        <div class="sidebar-item categories">
+                            <ul>
+                                <li><a href="#">PowerApps <span>(25)</span></a></li>
+                                <li><a href="#">Ui Path <span>(12)</span></a></li>
+                                
+                            </ul>
+                        </div><!-- End sidebar categories-->
+
+                        <h3 class="sidebar-title">Recent Posts</h3>
+                        <div class="sidebar-item recent-posts">
+                            <div class="post-item clearfix">
+                                <img src="images/logo/powerappslogo.png" alt="">
+                                <h4><a href="blog-single.html">How To Use BarCode In PowerApps</a></h4>
+                                <time datetime="2020-05-016">May 20, 2023</time>
+                            </div>
+
+                          
+
+                        </div><!-- End sidebar recent posts-->
+
+                        <h3 class="sidebar-title">Tags</h3>
+                        <div class="sidebar-item tags">
+                            <ul>
+                                <li><a href="#">App</a></li>
+                                <li><a href="#">IT</a></li>
+                                <li><a href="#">Business Apps</a></li>
+                                <li><a href="#">PowerApps</a></li>
+                                <li><a href="#">Ui Path</a></li>
+                                <li><a href="#">Dot Net Core</a></li>
+                                <li><a href="#">Marketing</a></li>
+                            </ul>
+                        </div><!-- End sidebar tags-->
+
+                    </div><!-- End sidebar -->
+
+                </div><!-- End blog sidebar -->
+
+            </div>
+
+        </div>
+    </section><!-- End Blog Section -->
+
+</main>
