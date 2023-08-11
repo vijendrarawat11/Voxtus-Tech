@@ -85,5 +85,11 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
-    }
+
+		public ActionResult MultipleMakerFeature()
+		{
+			return View();
+		}
+
+	}
 }

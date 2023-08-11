@@ -1,4 +1,11 @@
-﻿<main id="main">
+﻿@model ContactUs
+
+@if (TempData["success"] != null)
+{
+    @TempData["success"];
+}
+
+<main id="main">
 
     <!-- ======= Contact Section ======= -->
     <section class="breadcrumbs">
@@ -52,30 +59,54 @@
 
                 </div>
 
+                
                 <div class="col-lg-6">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <p class="text-center">@TempData["success"]</p>
+                    <form method="post" class="mt-2">
+                        <div>
+                    <form method="post"  role="form" class="php-email-form">
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                    <input asp-for="Name" type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                    <span asp-validation-for="Name" class="text-danger"></span>
                             </div>
                             <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                    <input asp-for="Email" type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                        </div>
+                        <div class="form-group mt-3">
+                                <input asp-for="PhoneNo" type="text" class="form-control" name="PhoneNo" id="PhoneNo" placeholder="PhoneNo" required>
+                        </div>
+                        <div class="form-group mt-3">
+                                <textarea input asp-for="Message" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                <span asp-validation-for="Message" class="text-danger"></span>
                             </div>
-                        </div>
-                        <div class="form-group mt-3">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="my-3">
+                        @*<div class="my-3">
                             <div class="loading">Loading</div>
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
+                        </div> *@
+                                <div class="text-center mt-2"><button type="submit" class="btn-primary">Send Message</button></div>
                     </form>
                 </div>
+                </form>
+
+                   
+                </div>
+
+                @*<script type="text/javascript">
+                    $(document).ready(function(){
+                        setTimeout(function(){
+                            $("#myform").Index("show")
+                        }),5000
+                    });
+
+                </script>*@
+
+
+               
+
 
             </div>
 
