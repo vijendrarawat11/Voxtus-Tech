@@ -95,5 +95,9 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        public ActionResult TermsofServices()
+        {
+            return View();
+        }
     }
 }
