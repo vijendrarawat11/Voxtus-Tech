@@ -90,6 +90,14 @@ namespace Voxtus_Tech.Controllers
 		{
 			return View();
 		}
+        public ActionResult CanvasOrModelDrivenApp()
+        {
+            return View();
+        }
+        public ActionResult CustomizingControls()
+        {
+            return View();
+        }
 
-	}
+    }
 }
