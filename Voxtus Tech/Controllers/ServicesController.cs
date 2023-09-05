@@ -79,5 +79,25 @@ namespace Voxtus_Tech.Controllers
                 return View();
             }
         }
+        public ActionResult PowerAppsDevelopment()
+        {
+            return View();
+        }
+        public ActionResult Dynamics365Development()
+        {
+            return View();
+        }
+        public ActionResult DOTNETDevelopment()
+        {
+            return View();
+        }
+        public ActionResult RPADevelopment()
+        {
+            return View();
+        }
+        public ActionResult TermsofServices()
+        {
+            return View();
+        }
     }
 }

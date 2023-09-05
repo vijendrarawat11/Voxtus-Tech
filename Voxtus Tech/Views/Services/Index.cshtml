@@ -6,10 +6,10 @@
 
             <div class="d-flex justify-content-between align-items-center">
                 <h2>Our Services</h2>
-                <ol>
+                @*<ol>
                     <li><a href="index.html">Home</a></li>
                     <li>Our Services</li>
-                </ol>
+                </ol>*@
             </div>
 
         </div>
@@ -24,51 +24,58 @@
             <div class="row">
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
                     <div class="icon-box icon-box-pink">
-                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                        <h4 class="title"><a href=""> Development Services</a></h4>
+                        <div class="icon"><a asp-controller="Services" asp-action="PowerAppsDevelopment"><img src="~/images/powerappsicon.jpg" height="50" width="60" /></a></div>
+                        <h4 class="title"><a asp-controller="Services" asp-action="PowerAppsDevelopment"> PowerApps Development</a></h4>
                         <p class="description">
-                            Each engagement with Voxtus begins with a thorough discussion of your
-                            business and technological issues and objectives. We then create a plan that
-                            will direct our work, ensure success, and provide you with the best software
-                            development services possible.
+                            In today's digital age, businesses across industries need tailored solutions 
+                            to optimize their operations and foster growth. With 8 years of expertise in
+                            PowerApps development, we specialize in creating custom applications that align
+                            seamlessly with your business objectives. Whether you're in the healthcare sector,
+                            education, or corporate world, our services ensure that your digital needs are met with precision.
                         </p>
+                        <div class="read-more"><a asp-controller="Services" asp-action="PowerAppsDevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon-box icon-box-blue">
-                        <div class="icon"><i class="bx bx-world"></i></div>
-                        <h4 class="title"><a href="">Dynamics and Power Platform Developement</a></h4>
+                        <div class="icon"><a asp-controller="Services" asp-action="Dynamics365Development"><img src="~/images/dynamics-365-logo-trans (1).png" height="50" width="80" /></a></div>
+                        <h4 class="title"><a asp-controller="Services" asp-action="Dynamics365Development">Dynamics 365 Development</a></h4>
                         <p class="description">
-                            At Voxtus, we offer specialized services for creating Business Applications
-                            that give your business a competitive edge. Our Office 365 consultants help
-                            brands and organizations in increasing their visibility and increase your Business.
+                            In the interconnected ecosystem of modern businesses, Dynamics 365 stands as a cornerstone for
+                            efficiency and growth. With an enriched 8-year journey exclusively in Dynamics 365 module development, 
+                            I commit to transforming your business operations and customer experiences.
+
                         </p>
+                        <div class="read-more"><a asp-controller="Services" asp-action="Dynamics365Development"><i class="bi bi-arrow-right"></i> Read More</a></div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon-box icon-box-cyan">
-                        <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4 class="title"><a href=""> Product Development</a></h4>
+                        <div class="icon"><a asp-controller="Services" asp-action="DOTNETDevelopment"><img src="~/images/dotneticon.png" height="50" width="60" /></a></div>
+                        <h4 class="title"><a asp-controller="Services" asp-action="DOTNETDevelopment">.NET Development</a></h4>
                         <p class="description">
-                            To create scalable solutions, we utilize the right combination of
-                            technologies, data, and design. With our leading software product
-                            development solutions, we produce captivating products that offer an
-                            incredible user experience.
+                            In today's digital landscape, businesses seek agile, reliable, and high-performance software solutions.
+                            Through the prowess of the .NET framework, Voxtus Technology delivers just that. Our developers with 
+                            8 rich years in .NET - we blend technical acumen with practical insights to offer tailor-made solutions.
+
                         </p>
+                        <div class="read-more"><a asp-controller="Services" asp-action="DOTNETDevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon-box icon-box-green">
-                        <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4 class="title"><a href=""> Support and Maintenance</a></h4>
+                        <div class="icon"><a asp-controller="Services" asp-action="RPADevelopment"><img src="~/images/rpaicon.png" height="45" width="50" /></a></div>
+                        <h4 class="title"><a asp-controller="Services" asp-action="RPADevelopment">RPA Development</a></h4>
                         <p class="description">
-                            With the best software support services, we provide secure and stable
-                            software maintenance that focuses on important business concerns. Our tech
-                            professionals will provide you with the highest quality support and
-                            maintenance services in the shortest amount of time possible.
+                            In today's competitive landscape, the drive for greater efficiency and precision has never been higher. 
+                            Robotic Process Automation (RPA) stands out as the go-to solution for businesses to streamline operations,
+                            minimize errors, and amplify productivity. At [Your IT Company Name], we're at the vanguard of this
+                            automation revolution, led by [Your Name] — a developer with a focused 3-year trajectory in RPA.
+
                         </p>
+                        <div class="read-more"><a asp-controller="Services" asp-action="RPADevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
                     </div>
                 </div>
 
@@ -92,7 +99,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><a href="#">Our Mission</a></h5>
                             <p class="card-text">"Our mission is to help businesses leverage the power of technology to achieve their goals and stay ahead of the competition. We believe that technology should be accessible and easy to use, and we strive to create solutions that are tailored to the unique needs of each of our clients. With a focus on innovation and excellence, we are committed to providing personalized and comprehensive services that enable our clients to achieve their goals and succeed in an ever-changing digital landscape."</p>
-                            <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                            @*<div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>*@
                         </div>
                     </div>
                 </div>
@@ -104,7 +111,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><a href="#">Our Plan</a></h5>
                             <p class="card-text">At Voxtus, we believe in providing our clients with personalized and comprehensive services that are tailored to their specific needs.</p>
-                            <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                            @*<div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>*@
                         </div>
                     </div>
 
@@ -117,7 +124,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><a href="#">Our Vision</a></h5>
                             <p class="card-text">"Our vision is to empower businesses to thrive in a digital-first world through innovative technology solutions that are tailored to their specific needs. We strive to be the go-to provider for businesses of all sizes and industries, and to deliver exceptional service that exceeds our clients' expectations. With a focus on collaboration, innovation, and excellence, we are committed to staying ahead of the curve and helping our clients achieve success now and in the future."</p>
-                            <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                            @*<div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>*@
                         </div>
                     </div>
                 </div>
@@ -129,7 +136,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><a href="#">Our Care</a></h5>
                             <p class="card-text">At Voxtus, we understand that our clients' success is our success. That's why we're committed to providing exceptional care and support to every client we work with.</p>
-                            <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                            @*<div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>*@
                         </div>
                     </div>
                 </div>
@@ -158,7 +165,7 @@
                         <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>*@
                         
                     </ul>
-                    <a href="#" class="get-started-btn">Get Started</a>
+                    @*<a href="#" class="get-started-btn">Get Started</a>*@
                 </div>
 
                 <div class="col-lg-4 box featured">
@@ -167,7 +174,7 @@
                     <ul>
                         If, for any reason, you're not completely satisfied with our services during the first 40 hours, you can cancel your contract with us with no obligation to pay.
                     </ul>
-                    <a href="#" class="get-started-btn">Get Started</a>
+                    @*<a href="#" class="get-started-btn">Get Started</a>*@
                 </div>
 
                 <div class="col-lg-4 box">
@@ -176,7 +183,7 @@
                     <ul>
                         We believe that this commitment demonstrates our confidence in the quality of our services and our commitment to providing exceptional value to our clients. We're confident that you'll be satisfied with our services, and we look forward to the opportunity to work with you.
                     </ul>
-                    <a href="#" class="get-started-btn">Get Started</a>
+                    @*<a href="#" class="get-started-btn">Get Started</a>*@
                 </div>
 
             </div>

@@ -1,0 +1,194 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<main id="main">
+    <section>
+        <div class="container  text-justify mt-4 " style="border:1px solid black">
+            @*<div class="container text-justify mx-3" style="border:1px solid black">*@
+            <div class="mt-2 mx-3">
+                <h2 class="mt-4 mx-3">
+                    "Customizing Controls in Power Apps: Hidden Gems You Should Know"
+                </h2>
+                <h4 class="mt-4 mx-3">
+                    Introduction:
+                </h4>
+                <p class="mt-3 mx-3">
+                    Power Apps offers a plethora of controls that enable you to create dynamic and interactive user interfaces for your apps.
+                    While many controls are well-known and commonly used, there are several hidden gems that can take your app customization
+                    to the next level. In this blog, we'll explore some lesser-known controls and customization options in Power Apps that
+                    will unlock new possibilities for your app designs.
+                </p>
+                <h4 class="mt-3 mx-3">
+                    Data Table Control:
+                </h4>
+                <p class="mt-3 mx-3">
+                    Discover the power of the Data Table control, a versatile tool that allows you to display tabular data with advanced functionalities.
+                    Learn how to enable sorting, filtering, and grouping to provide a rich user experience for handling large datasets.
+                </p>
+                <ul class="mt-3 mx-3">
+                    <li>
+                        So in here data table you can view your data or large data sets in the table.
+                    </li>
+                    <li>
+                        It is similar to Gallery in power apps but is not flexible like gallery. Yes you can select an item in the data table.
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-3 mx-3">
+                <img src="~/images/blog/powerapps/customizing controls/ss1 (1).jpg" class="img-fluid rounded mx-lg-auto d-block " />
+            </div>
+            <div class="mt-3 mx-3">
+                <img src="~/images/blog/powerapps/customizing controls/ss2 (1).jpg" class="img-fluid rounded mx-lg-auto d-block " />
+            </div>
+
+            <div class="mt-2 mx-3">
+                <ul class="mt-3 mx-3">
+                    <li>
+                        Just add your data in the data table control and it will show all data in the table.
+                    </li>
+                    <li>
+                        And here if you want to edit the data in the data table then you need to add a form control also.
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-3 mx-3">
+                <img src="~/images/blog/powerapps/customizing controls/ss3 (1).jpg" class="img-fluid rounded mx-lg-auto d-block " />
+            </div>
+
+            <div class="mt-2 mx-3">
+                <ul class="mt-3 mx-3">
+                    <li>
+                        And after that change the item property of the form control to (DataTable1.Selected).
+                    </li>
+                    <li>
+                        It will show the data of the selected column in the form control.
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-3 mx-3">
+                <img src="~/images/blog/powerapps/customizing controls/ss4 (1).jpg" class="img-fluid rounded mx-lg-auto d-block " />
+            </div>
+
+            <div class="mt-2 mx-3">
+                <ul class="mt-3 mx-3">
+                    <li>
+                        After that add a button in the screen and set its onselect property to [submitform(Form1)].
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-3 mx-3">
+                <img src="~/images/blog/powerapps/customizing controls/ss5 (1).jpg" class="img-fluid rounded mx-lg-auto d-block " />
+            </div>
+
+            <div class="mt-2 mx-3">
+                <ul class="mt-3 mx-3">
+                    <li>
+                        Now as you have added a button in the screen your can change the data in the data table control.
+                    </li>
+                    <li>
+                        You can change the data of the data table control.
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-3 mx-3">
+                <img src="~/images/blog/powerapps/customizing controls/ss6 (1).jpg" class="img-fluid rounded mx-lg-auto d-block " />
+            </div>
+
+            <div class="mt-2 mx-3">
+                <ul class="mt-3 mx-3">
+                    <li>
+                        Like this change the selected information and click on button.
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-3 mx-3">
+                <img src="~/images/blog/powerapps/customizing controls/ss7 (1).jpg" class="img-fluid rounded mx-lg-auto d-block " />
+            </div>
+
+            <div class="mt-2  mb-4 mx-3">
+                <ul class="mt-3 mx-3">
+                    <li>
+                        It will change the data of the data table like you can see in the above image.
+                    </li>
+                </ul>
+            </div>
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-9"></div>
+                <div class="col-sm-3"><p><b>Abhishek Kumar<br />PowerApps Consultant</b></p></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--Our Links Section Start Here-->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<script src="~/assets/js/main.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.min.css" rel="stylesheet" />
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" rel="stylesheet" />
+<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
+<script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="~/assets/vendor/isotope-layout/isotope.pkgd.js"></script>
+<link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+<script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="~/assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="~/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="~/assets/vendor/php-email-form/validate.js"></script>
+
+
+<!--The End of the Links Section-->

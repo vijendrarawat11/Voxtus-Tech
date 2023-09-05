@@ -59,7 +59,7 @@
             <div class="carousel-container">
                 <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Voxtus</span></h2>
                 <p class="animate__animated animate__fadeInUp">Where Software Meets Imagination</p>
-                <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                @*<a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>*@
             </div>
         </div>
 
@@ -68,7 +68,7 @@
             <div class="carousel-container">
                 <h2 class="animate__animated animate__fadeInDown"><span>Voxtus - </span>We Shape Your Data In Visualisation </h2>
                 <p class="animate__animated animate__fadeInUp">Shape your data in Visualised Reports</p>
-                <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                @*<a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>*@
             </div>
         </div>
 
@@ -77,7 +77,7 @@
             <div class="carousel-container">
                 <h2 class="animate__animated animate__fadeInDown">Build Your Business Apps</h2>
                 <p class="animate__animated animate__fadeInUp">We make business proccess easy using business applications.</p>
-                <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                @*<a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>*@
             </div>
         </div>
 
@@ -98,7 +98,7 @@
 
 
     <!-- ======= Services Section ======= -->
-    
+
     <section class="services">
         <div class="section-title">
             <h2>Services</h2>
@@ -108,55 +108,62 @@
             <div class="row">
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
                     <div class="icon-box icon-box-pink">
-                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                        <h4 class="title"><a href=""> Development Services</a></h4>
+                        <div class="icon"><a asp-controller="Services" asp-action="PowerAppsDevelopment"><img src="~/images/powerappsicon.jpg" height="50" width="60" /></a></div>
+                        <h4 class="title"><a asp-controller="Services" asp-action="PowerAppsDevelopment"> PowerApps Development</a></h4>
                         <p class="description">
-                            Each engagement with Voxtus begins with a thorough discussion of your
-                            business and technological issues and objectives. We then create a plan that
-                            will direct our work, ensure success, and provide you with the best software
-                            development services possible.
+                            In today's digital age, businesses across industries need tailored solutions
+                            to optimize their operations and foster growth. With 8 years of expertise in
+                            PowerApps development, we specialize in creating custom applications that align
+                            seamlessly with your business objectives. Whether you're in the healthcare sector,
+                            education, or corporate world, our services ensure that your digital needs are met with precision.
                         </p>
+                        <div class="read-more"><a asp-controller="Services" asp-action="PowerAppsDevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon-box icon-box-blue">
-                        <div class="icon"><i class="bx bx-world"></i></div>
-                        <h4 class="title"><a href="">Dynamics and Power Platform Developement</a></h4>
+                        <div class="icon"><a asp-controller="Services" asp-action="Dynamics365Development"><img src="~/images/dynamics-365-logo-trans (1).png" height="50" width="80" /></a></div>
+                        <h4 class="title"><a asp-controller="Services" asp-action="Dynamics365Development">Dynamics 365 Development</a></h4>
                         <p class="description">
-                            At Voxtus, we offer specialized services for creating Business Applications
-                            that give your business a competitive edge. Our Office 365 consultants help
-                            brands and organizations in increasing their visibility and increase your Business.
+                            In the interconnected ecosystem of modern businesses, Dynamics 365 stands as a cornerstone for
+                            efficiency and growth. With an enriched 8-year journey exclusively in Dynamics 365 module development,
+                            I commit to transforming your business operations and customer experiences.
+
                         </p>
+                        <div class="read-more"><a asp-controller="Services" asp-action="Dynamics365Development"><i class="bi bi-arrow-right"></i> Read More</a></div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon-box icon-box-cyan">
-                        <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4 class="title"><a href=""> Product Development</a></h4>
+                        <div class="icon"><a asp-controller="Services" asp-action="DOTNETDevelopment"><img src="~/images/dotneticon.png" height="50" width="60" /></a></div>
+                        <h4 class="title"><a asp-controller="Services" asp-action="DOTNETDevelopment">.NET Development</a></h4>
                         <p class="description">
-                            To create scalable solutions, we utilize the right combination of
-                            technologies, data, and design. With our leading software product
-                            development solutions, we produce captivating products that offer an
-                            incredible user experience.
+                            In today's digital landscape, businesses seek agile, reliable, and high-performance software solutions.
+                            Through the prowess of the .NET framework, Voxtus Technology delivers just that. Our developers with
+                            8 rich years in .NET - we blend technical acumen with practical insights to offer tailor-made solutions.
+
                         </p>
+                        <div class="read-more"><a asp-controller="Services" asp-action="DOTNETDevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon-box icon-box-green">
-                        <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4 class="title"><a href=""> Support and Maintenance</a></h4>
+                        <div class="icon"><a asp-controller="Services" asp-action="RPADevelopment"><img src="~/images/rpaicon.png" height="45" width="50" /></a></div>
+                        <h4 class="title"><a asp-controller="Services" asp-action="RPADevelopment">RPA Development</a></h4>
                         <p class="description">
-                            With the best software support services, we provide secure and stable
-                            software maintenance that focuses on important business concerns. Our tech
-                            professionals will provide you with the highest quality support and
-                            maintenance services in the shortest amount of time possible.
+                            In today's competitive landscape, the drive for greater efficiency and precision has never been higher.
+                            Robotic Process Automation (RPA) stands out as the go-to solution for businesses to streamline operations,
+                            minimize errors, and amplify productivity. At [Your IT Company Name], we're at the vanguard of this
+                            automation revolution, led by [Your Name] — a developer with a focused 3-year trajectory in RPA.
+
                         </p>
+                        <div class="read-more"><a asp-controller="Services" asp-action="RPADevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
                     </div>
                 </div>
 
-                
+
 
             </div>
 
@@ -166,25 +173,53 @@
     <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
         <div class="section-title">
             <h2>Why US</h2>
-            <p>Thank you for considering our company for your needs. We understand that you have many options to choose from, and we appreciate the opportunity to explain why we believe our company is the right choice for you.</p>
+            <p>
+                Thank you for considering our company for your needs. We understand that you have many options to choose from, and we appreciate the opportunity to explain why we believe our company is the right choice for you.
+                <br /> At Voxtus, we don't just provide services; we craft solutions tailored to your unique challenges and goals. But why should you <br />trust us with your digital needs? Here are compelling reasons:
+            </p>
         </div>
         <div class="container">
 
             <div class="row">
-               
+
                 <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
 
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-gift"></i></div>
-                        <h4 class="title"><a href="">Expertise</a></h4>
-                        <p class="description">Our team is made up of highly skilled professionals with years of experience in their respective fields. We have a proven track record of delivering quality results to our clients and we are confident that we can meet and exceed your expectations.</p>
+                        <h4 class="title">Industry Expertise</h4>
+                        <p class="description">
+                            Our seasoned team brings years of experience across a multitude of technologies and sectors. This depth of knowledge ensures that you're not just getting a generic solution but one refined by insights and best practices.
+                        </p>
                     </div>
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-gift"></i></div>
-                        <h4 class="title"><a href="">Commitment to quality</a></h4>
-                        <p class="description">We take great pride in our work and we are committed to delivering high-quality results every time. We use only the best materials and equipment and we follow strict quality control procedures to ensure that our work meets the highest standards.</p>
+                        <h4 class="title">Innovative Approach</h4>
+                        <p class="description">
+                            In a rapidly evolving digital landscape, staying ahead of the curve is paramount. Our commitment to continuous learning and adoption of the latest technologies means you always get the most innovative and efficient solutions.
+                        </p>
                     </div>
-                    
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-gift"></i></div>
+                        <h4 class="title">End-to-End Support</h4>
+                        <p class="description">
+                            From the initial consultation to post-deployment support, we're by your side. We believe in building lasting relationships, and our comprehensive support ensures that your solutions keep delivering value long after implementation.
+                        </p>
+                    </div>
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-gift"></i></div>
+                        <h4 class="title">Data-Driven Decision Making</h4>
+                        <p class="description">
+                            With a keen emphasis on analytics and data, we ensure that every strategy, every solution, is backed by numbers. This data-driven approach ensures precision, efficiency, and measurable results.
+                        </p>
+                    </div>
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-gift"></i></div>
+                        <h4 class="title">Ethical Practices</h4>
+                        <p class="description">
+                            Integrity is at the heart of what we do. Whether it's data security, transparent billing, or honest advice, you can rely on us to act with the utmost professionalism and ethics.
+                        </p>
+                    </div>
+
 
                 </div>
 
@@ -192,16 +227,49 @@
 
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-gift"></i></div>
-                        <h4 class="title"><a href="">Competitive pricing</a></h4>
-                        <p class="description">We understand that cost is a major factor in your decision-making process. That's why we offer competitive pricing without compromising on quality. We believe that our pricing is fair and transparent, and we are happy to work with you to find a solution that fits your budget.</p>
+                        <h4 class="title">Customized Solutions</h4>
+                        <p class="description">
+                            Every business is unique, and we understand that. Our approach focuses on understanding your specific needs, challenges, and objectives, allowing us to provide solutions tailor-made for you.
+                        </p>
                     </div>
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-gift"></i></div>
-                        <h4 class="title"><a href="">Customer service</a></h4>
-                        <p class="description">We believe that exceptional customer service is the key to success. Our team is committed to providing timely and personalized support to ensure that you are completely satisfied with our services.</p>
+                        <h4 class="title">Transparent Collaboration</h4>
+                        <p class="description">
+                            Trust is the foundation of any successful partnership. With us, you're always in the loop. Our transparent processes ensure that you're part of every decision, and our collaborative approach ensures that your vision is realized accurately.
+                        </p>
                     </div>
-                    
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-gift"></i></div>
+                        <h4 class="title">Affordable Excellence</h4>
+                        <p class="description">
+                            High-quality solutions shouldn't come with exorbitant price tags. Our competitive pricing ensures that businesses of all sizes can benefit from top-tier digital solutions without breaking the bank.
+                        </p>
+                    </div>
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-gift"></i></div>
+                        <h4 class="title">Client Success Stories</h4>
+                        <p class="description">
+                            Don't just take our word for it. Our extensive portfolio of satisfied clients stands testimony to our capabilities, commitment, and excellence.
+                        </p>
+                    </div>
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-gift"></i></div>
+                        <h4 class="title">Client-Centric Approach</h4>
+                        <p class="description">
+                            We place you at the heart of everything we do. We listen intently, craft bespoke solutions, and adapt dynamically to your evolving needs. It's not just about delivering results, it's about forging partnerships built on trust, transparency, and a shared vision for success.
+                        </p>
+                    </div>
+                    @*<div class="icon-box">
+                    <div></div>
+                    <h4 class="title"></h4>
+                    <p class="description">
+                    </p>
+                    </div>*@
 
+                </div>
+                <div>
+                    <p class="mx-5 mb-4">By partnering with Voxtus, you're not just getting a service provider but a dedicated partner committed to propelling your business into the digital future with clarity, confidence, and capability.</p>
                 </div>
             </div>
 
@@ -221,20 +289,20 @@
                     <img src="assets/img/features-1.svg" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-7 pt-4">
-                    <h3>Custom Software Development</h3>
+                    <h3>Web Development</h3>
                     <p class="fst-italic">
-                      
-                    </p>
+                     </p>
                     <ul>
-                        <li><i class="bi bi-check"></i>Voxtus specializes in developing custom software solutions tailored to meet the specific needs of its clients.</li>
-                        <li><i class="bi bi-check"></i>Voxtus design and develop software from scratch or modify existing software to improve its functionality.</li>
+                        <li><i class="bi bi-check"></i><b>Overview:</b>: Our team specializes in designing and developing user-centric websites that resonate with your brand and target audience.</li>
+                        <li><i class="bi bi-check"></i><b>Features: </b>Responsive designs ensuring optimal viewing across various devices, SEO-friendly structures to improve search engine visibility, and integration of the latest web technologies for enhanced user experience.</li>
+                        <li><i class="bi bi-check"></i><b>Tools & Technologies:</b>Use of popular frameworks and CMS platforms tailored to client needs, ensuring flexibility and scalability.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="row" data-aos="fade-up">
                 <div class="col-md-5 order-1 order-md-2">
-                    <img src="assets/img/features-2.svg" class="img-fluid" alt="">
+                    <img src="assets/img/features-2.svg" class="img-fluid" alt=""> 
                 </div>
                 <div class="col-md-7 pt-5 order-2 order-md-1">
                     <h3>Cloud Services</h3>
@@ -242,7 +310,11 @@
                        
                     </p>
                     <p>
-                       Voxtus deploy and manage software applications on the cloud. This includes cloud infrastructure management, cloud migration, and cloud optimization
+                        <ul>
+                        <li><i class="bi bi-check"></i><b>Overview:</b>Navigate the digital cloud with our tailored cloud services, from consulting and migration to deployment and management.</li>
+                        <li><i class="bi bi-check"></i><b>Features: </b>Secure data storage, scalable resources based on demand, disaster recovery solutions, and regular backups.</li>
+                        <li><i class="bi bi-check"></i><b>Tools & Technologies:</b> Collaboration with leading cloud providers to ensure optimal performance and security.</li>
+                        </ul>
                     </p>
                 </div>
             </div>
@@ -252,10 +324,12 @@
                     <img src="assets/img/features-3.svg" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-7 pt-5">
-                    <h3>Mobile App Development</h3>
+                    <h3>App Development</h3>
                     <p></p>
                     <ul>
-                        <li><i class="bi bi-check"></i>Voxtus create custom mobile applications for Android and iOS platforms that are optimized for performance, security, and user experience.</li>
+                        <li><i class="bi bi-check"></i><b>Overview:</b>We conceptualize, design, and develop software applications tailored for both Android and iOS platforms, focusing on user experience and functionality.</li>
+                        <li><i class="bi bi-check"></i><b>Features:</b>Intuitive UI/UX, smooth performance, regular updates to keep up with OS changes, and integration of features like push notifications, geolocation, and more.</li>
+                        <li><i class="bi bi-check"></i><b>Tools & Technologies:</b>Use of native development tools, as well as cross-platform solutions, depending on project requirements.</li>
                         @*<li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
                         <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>*@
                     </ul>
@@ -267,13 +341,17 @@
                     <img src="assets/img/features-4.svg" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-7 pt-5 order-2 order-md-1">
-                    <h3>Agile Development Methodology</h3>
+                    <h3>Artificial Intelligence & Machine Learning</h3>
                     <p class="fst-italic">
                         @*Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.*@
                     </p>
                     <p>
-                       Voxtus use Agile development methodology to ensure that software is developed in an iterative and incremental manner. This helps ensure that the software is delivered on time, on budget, and meets the client's needs
+                        <ul>
+                            <li><i class="bi bi-check"></i><b>Overview:</b>Leverage the power of AI and ML to enhance business operations, from data analytics to automated customer interactions.</li>
+                            <li><i class="bi bi-check"></i><b>Features: </b>Predictive analytics to anticipate market changes, chatbots for improved customer service, and algorithmic solutions for process optimization.</li>
+                            <li><i class="bi bi-check"></i><b>Tools & Technologies:</b>Implementation of neural networks, deep learning models, and NLP for varied solutions.</li>
+                        </ul>
                     </p>
                 </div>
             </div>

@@ -12,10 +12,10 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h2>Blog</h2>
 
-                <ol>
+                @*<ol>
                     <li><a href="index.html">Home</a></li>
                     <li>Blog</li>
-                </ol>
+                </ol>*@
             </div>
 
         </div>
@@ -32,7 +32,7 @@
 
                         <div class="entry-img">
                            @* <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">*@
-                            <img src="images/logo/powerappslogo.png" alt="" class="img-fluid">
+                             <a asp-controller="PowerApps" asp-action="Index"><img src="images/logo/powerappslogo.png" alt="" class="img-fluid"></a>
                             @*<img src="~/images/logo/powerappslogo.png" />*@
                         </div>
 
@@ -54,7 +54,7 @@
                                 What sets Abhishek apart is his ability to translate complex technical concepts into relatable and accessible content. Whether he's demystifying coding languages or delving into the intricacies of Microsoft Coud Platform PowerApps, Abhishek has a natural talent for breaking down complex ideas and presenting them in a way that resonates with readers from all backgrounds
                             </p>
                             <div class="read-more">
-                                <a href="blog-single.html">Read More</a>
+                                <a asp-controller="PowerApps" asp-action="Index">Read More</a>
                             </div>
                         </div>
 
@@ -84,7 +84,7 @@
                                 Introducing Sumit, an IT blogger who seamlessly combines his love for technology with his exceptional writing skills. With a keen eye for detail and a passion for staying at the forefront of the ever-evolving IT industry, Sumit brings a wealth of knowledge and expertise to his role as an IT blogger.
                             </p>
                             <div class="read-more">
-                                <a href="blog-single.html">Read More</a>
+                                @*<a href="blog-single.html">Read More</a>*@
                             </div>
                         </div>
 
@@ -117,8 +117,8 @@
                         <h3 class="sidebar-title">Categories</h3>
                         <div class="sidebar-item categories">
                             <ul>
-                                <li><a href="#">PowerApps <span>(25)</span></a></li>
-                                <li><a href="#">Ui Path <span>(12)</span></a></li>
+                                <li><a asp-controller="PowerApps" asp-action="Index">PowerApps <span>(4)</span></a></li>
+                                <li><a href="#">Ui Path <span>(0)</span></a></li>
                                 
                             </ul>
                         </div><!-- End sidebar categories-->
@@ -127,8 +127,8 @@
                         <div class="sidebar-item recent-posts">
                             <div class="post-item clearfix">
                                 <img src="images/logo/powerappslogo.png" alt="">
-                                <h4><a href="blog-single.html">How To Use BarCode In PowerApps</a></h4>
-                                <time datetime="2020-05-016">May 20, 2023</time>
+                                <h4><a asp-controller="PowerApps" asp-action="CustomizingControls">Customizing Controls in Power Apps: Hidden Gems You Should Know.</a></h4>
+                                <time datetime="2020-05-016">September 1, 2023</time>
                             </div>
 
                           
