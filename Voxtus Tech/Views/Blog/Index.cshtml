@@ -63,12 +63,12 @@
                     <article class="entry">
 
                         <div class="entry-img">
-                            <img src="images/logo/uipath.png" alt="UI Path" class="img-fluid">
+                            <a asp-controller="UIPath" asp-action="Index"><img src="images/logo/uipath.png" alt="UI Path" class="img-fluid"></a>
                            @* <img src="~/images/logo/uipath.png" />*@
                         </div>
 
                         <h2 class="entry-title">
-                            <a href="blog-single.html">UI Path Blogs</a>
+                            <a asp-controller="UIPath" asp-action="Index">UI Path Blogs</a>
                         </h2>
 
                         <div class="entry-meta">
@@ -84,7 +84,7 @@
                                 Introducing Sumit, an IT blogger who seamlessly combines his love for technology with his exceptional writing skills. With a keen eye for detail and a passion for staying at the forefront of the ever-evolving IT industry, Sumit brings a wealth of knowledge and expertise to his role as an IT blogger.
                             </p>
                             <div class="read-more">
-                                @*<a href="blog-single.html">Read More</a>*@
+                                <a asp-controller="UIPath" asp-action="Index">Read More</a>
                             </div>
                         </div>
 
@@ -117,8 +117,8 @@
                         <h3 class="sidebar-title">Categories</h3>
                         <div class="sidebar-item categories">
                             <ul>
-                                <li><a asp-controller="PowerApps" asp-action="Index">Power Apps <span>(4)</span></a></li>
-                                <li><a href="#">Ui Path <span>(0)</span></a></li>
+                                <li><a asp-controller="PowerApps" asp-action="Index">Power Apps <span>(5)</span></a></li>
+                                <li><a asp-controller="UIPath" asp-action="Index">Ui Path <span>(1)</span></a></li>
                                 
                             </ul>
                         </div><!-- End sidebar categories-->
@@ -126,9 +126,10 @@
                         <h3 class="sidebar-title">Recent Posts</h3>
                         <div class="sidebar-item recent-posts">
                             <div class="post-item clearfix">
-                                <img src="images/logo/powerappslogo.png" alt="">
-                                <h4><a asp-controller="PowerApps" asp-action="CustomizingControls">Customizing Controls in Power Apps: Hidden Gems You Should Know.</a></h4>
-                                <time datetime="2020-05-016">September 1, 2023</time>
+                                @*<img src="images/logo/powerappslogo.png" alt="">*@
+                                <img src="~/images/logo/uipath.png" />
+                                <h4><a asp-controller="UIPath" asp-action="UiPathVsPowerAutomate">UiPath  vs. Power Automate</a></h4>
+                                <time datetime="2020-05-016">September 14, 2023</time>
                             </div>
 
                           
