@@ -5,9 +5,9 @@
 }
 <main id="main">
     <section>
-        <div class="container-fluid"><a style="text-decoration:none" asp-controller="PowerApps" asp-action="Index"><h5 class="text-primary"><i class="bi bi-arrow-left-circle"></i> Go back to Power Apps Blogs</h5></a></div>
+        <div class="row">
+            <div class=" col-lg-8">
         <div class="container  text-justify mt-4  bg-light service-details align-items-center" style="border:2px solid black">
-            @*<div class="container text-justify mx-3" style="border:1px solid black">*@
             <div class="mt-2 mx-3">
                 <h2 class="mt-4 mx-3 text-center">
                     The difference between Canvas Apps, Model driven App and Power Pages.
@@ -111,6 +111,60 @@
                 <div class="col-sm-3"><p><b>Abhishek Kumar<br />Power Apps Consultant</b></p></div>
             </div>
         </div>
+        </div>
+            <div class="col-lg-4 sidebar mt-4 bg-light service-details">
+                <h3 class="sidebar-title mt-5 pb-4 text-center">Recent Posts</h3><hr />
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="BarCodeReader" style="text-decoration:none"><p class="text-primary">How to use Barcode Scanner Application in Power Apps.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="MultipleMakerFeature" style="text-decoration:none"><p class="text-primary">Multiple Makers Feature of Microsoft Power Apps.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+
+                @*<div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="post-item clearfix col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="CanvasOrModelDrivenApp" style="text-decoration:none"><p class="text-primary">The difference between Canvas Apps, Model driven App and Power Pages.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>
+                    </div>
+                </div>*@
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="post-item clearfix col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="CustomizingControls" style="text-decoration:none"><p class="text-primary">"Customizing Controls in Power Apps: Hidden Gems You Should Know"</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="post-item clearfix col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="PowerAppsFlow" style="text-decoration:none"><p class="text-primary">What to do when your flow is not working and showing error.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="container-fluid pt-3"><a style="text-decoration:none" asp-controller="PowerApps" asp-action="Index"><h5 class="text-primary"><i class="bi bi-arrow-left-circle"></i> Go back to Power Apps Blogs</h5></a></div>
     </section>
 </main>
 
