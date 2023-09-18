@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\.well-known\pki-validation\" />
+    <Folder Include="wwwroot\Images\Blog\UI Path\" />
   </ItemGroup>
 
 </Project>

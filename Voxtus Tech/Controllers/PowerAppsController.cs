@@ -98,6 +98,10 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        public ActionResult PowerAppsFlow()
+        {
+            return View();
+        }
 
     }
 }
