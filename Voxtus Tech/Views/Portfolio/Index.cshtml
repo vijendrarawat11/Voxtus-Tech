@@ -11,10 +11,10 @@
 
             <div class="d-flex justify-content-between align-items-center">
                 <h2>Our Portfolio</h2>
-                <ol>
+                @*<ol>
                     <li><a href="index.html">Home</a></li>
                     <li>Our Portfolio</li>
-                </ol>
+                </ol>*@
             </div>
 
         </div>
@@ -27,31 +27,34 @@
                 <div class="col-lg-12">
                     <ul id="portfolio-flters">
                         <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-card">Card</li>
-                        <li data-filter=".filter-web">Web</li>
+                        @*<li data-filter=".filter-app">Canvas App</li>
+                        <li data-filter=".filter-card">Power Automate</li>
+                        <li data-filter=".filter-web">Model Driven App</li>*@
                     </ul>
                 </div>
             </div>
 
-            <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" @*style="background-color:aliceblue"*@ >
 
-                <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
-                    <div class="portfolio-item">
-                        <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h3>App 1</h3>
-                            <div>
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
+                    <div class="portfolio-item" style="background-color:aliceblue; height:150px">
+                        <a asp-controller="Portfolio" asp-action="HealthManagementSystemApp"><img src="~/assets/img/portfolio/home1.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                       <div class="portfolio-info">
+                            <a asp-controller="Portfolio" asp-action="HealthManagementSystemApp" style="text-decoration:none"><h5 class="card-body text-black">Health Management System</h5></a>
+                            @*<div>
                                 <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                            </div>
+                            </div>*@
+                        </div>
+                        <div class="card-footer mt-2 text-center">
+                            <a asp-controller="Portfolio" asp-action="HealthManagementSystemApp" style="text-decoration:none"><h6 class="text-primary">Health Management System</h6></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+                @*<div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
                     <div class="portfolio-item">
-                        <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                            <img src="~/assets/img/Home.png" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h3>Web 3</h3>
                             <div>
@@ -64,7 +67,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
                     <div class="portfolio-item">
-                        <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                            <img src="~/assets/img/home.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h3>App 2</h3>
                             <div>
@@ -77,7 +80,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
                     <div class="portfolio-item">
-                        <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                            <img src="~/assets/img/home.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h3>Card 2</h3>
                             <div>
@@ -151,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>*@
 
             </div>
 
