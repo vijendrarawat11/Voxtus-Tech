@@ -79,5 +79,9 @@ namespace Voxtus_Tech.Controllers
                 return View();
             }
         }
+        public ActionResult HealthManagementSystemApp()
+        {
+            return View();
+        }
     }
 }
