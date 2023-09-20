@@ -1,0 +1,312 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<main id="main">
+    <section>
+        <div class="row">
+            <div class=" col-lg-9">
+                <div class="container  text-justify mt-4  bg-light service-details align-items-center" style="border:2px solid black">
+                    <div class="mt-2 mx-3">
+                        <h2 class="mt-4 mx-3">
+                            Building Custom Forms with Power Apps: A Step-by-Step Guide using custom connectors “SharePoint”
+                        </h2><hr />
+                    </div>
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <h4 class="mt-4 mx-3">
+                            Introduction:
+                        </h4>
+                        <p class="mt-3 mx-3">
+                            Power Apps is a powerful and user-friendly low-code platform developed by Microsoft. It empowers individuals and 
+                            organizations to create custom business applications and solutions without the need for extensive coding expertise.
+                            With Power Apps, you can build intuitive apps that automate processes, streamline workflows, and connect to various data sources.
+                        </p>
+                    </div>
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <h4 class="mt-3 mx-3">
+                            Why we need custom form:
+                        </h4>
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                <b>Ensure Data Accuracy:</b> Custom forms enforce data validation, reducing errors in data entry.
+                            </li>
+                            <li>
+                                <b>Streamline Workflows:</b> They automate tasks, speeding up processes and reducing manual effort.
+                            </li>
+                            <li><b>Enhance User Experience:</b> User-friendly interfaces improve usability and efficiency.</li>
+                            <li><b>Enable Real-Time Access:</b> Custom forms connect to databases, providing up-to-date information.</li>
+                            <li><b>Customization:</b> Forms adapt to specific business needs, aligning with unique requirements.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <h4 class="mt-3 mx-3">
+                            Creating a new Power Apps Form
+                        </h4>
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                First create a new app in the power App.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_1.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Enter the App name and its layout as Tablet
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_2.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Click on Insert and select Edit form from there .
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_3.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Now in new tab first create a connection for SharePoint  by entering your credintials.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_4.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                After that select the connection.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_5.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                After that select the form and select its data source from SharePoint.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_6.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_7.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                After that Select your site and List.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_8.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_9.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                And now your data source will be connected and you can use share point to store data.
+                            </li>
+                            <li>
+                                As I have already created a SharePoint list like below.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_10.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Now add a button in the screen and change its on select property to submiform (Form1).
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_11.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Now In Play mode you can enter your details in the form and click on button. Your details will be saved on SharePoint.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_12.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Like this.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_13.png" class="img-fluid rounded mx-lg-auto d-block " />
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row mb-2">
+                        <h6 class="text-center text-primary">
+                            If you have any doubts or questions related to this blog, you can Contact us by Email: info@voxtus.com
+                        </h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-9"></div>
+                        <div class="col-sm-3"><p><b>Abhishek Kumar<br />Power Apps Consultant</b></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 sidebar mt-4 bg-light service-details">
+                <h3 class="sidebar-title mt-5 pb-4 text-center">Recent Posts</h3><hr />
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="BarCodeReader" style="text-decoration:none"><p class="text-primary">How to use Barcode Scanner Application in Power Apps.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="MultipleMakerFeature" style="text-decoration:none"><p class="text-primary">Multiple Makers Feature of Microsoft Power Apps.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="post-item clearfix col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="CanvasOrModelDrivenApp" style="text-decoration:none"><p class="text-primary">The difference between Canvas Apps, Model driven App and Power Pages.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                <div class="post-item clearfix col-3">
+                <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                </div>
+                <div class="col-9">
+                <a asp-controller="PowerApps" asp-action="CustomizingControls" style="text-decoration:none"><p class="text-primary">"Customizing Controls in Power Apps: Hidden Gems You Should Know"</p></a>
+                @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                </div>
+                </div>
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="post-item clearfix col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="PowerAppsFlow" style="text-decoration:none"><p class="text-primary">What to do when your flow is not working and showing error.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-3"><a style="text-decoration:none" asp-controller="PowerApps" asp-action="Index"><h5 class="text-primary"><i class="bi bi-arrow-left-circle"></i> Go back to Power Apps Blogs</h5></a></div>
+    </section>
+</main>
+
+<!--Our Links Section Start Here-->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<script src="~/assets/js/main.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.min.css" rel="stylesheet" />
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" rel="stylesheet" />
+<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
+<script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="~/assets/vendor/isotope-layout/isotope.pkgd.js"></script>
+<link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+<script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="~/assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="~/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="~/assets/vendor/php-email-form/validate.js"></script>
+
+
+<!--The End of the Links Section-->

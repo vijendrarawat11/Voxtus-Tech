@@ -83,5 +83,9 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        public ActionResult EmployeeOnboardingApp()
+        {
+            return View();
+        }
     }
 }

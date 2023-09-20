@@ -102,6 +102,10 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        public ActionResult BuildingCustomForms()
+        {
+            return View();
+        }
 
     }
 }
