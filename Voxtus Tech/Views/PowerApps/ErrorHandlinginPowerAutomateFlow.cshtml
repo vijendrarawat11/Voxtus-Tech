@@ -9,179 +9,124 @@
             <div class=" col-lg-9">
                 <div class="container  text-justify mt-4  bg-light service-details align-items-center" style="border:2px solid black">
                     <div class="mt-2 mx-3">
-                        <h2 class="mt-4 mx-3">
-                            Creating Power Apps Form using SharePoint list.
+                        <h2 class="mt-4 mx-3 text-center">
+                            Mastering Error Handling in Power Automate Flow.
                         </h2><hr />
                     </div>
                     <div class="mt-2 mx-3 bg-white pt-1">
-                        <h4 class="mt-4 mx-3">
-                            Introduction:
-                        </h4>
-                        <p class="mt-3 mx-3">
-                            Power Apps is a powerful and user-friendly low-code platform developed by Microsoft. It empowers individuals and 
-                            organizations to create custom business applications and solutions without the need for extensive coding expertise.
-                            With Power Apps, you can build intuitive apps that automate processes, streamline workflows, and connect to various data sources.
+                        <p class="mt-4 mx-3">
+                            Are you tired of your automated workflows going haywire when something unexpected happens? Don't worry; we've got your back! In this guide,
+                            we'll demystify **error handling in Power Automate Flow**, making it as easy as a walk in the park.
+                        </p>
+                        <h4 class="mt-3 mx-3">Understanding Errors in Power Automate Flow</h4>
+                        <p class="mt-4 mx-3">
+                            First things first, let's talk about what errors are in the context of Power Automate Flow. Errors can happen when a flow encounters a problem,
+                            such as a missing file, a failed API call, or even just a typo in your configuration. Instead of your flow breaking down, you can plan for these 
+                            mishaps and tell your flow what to do when things go awry.
                         </p>
                     </div>
                     <div class="mt-2 mx-3 bg-white pt-1">
                         <h4 class="mt-3 mx-3">
-                            Why we need custom form:
+                            The Three Musketeers of Error Handling
                         </h4>
+                        <p class="mt-3 mx-3">In Power Automate Flow, we have three powerful actions to handle errors:</p>
+                        <h6 class="mt-3 mx-3">Scope Action:</h6>
                         <ul class="mt-3 mx-3">
                             <li>
-                                <b>Ensure Data Accuracy:</b> Custom forms enforce data validation, reducing errors in data entry.
+                                Think of a Scope as a protective bubble around a set of actions. You can define a scope for a specific part of your flow.
                             </li>
                             <li>
-                                <b>Streamline Workflows:</b> They automate tasks, speeding up processes and reducing manual effort.
+                                If an error occurs within that scope, you can set rules on what the flow should do next, like sending an email or recording the error in a log.
                             </li>
-                            <li><b>Enhance User Experience:</b> User-friendly interfaces improve usability and efficiency.</li>
-                            <li><b>Enable Real-Time Access:</b> Custom forms connect to databases, providing up-to-date information.</li>
-                            <li><b>Customization:</b> Forms adapt to specific business needs, aligning with unique requirements.</li>
+                        </ul>
+                        <h6 class="mt-3 mx-3">Configure Run After:</h6>
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                When you add actions to your flow, you can configure what should happen if an action fails. You can decide whether the flow should continue or stop.
+                            </li>
+                            <li>
+                                This is like telling your flow, "If this action fails, don't give up; try the next one."
+                            </li>
+                        </ul>
+                        <h6 class="mt-3 mx-3">Initialize Variable:</h6>
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                You can use a variable to store information about errors. If an error occurs, you can store details like the error message in the variable.
+                            </li>
+                            <li>
+                                Later in your flow, you can check this variable to see if any errors occurred and take action accordingly.
+                            </li>
                         </ul>
                     </div>
-
                     <div class="mt-2 mx-3 bg-white pt-1">
                         <h4 class="mt-3 mx-3">
-                            Creating a new Power Apps Form
+                            Step-by-Step Guide: Handling Errors with a Simple Use Case
                         </h4>
+                        <p class="mt-3 mx-3">Use Case: Let's say you have a flow that sends email notifications when a new item is added to a SharePoint list. 
+                            You want to make sure the flow keeps running, even if there's an issue with sending an email.</p>
+                        <h6 class="mt-3 mx-3"><b>Step 1:</b> Create a New Flow</h6>
                         <ul class="mt-3 mx-3">
                             <li>
-                                First create a new app in the power App.
+                                Log in to Power Automate.
+                            </li>
+                            <li>
+                                Create a new flow or edit an existing one.
                             </li>
                         </ul>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_1.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                    </div>
-
-                    <div class="mt-2 mx-3 bg-white">
+                        <h6 class="mt-3 mx-3"><b>Step 2:</b> Add a Scope</h6>
                         <ul class="mt-3 mx-3">
                             <li>
-                                Enter the App name and its layout as Tablet
+                                In your flow, add a Scope action before the email sending action.
+                            </li>
+                            <li>
+                                Name it "Send Email."
                             </li>
                         </ul>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_2.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                    </div>
-
-                    <div class="mt-2 mx-3 bg-white">
+                        <h6 class="mt-3 mx-3"><b>Step 3:</b> Configure Run After</h6>
                         <ul class="mt-3 mx-3">
                             <li>
-                                Click on Insert and select Edit form from there .
+                                Select the email sending action and configure its "Run After" settings.
+                            </li>
+                            <li>
+                                Choose "Configure run after" and specify what to do if the action fails. You can choose to continue the flow even if the email fails to send.
                             </li>
                         </ul>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_3.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                    </div>
-
-                    <div class="mt-2 mx-3 bg-white">
+                        <h6 class="mt-3 mx-3"><b>Step 4:</b> Initialize a Variable</h6>
                         <ul class="mt-3 mx-3">
                             <li>
-                                Now in new tab first create a connection for SharePoint  by entering your credintials.
+                                Add an Initialize Variable action within the scope.
                             </li>
+                            <li>
+                                Name the variable "EmailError."
+                            </li>
+                            <li>If the email action fails, set the "EmailError" variable to "Yes."</li>
                         </ul>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_4.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                    </div>
-
-                    <div class="mt-2 mx-3 bg-white">
+                        <h6 class="mt-3 mx-3"><b>Step 5:</b> Check for Errors</h6>
                         <ul class="mt-3 mx-3">
                             <li>
-                                After that select the connection.
-                            </li>
-                        </ul>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_5.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                    </div>
-
-                    <div class="mt-2 mx-3 bg-white">
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                After that select the form and select its data source from SharePoint.
-                            </li>
-                        </ul>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_6.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_7.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                    </div>
-
-                    <div class="mt-2 mx-3 bg-white">
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                After that Select your site and List.
-                            </li>
-                        </ul>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_8.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_9.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                    </div>
-
-                    <div class="mt-2 mx-3 bg-white">
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                And now your data source will be connected and you can use share point to store data.
+                                After the scope, add a condition to check the "EmailError" variable.
                             </li>
                             <li>
-                                As I have already created a SharePoint list like below.
+                                If it's "Yes," you can send an email to yourself or a team member to notify them of the issue.
                             </li>
                         </ul>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_10.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
+                        <p class="mt-3 mx-3">
+                            That's it! You've created a flow that gracefully handles errors when sending emails.
+                            Even if the email action fails, your flow won't break, and you'll be informed of the error.</p>
+                        <p class="mt-3 mx-3">Remember, error handling in Power Automate Flow is your superhero cape when it comes to dealing with unexpected bumps in the automation road.
+                            With these simple steps and actions, you'll ensure your flows keep running smoothly, even in the face of errors.</p>
+                        <p class="mt-4 mx-3 text-center pb-3">Now, go ahead and create error-resistant flows like a pro! Happy automating!</p>
                     </div>
-
-                    <div class="mt-2 mx-3 bg-white">
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                Now add a button in the screen and change its on select property to submitform (Form1).
-                            </li>
-                        </ul>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_11.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                    </div>
-
-                    <div class="mt-2 mx-3 bg-white">
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                Now In Play mode you can enter your details in the form and click on button. Your details will be saved on SharePoint.
-                            </li>
-                        </ul>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_12.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                    </div>
-
-                    <div class="mt-2 mx-3 bg-white">
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                Like this.
-                            </li>
-                        </ul>
-                        <div class="mt-3 mx-3 pt-3 pb-3">
-                            <img src="~/images/blog/powerapps/buildingcustomforms/screenshot_13.png" class="img-fluid rounded mx-lg-auto d-block " />
-                        </div>
-                    </div>
-
                     <hr />
                     <div class="row mb-2">
                         <h6 class="text-center text-primary">
                             If you have any doubts or questions related to this blog, you can Contact us by Email: info@voxtus.com
                         </h6>
                     </div>
+
                     <div class="row">
                         <div class="col-sm-9"></div>
-                        <div class="col-sm-3"><p><b>Abhishek Kumar<br />Power Apps Consultant</b></p></div>
+                        <div class="col-sm-3"><p><b>Sumit Joshi<br />Power Apps Consultant</b></p></div>
                     </div>
                 </div>
             </div>
@@ -208,25 +153,24 @@
                 </div>
 
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
-                    <div class="post-item clearfix col-3">
-                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
-                    </div>
-                    <div class="col-9">
-                        <a asp-controller="PowerApps" asp-action="CanvasOrModelDrivenApp" style="text-decoration:none"><p class="text-primary">The difference between Canvas Apps, Model driven App and Power Pages.</p></a>
-                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
-                    </div>
-                </div>
-
-                <div class="row sidebar-item recent-posts mt-3 bg-white">
                 <div class="post-item clearfix col-3">
                 <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
                 </div>
                 <div class="col-9">
-                <a asp-controller="PowerApps" asp-action="CustomizingControls" style="text-decoration:none"><p class="text-primary">"Customizing Controls in Power Apps: Hidden Gems You Should Know"</p></a>
-                @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                <a asp-controller="PowerApps" asp-action="CanvasOrModelDrivenApp" style="text-decoration:none"><p class="text-primary">The difference between Canvas Apps, Model driven App and Power Pages.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
                 </div>
                 </div>
 
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="post-item clearfix col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="CustomizingControls" style="text-decoration:none"><p class="text-primary">"Customizing Controls in Power Apps: Hidden Gems You Should Know"</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="post-item clearfix col-3">
                         <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
@@ -236,11 +180,22 @@
                         @*<time datetime="2020-05-016">September 14, 2023</time>*@
                     </div>
                 </div>
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="post-item clearfix col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="BuildingCustomForms" style="text-decoration:none"><p class="text-primary">Creating Power Apps Form using SharePoint list.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container-fluid pt-3"><a style="text-decoration:none" asp-controller="PowerApps" asp-action="Index"><h5 class="text-primary"><i class="bi bi-arrow-left-circle"></i> Go back to Power Apps Blogs</h5></a></div>
     </section>
 </main>
+
 
 <!--Our Links Section Start Here-->
 <link href="~/assets/css/style.css" rel="stylesheet" />

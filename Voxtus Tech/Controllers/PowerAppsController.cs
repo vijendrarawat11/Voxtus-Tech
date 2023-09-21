@@ -106,6 +106,10 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        public ActionResult ErrorHandlinginPowerAutomateFlow()
+        {
+            return View();
+        }
 
     }
 }

@@ -87,5 +87,25 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        public ActionResult StudentManagementApplicationApp()
+        {
+            return View();
+        }
+        public ActionResult InspectionApp()
+        {
+            return View();
+        }
+        public ActionResult LeaveManagementApplicationApp()
+        {
+            return View();
+        }
+        public ActionResult OrderTrackingApplication()
+        {
+            return View();
+        }
+        public ActionResult EmployeePerformanceReviewingSystemApp()
+        {
+            return View();
+        }
     }
 }

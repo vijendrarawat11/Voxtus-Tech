@@ -27,9 +27,9 @@
                 <div class="col-lg-12">
                     <ul id="portfolio-flters">
                         <li data-filter="*" class="filter-active">All</li>
-                        @*<li data-filter=".filter-app">Canvas App</li>
+                        <li data-filter=".filter-app">Canvas App</li>
                         <li data-filter=".filter-card">Power Automate</li>
-                        <li data-filter=".filter-web">Model Driven App</li>*@
+                        <li data-filter=".filter-web">Model Driven App</li>
                     </ul>
                 </div>
             </div>
@@ -38,16 +38,96 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:150px">
-                        <a asp-controller="Portfolio" asp-action="HealthManagementSystemApp"><img src="~/assets/img/portfolio/home1.jpg" class="img-fluid w-100 h-75" alt=""></a>
-                       <div class="portfolio-info">
-                            <a asp-controller="Portfolio" asp-action="HealthManagementSystemApp" style="text-decoration:none"><h5 class="card-body text-black">Health Management System</h5></a>
+                        <a asp-controller="Portfolio" asp-action="HealthManagementSystemApp"><img src="~/images/portfolio/health management system app/home1.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                        <div class="portfolio-info">
+                            <a asp-controller="Portfolio" asp-action="HealthManagementSystemApp" style="text-decoration:none"><h5 class="card-body text-success">Health Management System</h5></a>
                             @*<div>
                                 <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                             </div>*@
                         </div>
                         <div class="card-footer mt-2 text-center">
-                            <a asp-controller="Portfolio" asp-action="HealthManagementSystemApp" style="text-decoration:none"><h6 class="text-primary">Health Management System</h6></a>
+                            <a asp-controller="Portfolio" asp-action="HealthManagementSystemApp" style="text-decoration:none"><h6 class="text-dark">Health Management System</h6></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-web" style="background-color:white">
+                    <div class="portfolio-item" style="background-color:aliceblue; height:150px">
+                        <a asp-controller="Portfolio" asp-action="StudentManagementApplicationApp"><img src="~/images/portfolio/student management application app/dashboard.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                        <div class="portfolio-info">
+                            <a asp-controller="Portfolio" asp-action="StudentManagementApplicationApp" style="text-decoration:none"><h5 class="card-body text-success">Student Management Application</h5></a>
+                            @*<div>
+                                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>*@
+                        </div>
+                        <div class="card-footer mt-2 text-center">
+                            <a asp-controller="Portfolio" asp-action="StudentManagementApplicationApp" style="text-decoration:none"><h6 class="text-dark">Student Management Application</h6></a>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
+                        <div class="portfolio-item" style="background-color:aliceblue; height:150px">
+                        <a asp-controller="Portfolio" asp-action="InspectionApp"><img src="~/images/portfolio/inspection app/inspection app.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                            <div class="portfolio-info">
+                            <a asp-controller="Portfolio" asp-action="InspectionApp" style="text-decoration:none"><h5 class="card-body text-success">Inspection App</h5></a>
+                                @*<div>
+                                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                </div>*@
+                            </div>
+                            <div class="card-footer mt-2 text-center">
+                            <a asp-controller="Portfolio" asp-action="InspectionApp" style="text-decoration:none"><h6 class="text-dark">Inspection App</h6></a>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
+                    <div class="portfolio-item" style="background-color:aliceblue; height:150px">
+                        <a asp-controller="Portfolio" asp-action="LeaveManagementApplicationApp"><img src="~/images/portfolio/leave management application app/home.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                        <div class="portfolio-info">
+                            <a asp-controller="Portfolio" asp-action="LeaveManagementApplicationApp" style="text-decoration:none"><h5 class="card-body text-success">Leave Management Application</h5></a>
+                            @*<div>
+                            <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>*@
+                        </div>
+                        <div class="card-footer mt-2 text-center">
+                            <a asp-controller="Portfolio" asp-action="LeaveManagementApplicationApp" style="text-decoration:none"><h6 class="text-dark">Leave Management Application</h6></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
+                    <div class="portfolio-item" style="background-color:aliceblue; height:150px">
+                        <a asp-controller="Portfolio" asp-action="OrderTrackingApplication"><img src="~/images/portfolio/order tracking application app/dashboard.png" class="img-fluid w-100 h-75" alt=""></a>
+                        <div class="portfolio-info">
+                            <a asp-controller="Portfolio" asp-action="OrderTrackingApplication" style="text-decoration:none"><h5 class="card-body text-success">Order Tracking Application</h5></a>
+                            @*<div>
+                            <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>*@
+                        </div>
+                        <div class="card-footer mt-2 text-center">
+                            <a asp-controller="Portfolio" asp-action="OrderTrackingApplication" style="text-decoration:none"><h6 class="text-dark">Order Tracking Application</h6></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
+                    <div class="portfolio-item" style="background-color:aliceblue; height:150px">
+                        <a asp-controller="Portfolio" asp-action="EmployeePerformanceReviewingSystemApp"><img src="~/images/portfolio/employee performance reviewing system/fill up kra.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                        <div class="portfolio-info">
+                            <a asp-controller="Portfolio" asp-action="EmployeePerformanceReviewingSystemApp" style="text-decoration:none"><h5 class="card-body text-success">Employee Performance Reviewing System</h5></a>
+                            @*<div>
+                            <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>*@
+                        </div>
+                        <div class="card-footer mt-2 text-center">
+                            <a asp-controller="Portfolio" asp-action="EmployeePerformanceReviewingSystemApp" style="text-decoration:none"><h6 class="text-dark">Employee Performance Reviewing System</h6></a>
                         </div>
                     </div>
                 </div>
