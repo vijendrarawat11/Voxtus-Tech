@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace Voxtus_Tech.Controllers
 {
@@ -104,6 +105,10 @@ namespace Voxtus_Tech.Controllers
             return View();
         }
         public ActionResult EmployeePerformanceReviewingSystemApp()
+        {
+            return View();
+        }
+        public ActionResult BillingProcessAutomation()
         {
             return View();
         }
