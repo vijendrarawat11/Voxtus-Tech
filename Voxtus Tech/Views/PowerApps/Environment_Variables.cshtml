@@ -1,0 +1,412 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<main id="main">
+    <section>
+        <div class="row">
+            <div class=" col-lg-9">
+                <div class="container  text-justify mt-4  bg-light service-details align-content-center" style="border:2px solid black">
+                    <div class="mt-2 mx-3">
+                        <h2 class="mt-4 mx-3 text-center">
+                            Environment Variables in Power Platform
+                        </h2><hr />
+                    </div>
+                    <div class="mt-3 mx-3 bg-white pt-1">
+                        <p class="mt-3 mx-3">
+                            Certainly! Let's start with a simple explanation of what environment variables are in the Power Platform, followed by a few use cases.
+                            Then, we’ll look at the step-by-step guide for using environment variables in Power Automate flows within a solution.
+                        </p>
+                        <h4 class="mt-3 mx-3">
+                            Demystifying Environment Variables in the Power Platform
+                        </h4>
+                        <p class="mt-3 mx-3 pb-3">
+                            In simple terms, environment variables in the Power Platform are like magic keys that unlock the full potential of your applications and workflows. They allow you to store, manage, and dynamically change important settings and data without having to dig through complex code or configurations. Imagine them as universal remote controls for your Power Apps, Power Automate flows, and other Power Platform components.
+                        </p>
+                    </div>
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <h5 class="mt-3 mx-3">Some Use Cases: How Environment Variables Work Magic</h5>
+                        <h6 class="mt-3 mx-3">
+                            1. API Keys and Credentials:
+                        </h6>
+                        <p class="mt-3 mx-3">
+                            You can use environment variables to securely store API keys, connection strings, or login credentials. This way, you keep sensitive information safe and make it easier to update them when needed without modifying your entire app or flow.
+                        </p>
+                        <h6 class="mt-3 mx-3">
+                            2. Environment Configuration:
+                        </h6>
+                        <p class="mt-3 mx-3">
+                            When you have different environments for development, testing, and production, environment variables help you manage settings specific to each environment. You can switch between environments effortlessly without changing your app's core logic.
+                        </p>
+                        <h6 class="mt-3 mx-3">
+                            3. Customization and Branding:
+                        </h6>
+                        <p class="mt-3 mx-3">
+                            Environment variables aren't just for technical settings. You can use them to customize the look and feel of your apps. For example, you can store colour schemes, logos, or branding details as environment variables, allowing you to change the app's appearance with a few clicks
+                        </p>
+                        <p class="mt-4 mx-3 pb-3">
+                            Now, let's dive little bit into it with a use case, which explains how to use environment variables in Power Automate flows within a solution:
+                        </p>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <h4 class="mt-3 mx-3">
+                            Harnessing the Power of Environment Variables in Power Automate Flows.
+                        </h4>
+                        <p class="mt-3 mx-3">
+                            In the ever-expanding universe of the Power Platform, effective configuration management is the key to building efficient workflows and automations. One of the most potent tools in this quest is Environment Variables. In this guide, we will explore how to leverage environment variables within Power Automate flows under a solution.
+                        </p>
+                        <p class="mt-4 mx-3 h6 text-center">
+                            Step-by-Step Guide: Using Environment Variables in Power Automate Flows by taking a simple use case.
+                        </p>
+                        <p class="mt-4 mx-3 pb-3 h6 text-center">
+                            ** In this use case we have already created a SharePoint Site [DevWithSharepoint] and List [Student], we’ll be using environment variable in Power Automate flow and submit data to SharePoint list which contains two columns Title,  First Name And Last Name .
+                        </p>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <h6 class="mt-3 mx-3">
+                            Step 1: First we will create a solution
+                        </h6>
+                        <p class="mt-3 mx-3">- After selecting your desired environment</p>
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                To create new solution Start by navigating to the New Solution.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step1.png" class="img-fluid rounded mx-auto d-block h-50 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                               After clicking "New Solution" to create a new solution variable   - Define its name and all the necessary details.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step2.png" class="img-fluid rounded mx-auto d-block h-75 w-50 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Once solution is created it’ll appear on solution’s list, Open it by clicking on Solution Name.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step3.png" class="img-fluid rounded mx-auto d-block h-50 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Navigate to the “Environment Variable’’ by clicking on the “+New” under “More” option.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step4.png" class="img-fluid rounded mx-auto d-block h-75 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                To create a new environment variable. Define its name, data type, and initial value. We have taken example for data source environment variables "var_SiteName" with a Data Source data type. Also map current SharePoint site URL under “Current Site” field.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step5.png" class="img-fluid rounded mx-auto d-block " />
+                        </div>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step5.1.gif" class="img-fluid rounded mx-auto d-block h-75 w-50 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                We’ll create once one more environment variable for share point list by following same steps as above.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step6.png" class="img-fluid rounded mx-auto d-block h-75 w-50 " />
+                        </div>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step6-1.png" class="img-fluid rounded mx-auto d-block h-75 w-50 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Once variables are created you’ll be able to find them under Solution.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step7.png" class="img-fluid rounded mx-auto d-block h-75 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <h6 class="mt-3 mx-3">Step 2: Incorporate the Environment Variable in a Flow</h6>
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Now, let's build a flow that uses this environment variable.
+                            </li>
+                            <li>
+                                You can directly build a flow from Solution, or by opening Power Automate in new tab (Make sure to select same environment).
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step8.png" class="img-fluid rounded mx-auto d-block h-50 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Create a new flow/ can also work on existing one.
+                            </li>
+                            <li>
+                                Give a name to your flow, will be using Manual trigger flow for our use case.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step9.png" class="img-fluid rounded mx-auto d-block h-75 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                In your flow, add a step where you need to use the "Environment Variable".
+                                For our example we’ll use SharePoint “Create Item”.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step10.png" class="img-fluid rounded mx-auto d-block h-75 w-75 " />
+                        </div>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step10-1.png" class="img-fluid rounded mx-auto d-block h-75 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                 In the relevant field, after clicking on text field, Select “Enter custom Value”
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step11.png" class="img-fluid rounded mx-auto d-block h-75 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                 Now search for Environment Variable name, to access the environment variable.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step12.png" class="img-fluid rounded mx-auto d-block h-75 w-50 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                We have selected both the variables on their respective fields.
+                            </li>
+                            <li>
+                                Then save your Power automate flow.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step13.png" class="img-fluid rounded mx-auto d-block h-75 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Once the flow is saved, test your flow to ensure it functions correctly with the environment variable.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step14.png" class="img-fluid rounded mx-auto d-block h-75 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Now once the flow has ran successfully you can check the SharePoint list has been updated with the provided data.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/environment variables/step15.png" class="img-fluid rounded mx-auto d-block h-75 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 mb-4 bg-white pt-1">
+                        <h6 class="mt-3 mx-3">
+                            Step 3: Managing Environment Variables.
+                        </h6>
+                        <p class="mt-3 mx-3">
+                            If you need to change the SharePoint Site and List or update any environment variable, you can do so just by updating the “Environment Variable” without modifying the flow. This centralizes configuration management.
+                        </p>
+                        <p class="mt-4 mx-3 h6 pb-3">By following these steps, you've harnessed the power of environment variables in Power Automate flows within a solution. You've streamlined configuration management, enhanced security, and created a more adaptable and efficient automation environment.</p>
+                    </div>
+                    <hr />
+                    <div class="row mb-2">
+                        <h6 class="text-center text-primary">
+                            If you have any doubts or questions related to this blog, you can Contact us by Email: info@voxtus.com
+                        </h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-9"></div>
+                        <div class="col-3"><p><b>Sumit Joshi<br />Power Apps Consultant</b></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 sidebar mt-4 bg-light service-details">
+                <h3 class="sidebar-title mt-5 pb-4 text-center">Recent Posts</h3><hr />
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="BarCodeReader" style="text-decoration:none"><p class="text-primary">How to use Barcode Scanner Application in Power Apps.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="MultipleMakerFeature" style="text-decoration:none"><p class="text-primary">Multiple Makers Feature of Microsoft Power Apps.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="post-item clearfix col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="CanvasOrModelDrivenApp" style="text-decoration:none"><p class="text-primary">The difference between Canvas Apps, Model driven App and Power Pages.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                <div class="post-item clearfix col-3">
+                <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                </div>
+                <div class="col-9">
+                <a asp-controller="PowerApps" asp-action="CustomizingControls" style="text-decoration:none"><p class="text-primary">"Customizing Controls in Power Apps: Hidden Gems You Should Know"</p></a>
+                @* <time datetime="2020-05-016">September 14, 2023</time> *@
+                </div>
+                </div>
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="post-item clearfix col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="PowerAppsFlow" style="text-decoration:none"><p class="text-primary">What to do when your flow is not working and showing error "Invalid type. Execpted Integer but got null.".</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+
+                <div class="row sidebar-item recent-posts mt-3 bg-white">
+                    <div class="post-item clearfix col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="BuildingCustomForms" style="text-decoration:none"><p class="text-primary">Creating Power Apps Form using SharePoint list.</p></a>
+                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-3"><a style="text-decoration:none" asp-controller="PowerApps" asp-action="Index"><h5 class="text-primary"><i class="bi bi-arrow-left-circle"></i> Go back to Power Apps Blogs</h5></a></div>
+    </section>
+</main>
+
+<!--Our Links Section Start Here-->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<script src="~/assets/js/main.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.min.css" rel="stylesheet" />
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" rel="stylesheet" />
+<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
+<script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="~/assets/vendor/isotope-layout/isotope.pkgd.js"></script>
+<link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+<script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="~/assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="~/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="~/assets/vendor/php-email-form/validate.js"></script>
+
+
+<!--The End of the Links Section-->

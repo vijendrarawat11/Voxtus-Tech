@@ -110,6 +110,10 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
-
+        public ActionResult Environment_variables()
+        {
+            return View();
+        }
+        
     }
 }

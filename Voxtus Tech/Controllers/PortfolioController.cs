@@ -112,5 +112,9 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        public ActionResult Web_Scraping_for_Data_Retrieval()
+        {
+            return View();
+        }
     }
 }
