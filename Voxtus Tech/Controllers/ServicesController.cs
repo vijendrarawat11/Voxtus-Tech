@@ -79,7 +79,7 @@ namespace Voxtus_Tech.Controllers
                 return View();
             }
         }
-        public ActionResult PowerAppsDevelopment()
+        public ActionResult PowerPlatformDevelopment()
         {
             return View();
         }
