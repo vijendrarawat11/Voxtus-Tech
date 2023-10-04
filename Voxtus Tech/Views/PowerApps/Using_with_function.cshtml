@@ -7,115 +7,89 @@
     <section>
         <div class="row">
             <div class=" col-lg-9">
-                <div class="container  text-justify mt-4  bg-light service-details align-items-center" style="border:2px solid black">
+                <div class="container  text-justify mt-4  bg-light service-details align-content-center" style="border:2px solid black">
                     <div class="mt-2 mx-3">
                         <h2 class="mt-4 mx-3 text-center">
-                            Mastering Error Handling in Power Automate Flow.
+                            Using ‘with’ function in Power Apps.
                         </h2><hr />
                     </div>
-                    <div class="mt-2 mx-3 bg-white pt-1">
-                        <p class="mt-4 mx-3">
-                            Are you tired of your automated workflows going haywire when something unexpected happens? Don't worry; we've got your back! In this guide,
-                            we'll demystify **error handling in Power Automate Flow**, making it as easy as a walk in the park.
-                        </p>
-                        <h4 class="mt-3 mx-3">Understanding Errors in Power Automate Flow</h4>
-                        <p class="mt-4 mx-3">
-                            First things first, let's talk about what errors are in the context of Power Automate Flow. Errors can happen when a flow encounters a problem,
-                            such as a missing file, a failed API call, or even just a typo in your configuration. Instead of your flow breaking down, you can plan for these 
-                            mishaps and tell your flow what to do when things go awry.
-                        </p>
-                    </div>
-                    <div class="mt-2 mx-3 bg-white pt-1">
-                        <h4 class="mt-3 mx-3">
-                            The Three Musketeers of Error Handling
-                        </h4>
-                        <p class="mt-3 mx-3">In Power Automate Flow, we have three powerful actions to handle errors:</p>
-                        <h6 class="mt-3 mx-3">Scope Action:</h6>
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                Think of a Scope as a protective bubble around a set of actions. You can define a scope for a specific part of your flow.
-                            </li>
-                            <li>
-                                If an error occurs within that scope, you can set rules on what the flow should do next, like sending an email or recording the error in a log.
-                            </li>
-                        </ul>
-                        <h6 class="mt-3 mx-3">Configure Run After:</h6>
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                When you add actions to your flow, you can configure what should happen if an action fails. You can decide whether the flow should continue or stop.
-                            </li>
-                            <li>
-                                This is like telling your flow, "If this action fails, don't give up; try the next one."
-                            </li>
-                        </ul>
-                        <h6 class="mt-3 mx-3">Initialize Variable:</h6>
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                You can use a variable to store information about errors. If an error occurs, you can store details like the error message in the variable.
-                            </li>
-                            <li>
-                                Later in your flow, you can check this variable to see if any errors occurred and take action accordingly.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mt-2 mx-3 bg-white pt-1">
-                        <h4 class="mt-3 mx-3">
-                            Step-by-Step Guide: Handling Errors with a Simple Use Case
-                        </h4>
-                        <p class="mt-3 mx-3">Use Case: Let's say you have a flow that sends email notifications when a new item is added to a SharePoint list. 
-                            You want to make sure the flow keeps running, even if there's an issue with sending an email.</p>
-                        <h6 class="mt-3 mx-3"><b>Step 1:</b> Create a New Flow</h6>
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                Log in to Power Automate.
-                            </li>
-                            <li>
-                                Create a new flow or edit an existing one.
-                            </li>
-                        </ul>
-                        <h6 class="mt-3 mx-3"><b>Step 2:</b> Add a Scope</h6>
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                In your flow, add a Scope action before the email sending action.
-                            </li>
-                            <li>
-                                Name it "Send Email."
-                            </li>
-                        </ul>
-                        <h6 class="mt-3 mx-3"><b>Step 3:</b> Configure Run After</h6>
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                Select the email sending action and configure its "Run After" settings.
-                            </li>
-                            <li>
-                                Choose "Configure run after" and specify what to do if the action fails. You can choose to continue the flow even if the email fails to send.
-                            </li>
-                        </ul>
-                        <h6 class="mt-3 mx-3"><b>Step 4:</b> Initialize a Variable</h6>
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                Add an Initialize Variable action within the scope.
-                            </li>
-                            <li>
-                                Name the variable "EmailError."
-                            </li>
-                            <li>If the email action fails, set the "EmailError" variable to "Yes."</li>
-                        </ul>
-                        <h6 class="mt-3 mx-3"><b>Step 5:</b> Check for Errors</h6>
-                        <ul class="mt-3 mx-3">
-                            <li>
-                                After the scope, add a condition to check the "EmailError" variable.
-                            </li>
-                            <li>
-                                If it's "Yes," you can send an email to yourself or a team member to notify them of the issue.
-                            </li>
-                        </ul>
+                    <div class="mt-3 mx-3 bg-white pt-1">
                         <p class="mt-3 mx-3">
-                            That's it! You've created a flow that gracefully handles errors when sending emails.
-                            Even if the email action fails, your flow won't break, and you'll be informed of the error.</p>
-                        <p class="mt-3 mx-3">Remember, error handling in Power Automate Flow is your superhero cape when it comes to dealing with unexpected bumps in the automation road.
-                            With these simple steps and actions, you'll ensure your flows keep running smoothly, even in the face of errors.</p>
-                        <p class="mt-4 mx-3 text-center pb-3">Now, go ahead and create error-resistant flows like a pro! Happy automating!</p>
+                            In this blog we will explain you how to use “with” Function in canvas app.
+                        </p>
+                        <p class="mt-3 mx-3">
+                            Let’s get started with the few simple steps.
+                        </p>
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                Create a new app by clicking on the left menu of the home page of the power apps.
+                                You can access that by entering make.PowerApps.com in your browser and login with you credentials.
+                             </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/using_with_function/screenshot_1.png" class="img-fluid rounded mx-auto d-block h-50 w-50 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>After that click on the new app and select the canvas app after that select the canvas layout for the app.</li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/using_with_function/screenshot_2.png" class="img-fluid rounded mx-auto d-block h-50 w-75 " />
+                        </div>
+                        <p class="mt-3 mx-3">
+                            So, before that let me explain “With” Function
+                        </p>
+                        <p class="mt-3 mx-3">
+                            The "With" function in Power Apps is used to temporarily change the context within a formula. It allows you to work with a specific context, making it easier to reference properties, controls, and variables within that context. The basic syntax of the "With" function is as follows:
+                        </p>
+                        <p class="mt-3 mx-5 p-3">
+                            Syntax:   With (<br />
+                            Context,<br />
+                            Expression<br />
+                            )
+                        </p>
+                        <ol class="mt-3 mx-3">
+                            <li>Context: This is the context or item you want to work with. It could be a record, a variable, or any other context in which you want to perform operations.</li>
+                            <li>Expression: This is the formula or set of operations you want to perform within the specified context.</li>
+                        </ol>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>Now in the Screen add 5 Text labels, And 3 text inputs./li>
+                        </ul>
+                        <ol class="mt-3 mx-5">
+                            <li>1 for heading of value 1.</li>
+                            <li>After that add a text input add text input where you can enter your 1st value.</li>
+                            <li>After that add a label in which you can enter operator for mathematical operations.</li>
+                            <li>And repeat the process as shown below.</li>
+                            <li>Now add a Text box where we can see the total value of the equation.</li>
+                        </ol>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/using_with_function/screenshot_3.png" class="img-fluid rounded mx-auto d-block h-50 w-75 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>Add this function in the text property of the total text box</li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/using_with_function/screenshot_4.png" class="img-fluid rounded mx-auto d-block h-50 w-50 " />
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mx-3 bg-white pt-1">
+                        <ul class="mt-3 mx-3">
+                            <li>
+                                In the image below you can see how this app works.
+                            </li>
+                        </ul>
+                        <div class="mt-3 mx-3 pt-3 pb-3">
+                            <img src="~/images/blog/powerapps/using_with_function/screenshot_5.png" class="img-fluid rounded mx-auto d-block h-50 w-50 " />
+                        </div>
                     </div>
                     <hr />
                     <div class="row mb-2">
@@ -123,10 +97,9 @@
                             If you have any doubts or questions related to this blog, you can Contact us by Email: info@voxtus.com
                         </h6>
                     </div>
-
                     <div class="row">
-                        <div class="col-9"></div>
-                        <div class="col-3"><p><b>Sumit Joshi<br />Power Apps Consultant</b></p></div>
+                        <div class="col-8"></div>
+                        <div class="col-4"><p><b>Sumit Joshi<br />Power Apps Consultant</b></p></div>
                     </div>
                 </div>
             </div>
@@ -153,13 +126,13 @@
                 </div>
 
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
-                <div class="post-item clearfix col-3">
-                <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
-                </div>
-                <div class="col-9">
-                <a asp-controller="PowerApps" asp-action="CanvasOrModelDrivenApp" style="text-decoration:none"><p class="text-primary">The difference between Canvas Apps, Model driven App and Power Pages.</p></a>
+                    <div class="post-item clearfix col-3">
+                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
+                    </div>
+                    <div class="col-9">
+                        <a asp-controller="PowerApps" asp-action="CanvasOrModelDrivenApp" style="text-decoration:none"><p class="text-primary">The difference between Canvas Apps, Model driven App and Power Pages.</p></a>
                         @*<time datetime="2020-05-016">September 14, 2023</time>*@
-                </div>
+                    </div>
                 </div>
 
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
@@ -168,9 +141,10 @@
                     </div>
                     <div class="col-9">
                         <a asp-controller="PowerApps" asp-action="CustomizingControls" style="text-decoration:none"><p class="text-primary">"Customizing Controls in Power Apps: Hidden Gems You Should Know"</p></a>
-                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                        @* <time datetime="2020-05-016">September 14, 2023</time> *@
                     </div>
                 </div>
+
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="post-item clearfix col-3">
                         <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
@@ -218,27 +192,11 @@
                         @*<time datetime="2020-05-016">September 14, 2023</time>*@
                     </div>
                 </div>
-
-                <div class="row sidebar-item recent-posts mt-3 bg-white">
-                    <div class="post-item clearfix col-3">
-                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
-                    </div>
-                    <div class="col-9">
-                        <a asp-controller="PowerApps" asp-action="Using_with_function" style="text-decoration:none">
-                            <p class="text-primary">
-                                Using ‘with’ function in Power Apps.
-                            </p>
-                        </a>
-                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
-                    </div>
-                </div>
-
             </div>
         </div>
         <div class="container-fluid pt-3"><a style="text-decoration:none" asp-controller="PowerApps" asp-action="Index"><h5 class="text-primary"><i class="bi bi-arrow-left-circle"></i> Go back to Power Apps Blogs</h5></a></div>
     </section>
 </main>
-
 
 <!--Our Links Section Start Here-->
 <link href="~/assets/css/style.css" rel="stylesheet" />

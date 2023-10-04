@@ -115,6 +115,14 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        public ActionResult Using_Git_for_Version_Control()
+        {
+            return View();
+        }
+        public ActionResult Using_with_function()
+        {
+            return View();
+        }
 
     }
 }
