@@ -12,5 +12,9 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        public IActionResult UiPathOrchestrator()
+        {
+            return View();
+        }
     }
 }
