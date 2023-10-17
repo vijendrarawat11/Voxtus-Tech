@@ -6,6 +6,7 @@ namespace Voxtus_Tech.Controllers
     public class BlogController : Controller
     {
         // GET: BlogController
+        [Route("blog")]
         public ActionResult Index()
         {
             return View();

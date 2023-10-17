@@ -7,6 +7,7 @@ namespace Voxtus_Tech.Controllers
     public class PortfolioController : Controller
     {
         // GET: PortfolioController
+        [Route("potfolio")]
         public ActionResult Index()
         {
             return View();
@@ -80,38 +81,47 @@ namespace Voxtus_Tech.Controllers
                 return View();
             }
         }
+        [Route("potfolio/canvas-app/health-management-system-app")]
         public ActionResult HealthManagementSystemApp()
         {
             return View();
         }
+        [Route("potfolio/model-driven-app/employee-onboarding-app")]
         public ActionResult EmployeeOnboardingApp()
         {
             return View();
         }
+        [Route("potfolio/model-driven-app/student-management-application")]
         public ActionResult StudentManagementApplicationApp()
         {
             return View();
         }
+        [Route("potfolio/canvas-app/inspection-app")]
         public ActionResult InspectionApp()
         {
             return View();
         }
+        [Route("potfolio/canvas-app/leave-management-application")]
         public ActionResult LeaveManagementApplicationApp()
         {
             return View();
         }
+        [Route("potfolio/canvas-app/order-tracking-application")]
         public ActionResult OrderTrackingApplication()
         {
             return View();
         }
+        [Route("potfolio/canvas-app/employee-performance-reviewing-system-app")]
         public ActionResult EmployeePerformanceReviewingSystemApp()
         {
             return View();
         }
+        [Route("potfolio/ui-path/billing-process-automation")]
         public ActionResult BillingProcessAutomation()
         {
             return View();
         }
+        [Route("potfolio/power-automate/web_scraping_for_data_retrieval")]
         public ActionResult Web_Scraping_for_Data_Retrieval()
         {
             return View();

@@ -7,6 +7,7 @@ namespace Voxtus_Tech.Controllers
     public class PowerAppsController : Controller
     {
         // GET: PowerAppsController
+        [Route("blog/power-apps")]
         public ActionResult Index()
         {
             return View();
@@ -81,44 +82,52 @@ namespace Voxtus_Tech.Controllers
             }
         }
 
-
+        [Route("power-apps/bar-code-reader")]
         public ActionResult BarCodeReader()
         {
             return View();
         }
-
-		public ActionResult MultipleMakerFeature()
+        [Route("power-apps/multiple-maker-feature")]
+        public ActionResult MultipleMakerFeature()
 		{
 			return View();
 		}
+        [Route("power-apps/canvas-app-vs-model-driven-app")]
         public ActionResult CanvasOrModelDrivenApp()
         {
             return View();
         }
+        [Route("power-apps/customizing-controls")]
         public ActionResult CustomizingControls()
         {
             return View();
         }
+        [Route("power-apps/power-apps-flow")]
         public ActionResult PowerAppsFlow()
         {
             return View();
         }
+        [Route("power-apps/building-custom-forms")]
         public ActionResult BuildingCustomForms()
         {
             return View();
         }
+        [Route("power-apps/error-handlingin-power-automate-flow")]
         public ActionResult ErrorHandlinginPowerAutomateFlow()
         {
             return View();
         }
+        [Route("power-apps/environment-variables")]
         public ActionResult Environment_variables()
         {
             return View();
         }
+        [Route("power-apps/using-git-for-version-control")]
         public ActionResult Using_Git_for_Version_Control()
         {
             return View();
         }
+        [Route("power-apps/using-with-function")]
         public ActionResult Using_with_function()
         {
             return View();

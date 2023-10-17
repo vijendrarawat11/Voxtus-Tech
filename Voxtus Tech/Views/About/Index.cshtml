@@ -19,23 +19,30 @@
 
         </div>
     </section><!-- End About Us Section -->
-    <div class="container-fluid shadow p-5 mt-4">
-        <h2 class="p-4">Leading Experts in Power Platform,<br> Dynamics 365, and RPA Consulting</h2>
-        <a class="btn btn-primary btn-lg" role="button" asp-controller="ContactUs" asp-action="Index">Get Connect</a>
+    <section>
+        <div class="container-fluid">
+    <div class="row shadow text-dark" style="background-color:#779ae0">
+        <div class="col-lg-6 p-5 mt-5">
+            <h2 class="display-6"><b>Leading Experts in Power Platform, Dynamics 365, and RPA Consulting</b></h2>
+            <a class="btn btn-primary btn-lg" role="button" asp-controller="ContactUs" asp-action="Index">Get Connect</a>
+        </div>
+        <div class="col-lg-6"><img src="~/assets/img/About_New.webp" alt="About-top-banner" class="img-fluid mx-auto w-100 h-100" /></div>
     </div>
+    </div>
+    </section>
     <!-- ======= About Section ======= -->
     <section class="about" data-aos="fade-up">
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-6">
-                        <img src="assets/img/about.jpg" class="img-fluid" alt="About us">
+                        <img src="assets/img/About_1.webp" class="img-fluid h-100 w-100" alt="About us">
                 </div>
                 <div class="col-lg-6 pt-lg-0">
                     @* <h3 class="fst-italic mt-5">
                         Welcome to Voxtus, where innovation meets execution. Since our inception, we have been committed to delivering best-in-class technological solutions that drive growth, streamline operations, and foster innovation for businesses of all sizes.
                     </h3> *@
-                    <p class="fst-italic display-6">We are a team of technology enthusiasts dedicated to driving digital transformation. We are more than just a tech company; we are a group of passionate innovators, committed to creating meaningful change.</p>
+                    <h1 class="h3 mt-5 mx-4 p-4 text-center">We are a team of technology enthusiasts dedicated to driving digital transformation. We are more than just a tech company; we are a group of passionate innovators, committed to creating meaningful change.</h1>
                     <hr />
 
                 </div>
@@ -74,11 +81,13 @@
 
                 </div>
             </div> *@
-            <div class="row container-fluid shadow p-5 mt-4">
-                <div class="col-lg-6">
-                    <p class="fst-italic p-4 display-6">Our story is one of determination and adaptability. Founded by forward-thinkers who saw technology's potential to reshape industries, Voxtus has evolved into a hub of creativity and expertise.</p>
+            <div class="row flex-column-reverse flex-lg-row container-fluid">
+                <div class="col-lg-6 pt-lg-0">
+                    <h1 class="h3 mt-5 mx-4 p-4 text-center">
+                        We've grown through determination and adaptability. Founded by individuals who recognized technology's ability to transform businesses. From challenges to growth, we're here to shape the future with technology.
+                    </h1>
                 </div>
-                <div class="col-lg-6"><img src="~/assets/img/blog/blog-recent-4.jpg"class="h-100 w-100" /></div>
+                <div class="col-lg-6"><img src="~/assets/img/About_2.webp" alt="About us" class="h-100 w-100" /></div>
             </div>
         </div>
     </section><!-- End About Section -->
@@ -91,8 +100,8 @@
             </div>
             <div class="container-fluid shadow-lg">
             <div class="row p-4">
-                <div class="col-lg-2"><img src="~/images/services/RPA/Optimization.svg" class="h-100 w-100 mx-auto d-block" /></div>
-                <div class="col-lg-4 shadow p-4">
+                <div class="col-lg-2"><img src="~/images/services/RPA/Optimization.svg" alt="Innovation" class="h-100 w-100 mx-auto d-block" /></div>
+                    <div class="col-lg-4 shadow p-4 btn btn-light">
                     <p>
                         <b>
                             Innovation:
@@ -103,9 +112,9 @@
                     </p>
                 </div>
                 <div class="col-lg-2 mt-4">
-                    <img src="~/images/services/dynamics365/DevelopmentandIntegration.svg" class="h-100 w-100 mx-auto d-block" />
+                    <img src="~/images/services/dynamics365/DevelopmentandIntegration.svg" alt="passion" class="h-100 w-100 mx-auto d-block" />
                 </div>
-                <div class="col-lg-4 shadow p-4">
+                    <div class="col-lg-4 shadow p-4 btn btn-light">
                     <p>
                         <b>
                             Passion:
@@ -118,8 +127,8 @@
                 </div>
             </div>
             <div class="row p-4">
-                <div class="col-lg-2"><img src="~/images/services/RPA/Connectors.svg" class="h-100 w-100 mx-auto d-block" /></div>
-                <div class="col-lg-4 shadow p-4">
+                <div class="col-lg-2"><img src="~/images/services/RPA/Connectors.svg" alt="Collabration" class="h-100 w-100 mx-auto d-block" /></div>
+                    <div class="col-lg-4 shadow p-4 btn btn-light">
                     <p>
                         <b>
                             Collaboration:
@@ -130,9 +139,9 @@
                     </p>
                 </div>
                 <div class="col-lg-2 mt-4">
-                    <img src="~/images/services/RPA/Consultation.svg" class="h-100 w-100 mx-auto d-block" />
+                    <img src="~/images/services/RPA/Consultation.svg" alt="ContinuousLearning" class="h-100 w-100 mx-auto d-block" />
                 </div>
-                <div class="col-lg-4 shadow p-4">
+                    <div class="col-lg-4 shadow p-4 btn btn-light">
                     <p>
                         <b>
                             Continuous Learning:
@@ -158,37 +167,45 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
-                        <div class="shadow p-4">
-                            <div class="text-center"><a asp-controller="Services" asp-action="PowerPlatformDevelopment"><img src="~/images/services/powerappsicon.png" alt="Power Apps Services" height="50" width="60" /></a></div>
-                            <h6 class="mt-2"><a asp-controller="Services" asp-action="PowerPlatformDevelopment">Power Platform Solutions</a></h6>
-                            <p>
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-4" data-aos="fade-up">
+                        <a asp-controller="Services" asp-action="PowerPlatformDevelopment">
+                            <div class="shadow p-4 btn btn-light h-100">
+                            <div class="text-center"><img src="~/images/services/powerappsicon.png" alt="Power Apps Services" height="50" width="60" /></div>
+                            <h6 class="mt-5">Power Platform Solutions</h6>
+                                    <p class="text-black">
                                 Leveraging the Power Platform to streamline processes, automate tasks, and create tailored applications.
-                            </p>
+                                    </p>
                             </div>
+                            </a>
                     </div>
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="shadow p-4">
-                            <div class="text-center"><a asp-controller="Services" asp-action="Dynamics365Development"><img src="~/images/dynamics-365-logo-trans (1).png" alt="Dynamics 365 Development Services" height="50" width="80" /></a></div>
-                            <h6 class="mt-2"><a asp-controller="Services" asp-action="Dynamics365Development">Dynamics 365 Integration</a></h6>
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
+                        <a asp-controller="Services" asp-action="Dynamics365Development">
+                            <div class="shadow p-4 btn btn-light h-100">
+                                <div class="text-center"><img src="~/images/Dynamics365-logo.webp" alt="Dynamics 365 Development Services" height="50" width="80" /></div>
+                            <h6 class="mt-5">Dynamics 365 Integration</h6>
                             <p>Seamlessly integrating Dynamics 365 solutions to optimize your operations.</p>
                         </div>
+                        </a>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="shadow p-4">
-                            <div class="text-center"><a asp-controller="Services" asp-action="DOTNETDevelopment"><img src="~/images/dotneticon.png" alt=".NET Development Services" height="50" width="60" /></a></div>
-                            <h6 class="mt-2"><a asp-controller="Services" asp-action="DOTNETDevelopment">.NET Development Services</a></h6>
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="100">
+                        <a asp-controller="Services" asp-action="DOTNETDevelopment">
+                            <div class="shadow p-4 btn btn-light h-100">
+                            <div class="text-center"><img src="~/images/dotneticon.png" alt=".NET Development Services" height="50" width="60" /></div>
+                            <h6 class="mt-5">.NET Development Services</h6>
                             <p>Building scalable and reliable software solutions that align with your objectives.</p>
                         </div>
+                        </a>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="shadow p-4">
-                            <div class="text-center"><a asp-controller="Services" asp-action="RPADevelopment"><img src="~/images/rpaicon.svg" height="50" width="60" /></a></div>
-                            <h6 class="mt-2"><a asp-controller="Services" asp-action="RPADevelopment">Robotic Process Automation (RPA)</a></h6>
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
+                        <a asp-controller="Services" asp-action="RPADevelopment">
+                            <div class="shadow p-4 btn btn-light h-100">
+                            <div class="text-center"><img src="~/images/rpaicon.svg" alt="RPA" height="50" width="60" /></div>
+                            <h6 class="mt-5">Robotic Process Automation (RPA)</h6>
                             <p>Enhancing productivity and precision by automating repetitive tasks.</p>
                         </div>
+                        </a>
                     </div>
 
 
@@ -289,7 +306,7 @@
             <div class="testimonials-carousel swiper">
                 <div class="swiper-wrapper">
                     <div class="testimonial-item swiper-slide">
-                        <img src="assets/img/testimonials/Person.jpg" class="testimonial-img" alt="">
+                        <img src="assets/img/testimonials/Person.jpg" class="testimonial-img" alt="testimonials1">
                         <h3>Shri Niwas</h3>
                         @* <h4>Ceo &amp; Founder</h4> *@
                         <p>
@@ -299,17 +316,17 @@
                     </div>
 
                     <div class="testimonial-item swiper-slide">
-                        <img src="assets/img/testimonials/Person.jpg" class="testimonial-img" alt="">
+                        <img src="assets/img/testimonials/Person.jpg" class="testimonial-img" alt="testimonials2">
                         <h3>Muhammad Ali</h3>
                         <h4>Developer</h4>
                         <p>
                             <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                            "Wonderful Exxperience. The voxtus team are very down to earth and Responsive. Went through everything in detail. Highly satisfied and recommended. More power to voxtus"<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            "Wonderful Exxperience. The voxtus team is very down to earth and Responsive. Went through everything in detail. Highly satisfied and recommended. More power to voxtus"<i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                     </div>
 
                     <div class="testimonial-item swiper-slide">
-                        <img src="assets/img/testimonials/Person.jpg" class="testimonial-img" alt="">
+                        <img src="assets/img/testimonials/Person.jpg" class="testimonial-img" alt="testimonials3">
                         <h3>Arth Patel</h3>
                         <h4>Manager at Integra LifeSciences</h4>
                         <p>
@@ -319,7 +336,7 @@
                     </div>
 
                     <div class="testimonial-item swiper-slide">
-                        <img src="assets/img/testimonials/Person.jpg" class="testimonial-img" alt="">
+                        <img src="assets/img/testimonials/Person.jpg" class="testimonial-img" alt="testimonials4">
                         <h3>Mhaque</h3>
                         <h4>Developer</h4>
                         <p>
@@ -344,5 +361,15 @@
 
         </div>
     </section><!-- End Ttstimonials Section -->
+    <div class="container-fluid p-5 position-relative" style="background-color:#5b87de">
+       @*  <h5>Are you ready to embark on a transformative journey with us? Whether you're a business seeking innovative tech solutions or a tech enthusiast looking for a dynamic environment, Voxtus is your destination.</h5>
+        <h5 class="mt-5">Follow us on <a href="https://www.linkedin.com/company/voxtus/?viewAsMember=true" target="_blank" class="linkedin text-white">LinkedIn</a> to stay updated on tech trends and team updates.</h5>
+        <h5>
+             If you have a project in mind or want to explore possibilities? <a class="btn btn-primary" role="button" asp-controller="ContactUs" asp-action="Index">Reach out.</a> We're eager to hear from you.
+        </h5> *@<img src="~/assets/img/Bottom_Banner (1).webp" class="w-100 h-100" alt="BottomBanner" />
+        
+            <a asp-controller="ContactUs" asp-action="Index" class="btn btn-sm btn-primary" style="position:absolute;bottom: 110px;right: 210px;">Contact us</a>
+       
+    </div>
 
 </main>

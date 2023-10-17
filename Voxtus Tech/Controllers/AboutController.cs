@@ -6,6 +6,7 @@ namespace Voxtus_Tech.Controllers
     public class AboutController : Controller
     {
         // GET: AboutController
+        [Route("about-us")]
         public ActionResult Index()
         {
             return View();

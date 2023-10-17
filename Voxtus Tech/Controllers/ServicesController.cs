@@ -7,6 +7,7 @@ namespace Voxtus_Tech.Controllers
     public class ServicesController : Controller
     {
         // GET: ServicesController
+        [Route("our-services")]
         public ActionResult Index()
         {
             return View();
@@ -80,22 +81,27 @@ namespace Voxtus_Tech.Controllers
                 return View();
             }
         }
+        [Route("our-services/power-platform-development")]
         public ActionResult PowerPlatformDevelopment()
         {
             return View();
         }
+        [Route("our-services/dynamics365-development")]
         public ActionResult Dynamics365Development()
         {
             return View();
         }
+        [Route("our-services/dot-net-development")]
         public ActionResult DOTNETDevelopment()
         {
             return View();
         }
+        [Route("our-services/rpa-development")]
         public ActionResult RPADevelopment()
         {
             return View();
         }
+        [Route("our-services/terms-of-services")]
         public ActionResult TermsofServices()
         {
             return View();

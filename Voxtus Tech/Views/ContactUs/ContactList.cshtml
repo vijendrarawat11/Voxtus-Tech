@@ -1,10 +1,12 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@{
+}
 @* @model IEnumerable<ContactUs> *@
-@model List<Voxtus_Tech.Models.ContactUs>
+    @* @model Voxtus_Tech.Models.ContactUsTable *@
 <h1>Contact Us Table</h1>
-<table class="table table-bordered table-striped" >
+<table class="table table-bordered table-striped">
     <thead>
         <tr>
             <th>Id</th>
@@ -16,16 +18,16 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var obj in Model.ContactUslist)
         {
-        <tr>
-                <td>@item.Id</td>
-                <td>@item.Name</td>
-                <td>@item.Email</td>
-                <td>@item.PhoneNo</td>
-                <td>@item.Message</td>
-                <td>@item.CreatedDateTime</td>
-        </tr>
+            <tr>
+                <td>@obj.Id</td>
+                <td>@obj.Name</td>
+                <td>@obj.Email</td>
+                <td>@obj.PhoneNo</td>
+                <td>@obj.Message</td>
+                <td>@obj.CreatedDateTime</td>
+            </tr>
         }
     </tbody>
 </table>

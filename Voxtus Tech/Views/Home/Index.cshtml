@@ -127,31 +127,31 @@
     </div>
 </div> *@
 
-<div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade mt-4 animate__animated animate__bounceInDown mt-5" style="background-color:#b4d9ed;border-bottom-left-radius:90px;border-bottom-right-radius:90px" data-bs-ride="carousel" data-bs-interval="4000">
+<div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade mt-4 animate__animated animate__bounceInDown mt-5" style="background-color:#567280;border-bottom-left-radius:90px;border-bottom-right-radius:90px" data-bs-ride="carousel" data-bs-interval="4000">
     <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active mt-5 mb-5">
             <div class="carousel-container">
-                <img class="d-block img-fluid animate__animated animate__bounceInRight animate__delay-1s  opacity-75" src="~/images/powerappsicon2.png" alt="First slide">
+                <img class="d-block img-fluid animate__animated animate__bounceInRight animate__delay-1s mx-auto" src="~/images/Powerplatform.png" alt="First slide">
                 <div class="carousel-caption">
-                    <h2 class="animate__animated animate__bounceInDown animate__delay-2s text-dark">Welcome to <span>Voxtus</span></h2>
+                    <h2 class="animate__animated animate__bounceInDown animate__delay-2s text-black">Welcome to <span>Voxtus</span></h2>
                     <h6 class="animate__animated animate__zoomInUp animate__delay-3s">Where Software Meets Imagination</h6>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <div class="carousel-container">
-                <img class="d-block img-fluid animate__animated animate__bounceInLeft animate__delay-1s opacity-75" src="~/images/Untitled-3.png" alt="Second slide">
+            <div class="carousel-container mt-5 mb-5">
+                <img class="d-block img-fluid animate__animated animate__bounceInLeft animate__delay-1s mx-auto" src="~/images/Dynamics365.png" alt="Second slide">
                 <div class="carousel-caption">
-                    <h2 class="animate__animated animate__bounceInDown animate__delay-2s text-dark"><span>Voxtus -</span> We Shape Your Data In Visualization</h2>
+                    <h2 class="animate__animated animate__bounceInDown animate__delay-2s text-black"><span>Voxtus -</span> We Shape Your Data In Visualization</h2>
                     <h6 class="animate__animated animate__zoomInUp animate__delay-3s">Shape your data in Visualizezed Reports</h6>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <div class="carousel-container">
-                <img class="d-block img-fluid animate__animated animate__bounceInRight animate__delay-1s opacity-75" src="~/images/Untitled-6.png" alt="Third slide">
+            <div class="carousel-container mt-5 mb-5">
+                <img class="d-block img-fluid animate__animated animate__bounceInRight animate__delay-1s mx-auto" src="~/images/DotNet.png" alt="Third slide">
                 <div class="carousel-caption">
-                    <h2 class="animate__animated animate__bounceInDown animate__delay-2s text-dark">Build Your Business Apps</h2>
+                    <h2 class="animate__animated animate__bounceInDown animate__delay-2s text-black">Build Your Business Apps</h2>
                     <h6 class="animate__animated animate__zoomInUp animate__delay-3s">We make business processes easy using business applications.</h6>
                 </div>
             </div>
@@ -181,62 +181,76 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
-                    <div class="icon-box icon-box-pink">
-                        <div class="icon"><a asp-controller="Services" asp-action="PowerPlatformDevelopment"><img src="~/images/services/powerappsicon.png" alt="Power Apps Services" height="50" width="60" /></a></div>
-                       @* <h4 class="title"><a asp-controller="Services" asp-action="PowerAppsDevelopment"> Power Apps Development</a></h4>*@
-                        <h4 class="title"><a asp-controller="Services" asp-action="PowerPlatformDevelopment"> Power Platform Development</a></h4>
-                        <p class="description">
-                            In today's digital age, businesses across industries need tailored solutions
-                            to optimize their operations and foster growth. With 8 years of expertise in
-                            Power Apps development, we specialize in creating custom applications that align
-                            seamlessly with your business objectives.
-                        </p>
-                        <div class="read-more"><a asp-controller="Services" asp-action="PowerPlatformDevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
-                    </div>
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-4" data-aos="fade-up">
+                    <a asp-controller="Services" asp-action="PowerPlatformDevelopment">
+                        @* <div class="icon-box icon-box-pink">
+                            <div class="icon"><img src="~/images/services/powerappsicon.png" alt="Power Apps Services" height="50" width="60" /></div> *@
+                        <div class="shadow p-4 btn btn-light h-100">
+                            <div class="text-center"><img src="~/images/services/powerappsicon.png" alt="Power Apps Services" height="50" width="60" /></div>
+                            <h4 class="title text-black mt-5"> Power Platform Development</h4>
+                            <p class="description text-black mt-3">
+                                In today's digital age, businesses across industries need tailored solutions
+                                to optimize their operations and foster growth. With 8 years of expertise in
+                                Power Apps development, we specialize in creating custom applications that align
+                                seamlessly with your business objectives.
+                            </p>
+                            <div class="read-more"><a asp-controller="Services" asp-action="PowerPlatformDevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-box icon-box-blue">
-                        <div class="icon"><a asp-controller="Services" asp-action="Dynamics365Development"><img src="~/images/dynamics-365-logo-trans (1).png" alt="Dynamics 365 Development Services" height="50" width="80" /></a></div>
-                        <h4 class="title"><a asp-controller="Services" asp-action="Dynamics365Development">Dynamics 365 Development</a></h4>
-                        <p class="description">
-                            In the interconnected ecosystem of modern businesses, Dynamics 365 stands as a cornerstone for
-                            efficiency and growth. With an enriched 8-year journey exclusively in Dynamics 365 module development,
-                            I commit to transforming your business operations and customer experiences.
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
+                    <a asp-controller="Services" asp-action="Dynamics365Development">
+                        @* <div class="icon-box icon-box-blue">
+                            <div class="icon"><img src="~/images/Dynamics365-logo.webp" alt="Dynamics 365 Development Services" height="50" width="80" /></div> *@
+                        <div class="shadow p-4 btn btn-light h-100">
+                            <div class="text-center"><img src="~/images/Dynamics365-logo.webp" alt="Dynamics 365 Development Services" height="53" width="80" /></div>
+                            <h4 class="title text-black mt-5">Dynamics 365 Development</h4>
+                            <p class="description text-black mt-3">
+                                In the interconnected ecosystem of modern businesses, Dynamics 365 stands as a cornerstone for
+                                efficiency and growth. With an enriched 8-year journey exclusively in Dynamics 365 module development,
+                                I commit to transforming your business operations and customer experiences.
 
-                        </p>
-                        <div class="read-more"><a asp-controller="Services" asp-action="Dynamics365Development"><i class="bi bi-arrow-right"></i> Read More</a></div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon-box icon-box-cyan">
-                        <div class="icon"><a asp-controller="Services" asp-action="DOTNETDevelopment"><img src="~/images/dotneticon.png" alt=".NET Development Services" height="50" width="60" /></a></div>
-                        <h4 class="title"><a asp-controller="Services" asp-action="DOTNETDevelopment">.NET Development</a></h4>
-                        <p class="description">
-                            In today's digital landscape, businesses seek agile, reliable, and high-performance software solutions.
-                            Through the prowess of the .NET framework, Voxtus Technology delivers just that. Our developers with
-                            8 rich years in .NET - we blend technical acumen with practical insights to offer tailor-made solutions.
-
-                        </p>
-                        <div class="read-more"><a asp-controller="Services" asp-action="DOTNETDevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
-                    </div>
+                            </p>
+                            <div class="read-more"><a asp-controller="Services" asp-action="Dynamics365Development"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-box icon-box-green">
-                       @* <div class="icon"><a asp-controller="Services" asp-action="RPADevelopment"><img src="~/images/RPAIcon.svg alt="RPA Development Services" height="45" width="50" /></a></div>*@
-						<div class="icon"><a asp-controller="Services" asp-action="RPADevelopment"><img src="~/images/rpaicon.svg" height="50" width="60"/></a></div>
-                        <h4 class="title"><a asp-controller="Services" asp-action="RPADevelopment">RPA Development</a></h4>
-                        <p class="description">
-                            In today's competitive landscape, the drive for greater efficiency and precision has never been higher.
-                            Robotic Process Automation (RPA) stands out as the go-to solution for businesses to streamline operations,
-                            minimize errors, and amplify productivity. At Voxtus, we're at the vanguard of this
-                            automation revolution.
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="100">
+                    <a asp-controller="Services" asp-action="DOTNETDevelopment">
+                        @* <div class="icon-box icon-box-cyan">
+                            <div class="icon"><img src="~/images/dotneticon.png" alt=".NET Development Services" height="50" width="60" /></div> *@
+                        <div class="shadow p-4 btn btn-light h-100">
+                            <div class="text-center"><img src="~/images/dotneticon.png" alt=".NET Development Services" height="50" width="60" /></div>
+                            <h4 class="title text-black mt-5">.NET Development</h4>
+                            <p class="description text-black mt-3">
+                                In today's digital landscape, businesses seek agile, reliable, and high-performance software solutions.
+                                Through the prowess of the .NET framework, Voxtus Technology delivers just that. Our developers with
+                                8 rich years in .NET - we blend technical acumen with practical insights to offer tailor-made solutions.
 
-                        </p>
-                        <div class="read-more"><a asp-controller="Services" asp-action="RPADevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
-                    </div>
+                            </p>
+                            <div class="read-more"><a asp-controller="Services" asp-action="DOTNETDevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
+                    <a asp-controller="Services" asp-action="RPADevelopment">
+                        @* <div class="icon-box icon-box-green">
+                            <div class="icon"><img src="~/images/rpaicon.svg" height="50" width="60" /></div> *@
+                        <div class="shadow p-4 btn btn-light h-100">
+                            <div class="text-center"><img src="~/images/rpaicon.svg" alt="RPA" height="50" width="60" /></div>
+                            <h4 class="title text-black mt-5">RPA Development</h4>
+                            <p class="description text-black mt-3">
+                                In today's competitive landscape, the drive for greater efficiency and precision has never been higher.
+                                Robotic Process Automation (RPA) stands out as the go-to solution for businesses to streamline operations,
+                                minimize errors, and amplify productivity. At [Your IT Company Name], we're at the vanguard of this
+                                automation revolution, led by [Your Name] — a developer with a focused 3-year trajectory in RPA.
+
+                            </p>
+                            <div class="read-more"><a asp-controller="Services" asp-action="RPADevelopment"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                        </div>
+                    </a>
                 </div>
 
 
@@ -249,7 +263,7 @@
     <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
         <div class="section-title">
             <h2>Why US</h2>
-            <p>
+            <p class="p-5">
                 We understand that you have many options to choose from, and we appreciate the opportunity to explain why we believe our company is the right choice for you. we don't just provide services; we craft solutions tailored to your unique challenges and goals.
                 <br />
                 why should you trust Voxtus with your digital needs? Here are compelling reasons.
@@ -281,7 +295,7 @@
                     <div class="icon-box">
                         @*<div class="icon"><i class="bx bx-gift"></i></div>*@
                         @*<div class="icon"><i class="bi bi-align-end"></i></div>*@
-                        <div class="icon"> <img src="~/images/endtoendsupport.png" color="cornflowerblue" height="40" width="40" /></div>
+                        <div class="icon"><i class="bi bi-headset"></i></div>
                         <h4 class="title">End-to-End Support</h4>
                         <p class="description">
                             From the initial consultation to post-deployment support, we're by your side. We believe in building lasting relationships, and our comprehensive support ensures that your solutions keep delivering value long after implementation.
