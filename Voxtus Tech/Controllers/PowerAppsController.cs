@@ -102,21 +102,13 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
-        [Route("power-apps/power-apps-flow")]
-        public ActionResult PowerAppsFlow()
-        {
-            return View();
-        }
+        
         [Route("power-apps/building-custom-forms")]
         public ActionResult BuildingCustomForms()
         {
             return View();
         }
-        [Route("power-apps/error-handlingin-power-automate-flow")]
-        public ActionResult ErrorHandlinginPowerAutomateFlow()
-        {
-            return View();
-        }
+
         [Route("power-apps/environment-variables")]
         public ActionResult Environment_variables()
         {

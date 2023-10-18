@@ -1,4 +1,8 @@
 ﻿@model Newsletter
+@{
+    string encodedUrl = "https://www.youtube.com/%40voxtus";
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,19 +133,18 @@
 
         </div> *@
     <header id="header" class="fixed-top d-flex align-items-center">
-        <div class="logo px-5 mx-5">
+        <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
             @* <h1 class="text-light"><a asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span></a></h1> *@
             <span class="text-light h2"><a style="text-decoration:none" asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span> <span class="text-light"><b>Voxtus</b></span></a></span>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
-        <nav class="navbar navbar-expand-lg bg-transparent fixed-top p-3">
+        <nav class="navbar navbar-expand-lg bg-transparent p-3">
         <div class="container">
             @* <a class="navbar-brand fs-5" href="#">Voxtus</a> *@
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                <div class="sidebar offcanvas offcanvas-start bg-transparent bg-primary mh-50" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-start bg-transparent bg-primary mh-50" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header text-white border-bottom">
                         <h5 class="offcanvas-title mx-6" id="offcanvasNavbarLabel">Menu</h5>
                         <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -174,6 +177,7 @@
                 </div>
             </div>
         </nav>
+        </div>
 </header>
 
     @* </header> *@
@@ -252,9 +256,10 @@
                         <p>Voxtus is growing IT services and Consulting company in Dehradun Uttarakhand India</p>
                         <div class="social-links mt-3">
                             <a href="https://www.linkedin.com/company/voxtus/?viewAsMember=true" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="@encodedUrl" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
+                           @*  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                             <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> *@
                             
                         </div>
                     </div>
