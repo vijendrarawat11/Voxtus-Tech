@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]  Voxtus</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Voxtus_Tech.styles.css" asp-append-version="true" />
+
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    @*<title>Voxtus Technologies Pvt. Ltd.</title>*@
+    <title>Voxtus:Software development Company | IT Company</title>
+    <meta name="description" content="Voxtus Technologies: Expertise in software Development, driving digital innovation, delivers innovative software solutions and transforming IT visions to reality." />
+    <meta name=keywords content="Voxtus Technology, IT services, Software development, App development, RPA Power Apps, .NET development, Digital innovation, Business IT solutions, Custom software, IT consultancy">
+    <link rel="canonical" href="https://www.voxtus.com/" />
+    <script type="application/ld+json">
+        {
+          "context": "https://schema.org/",
+          "type": "BreadcrumbList",
+          "itemListElement": [{
+            "type": "ListItem",
+            "position": 1,
+            "name": "About",
+            "item": "https://voxtus.com/About"
+          },{
+            "type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://voxtus.com/Services"
+          },{
+            "type": "ListItem",
+            "position": 3,
+            "name": "Blog",
+            "item": "https://voxtus.com/Blog"
+          },{
+            "type": "ListItem",
+            "position": 4,
+            "name": "Contact Us",
+            "item": "https://voxtus.com/ContactUs"
+          }]
+        }
+    </script>
+    <meta property="og:title" content=Voxtus:-IT Solutions>
+    <meta property="og:site_name" content=Voxtus Technology Pvt Ltd>
+    <meta property="og:url" content=https://voxtus.com />
+    <meta property="og:description" content=Voxtus Technologies: Expertise in software Development, driving digital innovation, delivers innovative Software solutions and transforming IT visions to reality.>
+    <meta property="og:type" content=website>
+    <meta property="og:image" content=https://voxtus.com/images/v1.png>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/images/v1.png" rel="icon">
+    @*<img src="~/assets/img/voxtuslogo.png" />*@
+
+    @*<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">*@
+
+    @* <link href="images/v1.png" rel="apple-touch-icon">*@
+    @*<link rel="icon" href="~/assets/img/v1.ico" />
+    <link rel="icon" href="/assets/img/v1.ico" />*@
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="~/css/flex.css" rel="stylesheet" />
+</head>
+<body>
+    <header id="header" class="fixed-top d-flex align-items-center">
+         <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                @* <h1 class="text-light"><a asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span></a></h1> *@
+                <span class="text-light h2"><a style="text-decoration:none" asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span> <span class="text-light"><b>Voxtus</b></span></a></span>
+            </div>
+            <nav class="navbar navbar-expand-lg bg-transparent p-3">
+                <div class="container">
+                    @* <a class="navbar-brand fs-5" href="#">Voxtus</a> *@
+                    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start bg-transparent bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header text-white border-bottom">
+                            <h5 class="offcanvas-title mx-6" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-end align-items-center fs-5 text-white flex-grow-1 pe-5">
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" asp-controller="About" asp-action="Index">About</a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" asp-controller="Services" asp-action="Index">Services</a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" asp-controller="Portfolio" asp-action="Index">Portfolio</a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" asp-controller="Team" asp-action="Index">Team</a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" asp-controller="Blog" asp-action="Index">Blog</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="" class="text-decoration-none"><span>Learn</span> <i class="bi bi-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a asp-controller="Tutorial" asp-action="Introduction" class="text-decoration-none">Canvas Application</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                                <a asp-controller="ContactUs" asp-action="Index" class="btn btn-lg text-black fs-6 pe-4 rounded-4 bg-white" style="text-decoration:none;background-color:whitesmoke">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="main-container d-flex border-top border-white">
+        <div class="sidebar overflow-scroll" id="side_nav">
+            <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-center">
+                <h1 class="fs-4"><span class="text-dark fw-semibold px-2">Power Apps <br />(Canvas App)</span></h1>
+                <button class="btn d-md-none d-block btn-close px-1 py-0 text-white"></button>
+            </div>
+            <hr class="h-cloro" />
+            <ul class="list-unstyled px-2 mb-2">
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 fs-5"><i class="bi bi-house-fill"></i>Home</a></li>
+            </ul>
+            <ul class="list-unstyled px-2 mb-2">
+                <li class=""><p class="headp px-3 py-1 d-block">Introduction</p></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="Introduction" class="menu-item text-decoration-none px-3 py-2 d-block">Introduction to Power Apps</a></li>
+            </ul>
+            <ul class="list-unstyled px-2 mb-2">
+                <li class=""><p class="headp px-3 py-1 d-block">Getting Started with Power Apps</p></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="SettingupEnvironment" class=" menu-item text-decoration-none px-3 py-2 d-block">Setting up Power Apps environment</a></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="ExploringthePowerApps" class="menu-item text-decoration-none px-3 py-2 d-block">Exploring the Power Apps Studio</a></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="EnvironmentPublisherSolution" class="menu-item text-decoration-none px-3 py-2 d-block">How to create New(Environment, Publisher, Solution)</a></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="DataSource" class="menu-item text-decoration-none px-3 py-2 d-block">Data Source (Dataverse)</a></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="CreatingCanvasapp" class="menu-item text-decoration-none px-3 py-2 d-block">Creating Canvas app</a></li>
+            </ul>
+            <ul class="list-unstyled px-2 mb-2">
+                <li class=""><p class="headp px-3 py-1 d-block">Canvas App Interface</p></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="CanvasAppInterface" class=" menu-item text-decoration-none px-3 py-2 d-block">Canvas App Interface</a></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="Layoutandcomponents" class="menu-item text-decoration-none px-3 py-2 d-block">Layout and components</a></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="ControlsandProperties" class="menu-item text-decoration-none px-3 py-2 d-block">Controls and Properties</a></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="BuildCanvasAppQuickly" class="menu-item text-decoration-none px-3 py-2 d-block">Build Canvas Application Quickly</a></li>
+            </ul>
+            <ul class="list-unstyled px-2">
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-headset"></i>Contact Us</a></li>
+            </ul>
+            <hr class="h-cloro" />
+            
+        </div>
+        <div class="content d-md-flex">
+            <div class="d-flexjustify-content-between d-md-none d-block"><button class="btn btn-lg px-1 py-0 open-btn shadow-lg border-0 position-fixed"><i class="bi bi-list" style="color:black;font-size:26px;"></i></button></div>
+            <div>
+                <!-- Your page content goes here -->
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+           
+      
+    <script>
+        $(".sidebar ul li").on('click', function () {
+            $(".sidebar ul li.active").removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $('.open-btn').on('click', function () {
+            $('.sidebar').addClass('active');
+        });
+
+        $('.btn-close').on('click', function () {
+            $('.sidebar').removeClass('active');
+        });
+    </script>
+    @* <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("side_nav");
+        var btns = header.getElementsByClassName("menu-item");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script> *@
+</body>
+</html>

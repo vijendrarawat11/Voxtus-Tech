@@ -1,0 +1,200 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_TutorialLayout.cshtml";
+}
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid" height="50" width="50" /></div>
+    <div class="container p-3 mb-5 pb-5 mt-3">
+        <h1 class="text-center fs-2">Understanding Data Source (Dataverse)</h1>
+        <p class="mt-4">Dataverse in Power Apps is a data platform provided by Microsoft for building structured, secure, and scalable applications. It acts as a centralized database for your apps, allowing you to create, store, and manage data tables with defined relationships, security settings, and data validation rules. You can use this structured data to build web-based applications using Power Apps, integrating seamlessly with other Microsoft services. Dataverse ensures data integrity, privacy, and scalability for your applications. It's an ideal choice for businesses looking to create custom apps with structured data and minimal coding. </p>
+        <p>These are some of the common data types you can define when working with tables and entities in Power Platform Dataverse. The choice of data type depends on the nature of the data you're managing and the requirements of your applications and business processes.</p>
+        <table class="mt-4 p-lg-5 ms-lg-5 me-lg-5 text-center" style="background-color:#CBE0F5">
+            <tr>
+                <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke"><h5 class="text-center">Data Type</h5></th>
+                <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke"><h5 class="text-center">Description</h5></th>
+                <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke"><h5 class="text-center">Example</h5></th>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Single Line of Text
+                </td>
+                <td style="border:1px solid black">A single line of text data. It's typically used for<br /> short descriptions or labels.</td>
+                <td style="border:1px solid black">Customer Name, Product Code</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Multiple Lines of Text</td>
+                <td style="border:1px solid black">A longer text field that can hold multiple lines of text.</td>
+                <td style="border:1px solid black">Description, Comments</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Whole Number</td>
+                <td style="border:1px solid black">An integer data type for whole numbers.</td>
+                <td style="border:1px solid black">Order Quantity, Age</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Decimal Number</td>
+                <td style="border:1px solid black">A floating-point number with decimal precision.</td>
+                <td style="border:1px solid black">Price, Latitude, Longitude</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Date and Time</td>
+                <td style="border:1px solid black">A field for storing date and time values.</td>
+                <td style="border:1px solid black">Order Date, Meeting Time</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Option Set</td>
+                <td style="border:1px solid black">A predefined list of values that users can select from.</td>
+                <td style="border:1px solid black">Status (Open/Closed), Priority</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Two Options</td>
+                <td style="border:1px solid black">A binary choice field, often used for yes/no or true/false options.</td>
+                <td style="border:1px solid black">Approval (Yes/No), Gender</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Image</td>
+                <td style="border:1px solid black">A data type for storing image files.</td>
+                <td style="border:1px solid black">User Profile Picture, Product Image</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Lookup</td>
+                <td style="border:1px solid black">A reference to another record in Dataverse.</td>
+                <td style="border:1px solid black">Customer (related entity), Parent Record</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Customer</td>
+                <td style="border:1px solid black">A reference to a contact or user record.</td>
+                <td style="border:1px solid black">Associated Customer, Owner</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Currency</td>
+                <td style="border:1px solid black">A data type for storing currency values.</td>
+                <td style="border:1px solid black">Total Revenue, Price Per Unit</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">URL</td>
+                <td style="border:1px solid black">A field for storing website or hyperlink addresses.</td>
+                <td style="border:1px solid black">Website URL, Hyperlink to Document</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Email</td>
+                <td style="border:1px solid black">A field for storing email addresses./td>
+                <td style="border:1px solid black">Contact Email, User Email</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">Phone</td>
+                <td style="border:1px solid black">A field for storing phone numbers.</td>
+                <td style="border:1px solid black">Contact Phone, Support Hotline</td>
+            </tr>
+        </table>
+        <p class="fs-4 fw-semibold px-2 mt-4">Why use Dataverse</p>
+        <ul class="d-flex flex-column gap-3">
+            <li><span class="fw-semibold">Relationships:</span> Dataverse supports creating relationships between tables, including one-to-one, one-to-many, and many-to-many relationships. This is particularly useful when you need to model complex data structures and maintain data integrity.</li>
+            <li><span class="fw-semibold">Data Modeling:</span> You can define data types, rules, and business logic (such as validation rules and calculated fields) within Dataverse to ensure data quality and consistency.</li>
+            <li><span class="fw-semibold">Security and Permissions:</span> Dataverse provides role-based security to control access to data. You can set up permissions to determine who can read, write, or modify data in your tables. This ensures data privacy and compliance.</li>
+            <li><span class="fw-semibold">Integration:</span> Dataverse is tightly integrated with other Microsoft services like Power Automate, Power BI, and Dynamics 365. You can easily connect and share data between these services, making it an ideal choice for end-to-end business applications.</li>
+            <li><span class="fw-semibold">Web-Based App Creation:</span> You can use Power Apps to create web-based apps that interact with Dataverse. Power Apps provides a visual interface for designing your app's user interface and logic, and you can use Dataverse as the data source for your app.</li>
+            <li><span class="fw-semibold">Canvas and Model-Driven Apps:</span> Power Apps allows you to create different types of apps. Canvas apps provide more flexibility and are suitable for custom app development, while model-driven apps are suitable for scenarios where data-driven apps are more appropriate.</li>
+        </ul>
+        <p class="fs-4 fw-semibold px-2 mt-4">Creating Dataverse table</p>
+        <p>Let’s create a Dataverse table for our application</p>
+        <ul class="d-flex flex-column gap-2">
+            <li>Select the solution we have created in previous step:</li>
+            <li>Solutions are containers for organizing and managing your app components, including tables.</li>
+            <li>You can either create a new solution or select an existing one. To create a new solution, click on <span class="fw-bold">"Solutions"</span> in the left sidebar, then click the <span class="fw-bold">"<i class="bi bi-plus-lg"></i>New Solution"</span> button.</li>
+            <li>Add a New Table to the Solution: Within your solution, you can add a new Dataverse table.</li>
+            <li>Click on the solution name to open it.</li>
+            <li>Inside the solution, click the <span class="fw-bold">"<i class="bi bi-plus-lg"></i>New"</span> button and select <span class="fw-bold">"Table"</span> from the options.</li>
+        </ul>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/getting started with power apps/5. creating dataverse table/screenshot_1.png" class="img-fluid" /></div>
+        <ul class="d-flex flex-column gap-2">
+            <li>Define Table Properties: IN the table creation dialog, provide the following details for your new table: Display Name: Give your table a name, such as <span class="fw-bold">"Person"</span> or any name you prefer.</li>
+            <li>Name: This will be the technical name of the table and should be unique in your environment.</li>
+            <li>Primary Name Column: Set this to <span class="fw-bold">"Full Name"</span> since it's a common identifier for people.</li>
+        </ul>
+        <div class="container d-flex flex-lg-row justify-content-center mt-4 mb-4">
+            <img src="~/images/learn/getting started with power apps/5. creating dataverse table/screenshot_2.png" class="img-fluid me-2" width="50%" />
+            <img src="~/images/learn/getting started with power apps/5. creating dataverse table/screenshot_3.png" class="img-fluid" width="50%" />
+        </div>
+        <ul class="d-flex flex-column gap-2">
+            <li>Description: Add an optional description for your table.</li>
+            <li>Define Columns:</li>
+        </ul>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/getting started with power apps/5. creating dataverse table/screenshot_4.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/getting started with power apps/5. creating dataverse table/screenshot_5.png" class="img-fluid" width="50%" /></div>
+        <ul class="d-flex flex-column gap-2">
+            <li>After creating the table, you will be taken to the table's design view.</li>
+            <li>Click on <span class="fw-bold">"Add column"</span> to add columns for First Name, Last Name, Full Name, and Age.</li>
+            <li>For each column, set the following properties:</li>
+            <li>Name: Enter the column name <span class="fw-bold">(e.g., "First Name," "Last Name," "Full Name," "Age," ”Class,” and ”DOB”)</span>.choose data type of class column as choice to make Class column as choice column. And Full name is already there because we have made full name as primary column of the table.</li>
+            <li>Data Type: Choose the appropriate data type for each column (e.g., Single Line of Text for names, Whole Number for age).</li>
+            <li>Repeat the previous task to create all columns individually.</li>
+            <li>It will look like this:</li>
+        </ul>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/getting started with power apps/5. creating dataverse table/screenshot_6.png" class="img-fluid" /></div>
+        <p>In this above image you can see the data type and name of all the columns in have created and Student info is the unique identifier which is created by Default. </p>
+        <ul class="mb-4 pb-4">
+            <li>
+                Save and Publish: Once you have defined the table and its columns, click the <span class="fw-bold">
+                    "Save"</span> button within your solution.
+                After saving, you can choose to publish your changes to make the table and columns available for use in your solution.
+            </li>
+        </ul>
+    </div>
+        </body>
+
+
+
+<!--Our Links Section Start Here-->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<script src="~/assets/js/main.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
+
+
+
+<!--The End of the Links Section-->

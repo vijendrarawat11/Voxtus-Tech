@@ -114,27 +114,27 @@
     </section>
 </main> *@
 
-<main id="main">
-    <div class="container-fluid">
+<main id="main" class="ps-0 pe-0">
+    @* <div class="container-fluid"> *@
         <div class="w-100 algin-item-center" style="border-bottom-right-radius: 150px; border-top-left-radius:150px; background-color:#512BD4">
-            <center><img src="~/images/dotneticon.png" class="img-fluid p-3" height="140" width="150" /></center>
+            <center><img src="~/images/dotneticon.png" class="img-fluid" height="110" width="130" /></center>
         </div>
-        <div class="container-fluid mt-2 text-center">
-            
-            <div class="container-fluid shadow-lg p-3">
-                <h2 class="text-end p-3">Voxtus - Your Trusted .NET Development Partner</h2>
+        @* <div class="container-fluid mt-2 text-center"> *@
+
+        <div class="container-fluid shadow-lg p-3 mt-2 text-center">
+                
             <div class="row">
-                <div class="col-lg-6 p-5 mt-3"><h5>At Voxtus, we're committed to delivering top-notch .NET development services that cater to your unique business needs. Our goal is to empower your organization to thrive in the digital world by leveraging the power of .NET. </h5></div>
+            <div class="col-lg-6 p-4 mt-1"><h1 class="text-end p-2">Voxtus - Your Trusted .NET Development Partner</h1><h5 class="mt-5">At Voxtus, we're committed to delivering top-notch .NET development services that cater to your unique business needs. Our goal is to empower your organization to thrive in the digital world by leveraging the power of .NET. </h5></div>
                 <div class="col-lg-6"><img src="~/images/services/dotnet/bg1.png" class="img-fluid"/></div>
             </div>
-            <h5>DISCUSS YOUR .NET DEVELOPMENT NEEDS?   <button type="button" class="btn btn-primary btn-lg"><a asp-controller="ContactUs" asp-action="Index" style="text-decoration:none; color:white">Let's Talk</a></button></h5>
+            <h5>DISCUSS YOUR .NET DEVELOPMENT NEEDS?    <button type="button" class="btn btn-primary btn-lg"><a asp-controller="ContactUs" asp-action="Index" style="text-decoration:none; color:white">Let's Talk</a></button></h5>
         </div>
-        </div>
-        <div class="container-fluid mt-5">
-            <h2 class="text-center">What we provide in .NET Development.</h2><hr />
+        @* </div> *@
+        @* <div class="container-fluid mt-5"> *@
+        <h2 class="text-center mt-5">What we provide in .NET Development.</h2><hr />
             <div class="container-fluid">
             <h3 class="p-3">Custom .NET Applications</h3>
-            <div class="container position-relative" style="height:600px">
+            <div class="container-fluid position-relative" style="height:600px">
                 <img src="~/images/services/dotnet/bg2.png" class="img-fluid h-100 w-100" />
                 <div class="text-center w-50 h-50 mt-5" style="position:absolute;top: 8px;left: 35px;"><h6>We work closely with your team to understand your business requirements. Then, we design and build tailored .NET applications that precisely fit your needs. Our approach ensures that your applications are not only functional but also scalable and user-friendly.</h6></div>
 
@@ -151,7 +151,7 @@
             </div>
 
             <h3 class="p-3 mt-5">Legacy Application Migration</h3>
-            <div class="container position-relative" style="height:700px">
+        <div class="container-fluid position-relative" style="height:700px">
                 <img src="~/images/services/dotnet/bg3.png" class="img-fluid h-100 w-100 opacity-50" />
                 <div class="text-center w-50 h-50 mt-5" style="position:absolute;top: 8px;left: 35px;">
                     <h6>If you have legacy applications holding you back, we can help. Our experts specialize in migrating legacy systems to the modern .NET framework. We analyse your existing systems, create a migration plan, update and optimize your codebase, and ensure a seamless transition with enhanced performance and security.</h6>
@@ -170,7 +170,7 @@
             </div>
 
             <h3 class="p-3">ASP.NET Development</h3>
-            <div class="container position-relative" style="height:720px">
+        <div class="container-fluid position-relative" style="height:720px">
                 <img src="~/images/services/dotnet/bg4.png" class="img-fluid h-100 w-100 opacity-50" />
                 <div class="text-center w-50 h-50 mt-5" style="position:absolute;top: 8px;left: 35px;">
                     <h6>Our ASP.NET development services are designed to accelerate your business growth. We have deep expertise in ASP.NET MVC, ASP.NET Core, and related technologies. We follow industry best practices, conduct comprehensive requirement analysis, employ efficient software architecture, and ensure reliable and bug-free applications.</h6>
@@ -191,7 +191,7 @@
             </div>
 
             <h3 class="p-3">API Development and Integration</h3>
-            <div class="container position-relative" style="height:730px">
+        <div class="container-fluid position-relative" style="height:730px">
                 <img src="~/images/services/dotnet/bg5.png" class="img-fluid h-100 w-100 opacity-50" />
                 <div class="text-center w-50 h-50 mt-5" style="position:absolute;top: 8px;left: 35px;">
                         <h6>Our Efficient communication and data exchange between systems are essential. We excel in creating APIs that enable robust integration and interoperability. Our experts understand the importance of secure data transfer and adhere to industry standards.</h6>
@@ -209,7 +209,7 @@
             </div>
 
             <h3 class="p-3">Application Support and Maintenance </h3>
-            <div class="container position-relative" style="height:600px">
+        <div class="container-fluid position-relative" style="height:600px">
                 <img src="~/images/services/dotnet/bg6.png" class="img-fluid h-100 w-100 opacity-50" />
                 <div class="text-center w-50 h-50 mt-5" style="position:absolute;top: 8px;left: 35px;">
                     <h6>We recognize the importance of ongoing support and maintenance for your .NET applications. Our team provides comprehensive support services, including bug fixes, performance optimization, upgrades, security patching, and continuous monitoring.</h6>
@@ -227,7 +227,7 @@
                 </div>
             </div>
             </div>  
-        </div>
+        @* </div> *@
 
         <div class="container-fluid mt-5">
             <h2 class="text-center">Why Choose Voxtus?</h2><hr />
@@ -312,7 +312,7 @@
             <h5 class="m-1"><a asp-controller="ContactUs" asp-action="Index" style="text-decoration:none;color:white">Contact us</a> today to discuss your .Net development project, and let's bring your vision to life.</h5>
         </div>
 
-    </div>
+    @* </div> *@
 
 </main>
 
@@ -333,22 +333,8 @@
 <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-<link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap.rtl.css" rel="stylesheet" />
 <link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-utilities.css" rel="stylesheet" />
+
 
 <!-- Template Main CSS File -->
 <link href="assets/css/style.css" rel="stylesheet">
@@ -374,30 +360,12 @@
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
 
-
-
-<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.min.css" rel="stylesheet" />
-<link href="~/lib/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet" />
-<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.min.css" rel="stylesheet" />
-<script src="~/lib/jquery/dist/jquery.js"></script>
-<link href="~/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" rel="stylesheet" />
-<link href="~/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" rel="stylesheet" />
-<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" rel="stylesheet" />
-<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" rel="stylesheet" />
-<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" rel="stylesheet" />
-<link href="~/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" rel="stylesheet" />
 <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
 <link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
 <link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
 <link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
 <link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
-<script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="~/assets/vendor/isotope-layout/isotope.pkgd.js"></script>
-<link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-<script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="~/assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="~/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="~/assets/vendor/php-email-form/validate.js"></script>
+
 
 
 <!--The End of the Links Section-->

@@ -1,0 +1,112 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_TutorialLayout.cshtml";
+}
+
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid" height="50" width="50" /></div>
+    <div class="container p-3 mb-5 pb-5 mt-3">
+        <h1 class="text-center fs-2">Controls and Properties</h1>
+        <p class="fs-4 fw-semibold px-2 mt-4">Controls:-</p>
+        <p>In a canvas app, controls represent elements or widgets that display and interact with data. They enable the creation of user interfaces and customization of app functionality. Canvas apps are often developed using platforms like Microsoft Power Apps, which offer a visual design interface, reducing the need for extensive coding. Below are examples of common controls that can be utilized in a canvas app.:</p>
+        <ol class="d-flex flex-column gap-3">
+            <li><span class="fw-semibold">Label Control:</span> A label control is used to display text or static information. Can be used to provide descriptions, headers, or other textual information.</li>
+            <li><span class="fw-semibold">Text Input Control:</span> Text input controls allow users to enter text or data. They can be used for forms, search boxes, or any scenario where user input is required.</li>
+            <li><span class="fw-semibold">Button Control:</span> Buttons serve as triggers for actions or navigation within the app. Their click behavior can be defined to perform various actions, including screen navigation, form submission, or the execution of specific functions.</li>
+            <li><span class="fw-semibold">Gallery Control:</span> The gallery control is employed to present a list of items, and its presentation can be customized to display data in various ways. It is commonly used to create data-driven views.</li>
+            <li><span class="fw-semibold">Data Table Control:</span> Similar to a gallery, a data table control is used to display data in a tabular format, making it suitable for displaying data from a data source.</li>
+            <li><span class="fw-semibold">Image Control:</span> The image control is utilized for displaying images or icons, allowing you to showcase pictures, logos, or icons within the app.</li>
+            <li><span class="fw-semibold">Media Controls:</span> The controls like Audio and Video provide the capability to seamlessly incorporate multimedia elements into Canvas application.</li>
+            <li><span class="fw-semibold">Forms: Forms are</span> used for data input and editing. They contain various input controls and are commonly used for data entry and updating records.</li>
+            <li><span class="fw-semibold">Chart Controls:</span> Chart controls let you visualize data through various chart types, including bar charts, pie charts, line charts, etc.</li>
+            <li><span class="fw-semibold">Dropdowns and Combo Boxes:</span> Dropdown and combo box controls allow users to select options from a list, which is especially useful for data selection or filtering.</li>
+            <li><span class="fw-semibold">Toggle Controls:</span> Toggles are used for binary choices or on/off settings.</li>
+            <li><span class="fw-semibold">Slider Controls:</span> Sliders let users select a value within a predefined range, making them suitable for tasks like setting a numeric value.</li>
+            <li><span class="fw-semibold">Timer Control:</span> The timer control can trigger actions at specific intervals or time intervals.</li>
+            <li><span class="fw-semibold">Maps Control:</span> Maps controls can display interactive maps and integrate with location-based services.</li>
+            <li><span class="fw-semibold">Barcode Scanner Control:</span> For an app that requires scanning barcodes or QR codes, the barcode and QR code scanning control can be valuable.</li>
+            <li><span class="fw-semibold">PDF Viewer Control:</span> To display PDF documents within your app, this control is handy.</li>
+            <li><span class="fw-semibold">Rating Control:</span> Rating controls allow users to rate items on a scale, typically used for product or service reviews.</li>
+        </ol>
+        <p class="fs-4 fw-semibold px-2 mt-4">Properties:-</p>
+        <p>In a canvas app, properties represent attributes or settings that can be applied to controls, objects, and elements within the app. These attributes determine the appearance, behavior, and functionality of the components in the app. The available properties may vary based on the platform used for building the canvas app, like Microsoft Power Apps. Here are some common properties found in a canvas app:</p>
+        <ol class="d-flex flex-column gap-3">
+            <li><span class="fw-semibold">Visible:</span> This property controls the visibility of a control, allowing dynamic showing or hiding based on conditions. It can be set to a formula or a Boolean value.</li>
+            <li><span class="fw-semibold">Color:</span> The color property is used to define the color of elements such as text, backgrounds, or borders. It can be set to a specific color code or a formula for dynamic color changes.</li>
+            <li><span class="fw-semibold">Text:</span> The text property determines the text content for controls like labels, buttons, and text input boxes.</li>
+            <li><span class="fw-semibold">Font Size and Style:</span> Font size, style (bold, italic), and family (font type) can be adjusted to control text appearance.</li>
+            <li><span class="fw-semibold">Border Style:</span> For controls with borders, properties like border color, thickness, and style can be configured.</li>
+            <li><span class="fw-semibold">Fill:</span> This property specifies the background or fill color for controls or shapes.</li>
+            <li><span class="fw-semibold">Height and Width:</span> These properties define the size of controls on the screen.</li>
+            <li><span class="fw-semibold">Position (X and Y):</span> The horizontal (X) and vertical (Y) positions of controls on the screen are determined by these properties.</li>
+            <li><span class="fw-semibold">Padding and Margin:</span> Padding sets the space between the content and the control's border, while margin defines the space between a control and other nearby controls.</li>
+            <li><span class="fw-semibold">OnSelect:</span> Typically used with buttons, this property specifies the action when the button is clicked, allowing for dynamic actions using formulas and functions.</li>
+            <li><span class="fw-semibold">Default Value:</span> For input controls like text input boxes, this property sets the initial value when the control is loaded.</li>
+            <li><span class="fw-semibold">Items:</span> Used in controls like galleries or data tables, the Items property defines the data source displayed by the control.</li>
+            <li><span class="fw-semibold">Selection:</span> This property, often used with galleries or data tables, allows the definition of how items are selected or highlighted.</li>
+            <li><span class="fw-semibold">Formula Bar:</span> The formula bar provides a platform for creating formulas or expressions to customize control behavior. It's where dynamic behaviors for the app are created.</li>
+            <li><span class="fw-semibold">BorderColor:</span> Controls with borders have a property to specify the border color.</li>
+            <li><span class="fw-semibold">TextAlign:</span> For controls with text, this property sets the text alignment (left, center, right).</li>
+            <li><span class="fw-semibold">Validation Rules:</span> Input controls often have properties for defining validation rules to ensure the input meets specific criteria.</li>
+            <li><span class="fw-semibold">Options and Choices:</span> Dropdowns, combo boxes, and other selection controls have properties for defining available options or choices for the user.</li>
+            <li><span class="fw-semibold">Disabled:</span> The disabled property can be set to make a control read-only, preventing interaction.</li>
+            <li><span class="fw-semibold">Hover Effects:</span> Some controls support hover effects that define user experiences when the mouse hovers over the control.</li>
+        </ol>
+    </div>
+        </body>
+
+
+<!--Our Links Section Start Here-->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<script src="~/assets/js/main.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
+
+
+
+<!--The End of the Links Section-->

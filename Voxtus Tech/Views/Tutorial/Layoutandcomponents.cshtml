@@ -1,0 +1,107 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_TutorialLayout.cshtml";
+}
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid" height="50" width="50" /></div>
+    <div class="container p-3 mb-5 pb-5 mt-3">
+        <h1 class="text-center fs-2">Layout and Components</h1>
+        <p class="fs-4 fw-semibold px-2 mt-4">Layout:-</p>
+        <ul>
+            <li><span class="fw-semibold">Screens:</span> Canvas apps consist of screens, and each screen represents a unique page or view within the app. Multiple screens can be designed to arrange and display various content or functionalities.</li>
+        </ul>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/canvas app interface/layout and components/screenshot_1.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/canvas app interface/layout and components/screenshot_2.png" class="img-fluid" /></div>
+        <p>Layout and different default templates can be selected to start making canvas app.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/canvas app interface/layout and components/screenshot_3.png" class="img-fluid" /></div>
+        <p>In this setup, a vertical container serves as the global container responsible for holding other containers and screens. There are also two horizontal containers for the header and footer, and a vertical container for the main screen. </p>
+        <span class="fs-6 text-center fw-semibold" style="background-color:yellow">("container" is a user interface control that groups and organizes other controls within an app. It helps structure the app's layout, making it easier to manage and manipulate multiple controls as a single unit. Common types of containers include groups, data tables, galleries, forms, and screens, each serving specific purposes in app design and data presentation. Containers are essential for creating organized and user-friendly interfaces.)</span>
+        <ul>
+            <li class="list-unstyled mt-4"><ul>
+                    <li>For the global container, set the Width to Parent.Width and Height to Parent.Height. In this case, the parent for this global container is Screen1, and its height and width are set as defaults, with height as Max(App.Height, App.MinScreenHeight) and width as Max (App.Width, App.MinScreenWidth). These settings enable the creation of a responsive application that functions effectively on both mobile and tablet devices.</li>
+            </ul></li>
+        </ul>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/canvas app interface/layout and components/screenshot_4.png" class="img-fluid" /></div>
+        <ul>
+            <li class="list-unstyled">
+                <ul>
+                    <li>In the Header container, configure the Height and Width properties as follows: set the width to (Parent.Width) and the height to (Parent.Height/10). Apply the same settings to the Footer container.</li>
+                    <li>For the main container, establish the width as (Parent.Width) and the height as (Parent.Height - HeaderContainer.Height - FooterContainer.Height). Additionally, disable the flexible height option for the main container from the Right navigation menu.</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><span class="fw-semibold">Headers and Footers:</span>  Headers and footers can be added to screens to maintain a consistent appearance, showcase branding, or introduce navigation components.</li>
+            <li><span class="fw-semibold">Navigation Elements:</span>  Design and position navigation menus, buttons, or tabs to enable users to transition between screens within the application.</li>
+        </ul>
+        <p>Another screen was added using the "New screen" option, and a button was inserted from the "Insert" menu. The button's "OnSelect" property was set to a function (Navigate(Screen2)) to facilitate navigation to another screen.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/canvas app interface/layout and components/screenshot_5.png" class="img-fluid" /></div>
+        <p class="fs-4 fw-semibold px-2 mt-4">Components:-</p>
+        <div class="container d-lg-flex flex-row justify-content-center mt-4 mb-4 gap-2 pb-5">
+            <img src="~/images/learn/canvas app interface/layout and components/screenshot_6.png" class="img-fluid" />
+            <ul class="d-flex flex-column justify-content-center gap-3">
+                <li><span class="fw-semibold">Text Controls:</span> Add labels, headings, and regular text to provide information to users.</li>
+                <li><span class="fw-semibold">Input Controls:</span> Include text input boxes, dropdowns, date pickers, and other input elements for user data entry.</li>
+                <li><span class="fw-semibold">Buttons:</span> Buttons trigger actions when clicked, such as submitting data, navigating to other screens, or running app logic.</li>
+                <li><span class="fw-semibold">Galleries:</span> Use galleries to display lists of data, such as a collection of items. Appearance and interactions can be customized. </li>
+                <li><span class="fw-semibold">Charts:</span> Incorporate charts and graphs to visually represent data within your app.</li>
+                <li><span class="fw-semibold">Media Controls:</span> Embed images, videos, or audio to enhance your app's content.</li>
+                <li><span class="fw-semibold">Shapes:</span> Create custom designs and visuals using shapes, allowing for unique and creative app layouts.</li>
+            </ul></div>
+    </div>
+        </body>
+
+<!--Our Links Section Start Here-->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<script src="~/assets/js/main.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
+
+
+
+<!--The End of the Links Section-->
