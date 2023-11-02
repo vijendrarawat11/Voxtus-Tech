@@ -5,8 +5,13 @@
     Layout = "~/Views/Shared/_TutorialLayout.cshtml";
 }
 <body style="background-color:ghostwhite;">
-    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid" height="50" width="50" /></div>
-    <div class="container p-3 mb-5 pb-5 mt-3">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="d-flex justify-content-around py-2">
+        <a asp-controller="Tutorial" asp-action="ExploringthePowerApps" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+        <a asp-controller="Tutorial" asp-action="DataSource" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+    </div>
+    <div class="container p-3 mt-3">
         <h1 class="text-center fs-2">How to create New (Environment, Publisher, Solution)</h1>
         <p class="fs-4 fw-semibold px-2 mt-4">Environment:-</p>
         <p>Let’s Begin with setting up an Environment first because creating multiple Environments in Power Apps is a best practice for organizations that develop and manage applications using the Power Platform, including Power Apps.</p>
@@ -48,7 +53,12 @@
         <ul class="mt-4"><li>Select <span class="fw-bold">“Solution”</span> form left navigation panel on home page.</li></ul>
         <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/getting started with power apps/3. creating new environment solution and publisdher/creating esp 10.png" class="img-fluid" /></div>
         <ul><li>Click the <span class="fw-bold">"<i class="bi bi-plus-lg"></i>New Solution"</span> button, and a new pop-up window will appear on the right side of the screen. Fill in the Display name, Name, Publisher, and then click the save button. The new solution will be created and can be seen on the solution lists.</li></ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4 pb-4"><img src="~/images/learn/getting started with power apps/3. creating new environment solution and publisdher/creating esp 11.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/getting started with power apps/3. creating new environment solution and publisdher/creating esp 11.png" class="img-fluid" /></div>
+    </div>
+    <div class="d-flex justify-content-around pb-3">
+        <a asp-controller="Tutorial" asp-action="ExploringthePowerApps" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+        <a asp-controller="Tutorial" asp-action="DataSource" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
     </div>
         </body>
 

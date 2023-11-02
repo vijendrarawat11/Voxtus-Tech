@@ -1,0 +1,143 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<main id="main">
+    <section>
+        <div class="container bg-light service-details align-items-center" style="border:2px solid black">
+            <div class="mt-2 mx-2">
+                <h2 class="mt-4 mx-3 text-center">
+                    Exploring Virtual Tables in Dataverse with SharePoint Connector
+                </h2><hr />
+            </div>
+            <div class="mt-2 mx-3 bg-white pt-1 pb-3">
+                <p class="mt-4 mx-3">In today's rapidly evolving business landscape, data plays a pivotal role in decision-making and strategy development. Microsoft Dataverse, formerly known as the Common Data Service, empowers organizations to manage and harness data effectively. One of Dataverse's powerful features is the ability to create virtual tables, which can be linked to various data sources, including SharePoint. In this blog post, we will dive into the world of virtual tables in Dataverse and explore how to leverage the SharePoint connector for seamless data integration.</p>
+                <h4 class="mt-4 mx-3">What are Virtual Tables in Dataverse?</h4>
+                <p class="mt-4 mx-3">Virtual tables in Dataverse are a mechanism for connecting and working with data from external sources without the need to physically import or replicate the data. Instead, you create a logical representation of the data source within Dataverse, making it accessible and manageable right from the Dataverse environment.</p>
+                <h4 class="mt-4 mx-3">Leveraging SharePoint as a Virtual Connector</h4>
+                <p class="mt-4 mx-3">SharePoint is a widely used collaboration platform for document management, team collaboration, and content sharing. With Dataverse, you can effortlessly integrate SharePoint data into your applications and workflows by creating a virtual table.</p>
+                <p class="mt-4 mx-3 text-center h5">This is our SharePoint List</p>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/exploringvirtualtablesindataverse/sharepoint table.png" class="img-fluid  border" /></div>
+                <p class="mt-4 mx-3 h6">Here are the detailed steps for how anyone can createvirtual Dataverse table with SharePoint connector:</p>
+                <p class="mt-4 mx-3 fw-semibold">Step 1: Create a Virtual Table</p>
+                <ul class="mx-3">
+                    <li>Navigate to your Dataverse environment. Select existing table, or I’ll move ahead with creating a new solution in which I want to add table.</li>
+                    <li>Click on <span class="fw-bold">"<i class="bi bi-plus-lg"></i>New"</span> and then <span class="fw-bold">"Table"</span>.</li>
+                    <li>Select <span class="fw-bold">"Table from External Data”</span>. </li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/exploringvirtualtablesindataverse/Screenshot_1.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li>Choose <span class="fw-bold">"Connect to an existing data source"</span> and select <span class="fw-bold">"SharePoint"</span>.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/exploringvirtualtablesindataverse/Screenshot_2.png" class="img-fluid  border" /></div>
+                <p class="mt-4 mx-3 fw-semibold">Step 2: Configure SharePoint Connection</p>
+                <ul class="mx-3">
+                    <li>Provide the necessary SharePoint site URL and credentials.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/exploringvirtualtablesindataverse/Screenshot_3.png" class="img-fluid  border" /></div>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/exploringvirtualtablesindataverse/Screenshot_4.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li>Select the SharePoint list or library you want to connect to.</li>
+                    <li>Define the table's schema by mapping SharePoint columns to Dataverse attributes.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/exploringvirtualtablesindataverse/Screenshot_6.png" class="img-fluid  border" /></div>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/exploringvirtualtablesindataverse/Screenshot_5.png" class="img-fluid  border" /></div>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/exploringvirtualtablesindataverse/creating.png" class="img-fluid  border" /></div>
+                <p class="mt-4 mx-3 fw-semibold">Step 3: Data Integration and Workflow</p>
+                <ul class="mx-3">
+                    <li>Now that you have your virtual table set up, you can seamlessly integrate SharePoint data into your Dataverse applications and Power Platform workflows. You can use Power Apps to build user-friendly interfaces for data entry and retrieval, automate processes with Power Automate, and gain valuable insights with Power BI.</li>
+                </ul>
+                <div class="container d-flex flex-column justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/exploringvirtualtablesindataverse/Screenshot_7.png" class="img-fluid  border" />
+                    <p class="mt-1 mx-3 text-center h5">And Now Dataverse virtual table is ready to use.</p>
+                </div>
+                
+                <h4 class="mt-5 mx-3">Benefits of Using SharePoint as a Virtual Connector</h4>
+                <ol class="mx-3 d-flex flex-column gap-3">
+                    <li><span class="fw-semibold">Real-time Data Access:</span> Your Dataverse virtual table stays synchronized with the SharePoint data source, ensuring you always have access to the latest information.</li>
+                    <li><span class="fw-semibold">Centralized Data Management:</span> Dataverse allows you to combine data from various sources, providing a unified view of your organization's information.</li>
+                    <li><span class="fw-semibold">Security and Compliance:</span> Data access and permissions are managed centrally, ensuring data security and compliance with your organization's policies.</li>
+                    <li><span class="fw-semibold">Efficiency:</span> Streamline your business processes by automating tasks that involve SharePoint data, reducing manual effort and potential errors.</li>
+                </ol>
+                <h4 class="mt-4 mx-3">Use Cases for SharePoint Virtual Tables</h4>
+                <p class="mt-4 mx-3">The possibilities for utilizing SharePoint as a virtual connector in Dataverse are vast. Here are a few common use cases:</p>
+                <ol class="mx-3 d-flex flex-column gap-3">
+                    <li><span class="fw-semibold">Document Management:</span> Create virtual tables linked to SharePoint document libraries to manage and track documents efficiently.</li>
+                    <li><span class="fw-semibold">Project Management:</span> Integrate SharePoint lists with your project management apps to track tasks, deadlines, and project progress.</li>
+                    <li><span class="fw-semibold">Inventory and Asset Tracking:</span> Maintain an up-to-date inventory by connecting Dataverse with SharePoint lists containing asset details.</li>
+                </ol>
+                <h3 class="mt-5 mx-3 text-center">Conclusion</h3>
+                <p class="mt-4 mx-3 text-center">Leveraging virtual tables in Dataverse, with SharePoint as a virtual connector, opens up exciting opportunities for businesses to streamline data management and enhance decision-making. Whether you're looking to integrate documents, manage projects, or track assets, Dataverse provides a robust platform for achieving your data integration goals.</p>
+            </div>
+            <hr />
+            <div class="row mb-2">
+                <h6 class="text-center text-primary">
+                    If you have any doubts or questions related to this blog, you can Contact us by Email: info@voxtus.com
+                </h6>
+            </div>
+
+            <div class="row">
+                <div class="col-8"></div>
+                <div class="col-4"><p><b>Abhishek Kumar<br />Power Apps Consultant</b></p></div>
+            </div>
+        </div>
+        <div class="container-fluid pt-3"><a style="text-decoration:none" asp-controller="PowerAutomate" asp-action="Index"><h5 class="text-primary"><i class="bi bi-arrow-left-circle"></i> Go back to Power Automate Blogs</h5></a></div>
+    </section>
+</main>
+
+
+
+
+<!--Our Links Section Start Here-->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<script src="~/assets/js/main.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
+
+
+
+<!--The End of the Links Section-->

@@ -6,8 +6,13 @@
 }
 
 <body style="background-color:ghostwhite;">
-    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid" height="50" width="50" /></div>
-    <div class="container p-3 mb-5 pb-5 mt-3">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="d-flex justify-content-around py-2">
+        <a asp-controller="Tutorial" asp-action="DataSource" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+        <a asp-controller="Tutorial" asp-action="CanvasAppInterface" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+    </div>
+    <div class="container p-3 mt-3">
         <h1 class="text-center fs-2">Creating First Canvas App</h1>
         <p class="mt-4">To create a new Canvas Application, go to the Solutions tab and select the previously created solution.</p>
         <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/getting started with power apps/4. creating a new canvas app and overview of pwer app studio/creating canvas app 1.png" class="img-fluid" /></div>
@@ -19,7 +24,12 @@
             <li>Specify the name of the app and choose its format, whether it is for tablet or phone.</li>
         </ul>
         <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/getting started with power apps/4. creating a new canvas app and overview of pwer app studio/creating canvas app 3.png" class="img-fluid" /></div>
-        <p class=" text-center mb-4 pb-4">Before moving further let me give you an overview of <span class="fw-bold">“Power Apps canvas Studio layout”</span>.</p>
+        <p class=" text-center mb-4">Before moving further let me give you an overview of <span class="fw-bold">“Power Apps canvas Studio layout”</span>.</p>
+    </div>
+    <div class="d-flex justify-content-around pb-3">
+        <a asp-controller="Tutorial" asp-action="DataSource" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+        <a asp-controller="Tutorial" asp-action="CanvasAppInterface" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
     </div>
         </body>
 

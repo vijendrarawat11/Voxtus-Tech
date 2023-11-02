@@ -6,8 +6,13 @@
 }
 
 <body style="background-color:ghostwhite;">
-    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid" height="50" width="50" /></div>
-    <div class="container p-3 mb-5 pb-5 mt-3">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="d-flex justify-content-around py-2">
+        <a asp-controller="Tutorial" asp-action="CreatingCanvasapp" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+        <a asp-controller="Tutorial" asp-action="Layoutandcomponents" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+    </div>
+    <div class="container p-3 mt-3">
         <h1 class="text-center fs-2">Understanding the Canvas App Interface</h1>
         <p class="mt-4">
             In the Canvas app interface, individuals design and customize mobile or web applications. This interface comprises screens, controls (such as buttons and text fields), data sources, and formulas used for creating app functionality. It is possible to personalize the application's appearance, integrate data from various sources, and establish navigation between screens. The app development process includes steps like testing, debugging, and publishing. Canvas apps are a suitable choice for constructing custom, visually appealing applications without the necessity for extensive coding
@@ -54,7 +59,12 @@
         </div>
         <p class="fw-semibold mt-4">Right Pane:</p>
         <p>Let's proceed to the Properties menu on the right side. Within it, Custom properties for the selected elements can be find and advanced properties where functions can be added.</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4 pb-5"><img src="~/images/learn/getting started with power apps/4. creating a new canvas app and overview of pwer app studio/creating canvas app 8.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/getting started with power apps/4. creating a new canvas app and overview of pwer app studio/creating canvas app 8.png" class="img-fluid" /></div>
+    </div>
+    <div class="d-flex justify-content-around pb-3">
+        <a asp-controller="Tutorial" asp-action="CreatingCanvasapp" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+        <a asp-controller="Tutorial" asp-action="Layoutandcomponents" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
     </div>
         </body>
 

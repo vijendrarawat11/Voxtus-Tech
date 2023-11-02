@@ -1,0 +1,166 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<main id="main">
+    <section>
+        <div class="container bg-light service-details align-items-center" style="border:2px solid black">
+            <div class="mt-2 mx-2">
+                <h2 class="mt-4 mx-3 text-center">
+                    How to Effectively Use Power Automate Filter Query
+                </h2><hr />
+            </div>
+            <div class="mt-2 mx-3 bg-white pt-1 pb-3">
+                <p class="mt-4 mx-3">Power Automate is a powerful tool for automating tasks, and one of its handy features is the filter query. This feature allows users to retrieve specific data from various sources, including SharePoint and SharePoint Online. In this article, we'll explore how to use filter queries in Power Automate without getting bogged down in technical jargon.</p>
+                <h4 class="mt-4 mx-3">Understanding Power Automate's Filter Query</h4>
+                <p class="mt-4 mx-3">Before we dive into the practical steps, let's grasp the basics. Power Automate, formerly known as Microsoft Flow, empowers users to create automated workflows. The filter query acts as a search filter, enabling you to refine a large dataset and extract only the items that meet specific criteria.</p>
+                
+            </div>
+            <div class="mt-2 bg-white pt-1 pb-3 d-flex justify-content-center">
+            <table class="mt-4 text-center " style="background-color:#CBE0F5">
+                <tr>
+                    <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke;"><h5 class="text-center">Expression</h5></th>
+                    <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke;"><h5 class="text-center">Description</h5></th>
+                    <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke;"><h5 class="text-center">Example</h5></th>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">eq</td>
+                    <td style="border:1px solid black">Equals</td>
+                    <td style="border:1px solid black">Category eq 'Electronics'</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">ne</td>
+                    <td style="border:1px solid black">Not equals</td>
+                    <td style="border:1px solid black">Status ne 'Inactive'</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">gt</td>
+                    <td style="border:1px solid black">Greater than</td>
+                    <td style="border:1px solid black">Price gt 50</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">ge</td>
+                    <td style="border:1px solid black">Greater than or equal to</td>
+                    <td style="border:1px solid black">TotalAmount ge 100</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">lt</td>
+                    <td style="border:1px solid black">Less than</td>
+                    <td style="border:1px solid black">Price lt 30</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">le</td>
+                    <td style="border:1px solid black">Less than or equal to</td>
+                    <td style="border:1px solid black">Salary le 50000</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">eq</td>
+                    <td style="border:1px solid black">Equals</td>
+                    <td style="border:1px solid black">Category eq 'Electronics'</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">startswith</td>
+                    <td style="border:1px solid black">Field starts with</td>
+                    <td style="border:1px solid black">startswith(Name, 'A')</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">endswith</td>
+                    <td style="border:1px solid black">Field ends with </td>
+                    <td style="border:1px solid black">endswith(Name, 'I')</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">substringof</td>
+                    <td style="border:1px solid black">Field contains the substring</td>
+                    <td style="border:1px solid black">substringof('Laptop', Name)</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">indexof</td>
+                    <td style="border:1px solid black">Name field contains the letter "X" at position 2</td>
+                    <td style="border:1px solid black">indexof(Name, 'X') eq 1</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">replace</td>
+                    <td style="border:1px solid black">Replace  field value</td>
+                    <td style="border:1px solid black">Replace(Name, 'xyz', 'abc') </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">substring</td>
+                    <td style="border:1px solid black">Returns Boolean value for string containing ‘ABC'.</td>
+                    <td style="border:1px solid black">substring(ProductCode, 2) eq 'ABC'</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">tolower</td>
+                    <td style="border:1px solid black">Change Field to Lowercase</td>
+                    <td style="border:1px solid black">tolower(Name)</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">toupper</td>
+                    <td style="border:1px solid black">Change field to Uppercase</td>
+                    <td style="border:1px solid black">toupper(Name)</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black">concat</td>
+                    <td style="border:1px solid black">Concatenate fields </td>
+                    <td style="border:1px solid black">concat(Brand, ' ', Model)</td>
+                </tr>
+            </table>
+            </div>
+                </div>
+                </section>
+                </main>
+
+
+<!--Our Links Section Start Here-->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<script src="~/assets/js/main.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
+
+
+
+<!--The End of the Links Section-->

@@ -82,44 +82,44 @@ namespace Voxtus_Tech.Controllers
             }
         }
 
-        [Route("power-apps/bar-code-reader")]
+        [Route("blog/power-apps/bar-code-reader")]
         public ActionResult BarCodeReader()
         {
             return View();
         }
-        [Route("power-apps/multiple-maker-feature")]
+        [Route("blog/power-apps/multiple-maker-feature")]
         public ActionResult MultipleMakerFeature()
 		{
 			return View();
 		}
-        [Route("power-apps/canvas-app-vs-model-driven-app")]
+        [Route("blog/power-apps/canvas-app-vs-model-driven-app")]
         public ActionResult CanvasOrModelDrivenApp()
         {
             return View();
         }
-        [Route("power-apps/customizing-controls")]
+        [Route("blog/power-apps/customizing-controls")]
         public ActionResult CustomizingControls()
         {
             return View();
         }
         
-        [Route("power-apps/building-custom-forms")]
+        [Route("blog/power-apps/building-custom-forms")]
         public ActionResult BuildingCustomForms()
         {
             return View();
         }
 
-        [Route("power-apps/environment-variables")]
+        [Route("blog/power-apps/environment-variables")]
         public ActionResult Environment_variables()
         {
             return View();
         }
-        [Route("power-apps/using-git-for-version-control")]
+        [Route("blog/power-apps/using-git-for-version-control")]
         public ActionResult Using_Git_for_Version_Control()
         {
             return View();
         }
-        [Route("power-apps/using-with-function")]
+        [Route("blog/power-apps/using-with-function")]
         public ActionResult Using_with_function()
         {
             return View();

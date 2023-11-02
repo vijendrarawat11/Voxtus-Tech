@@ -1,0 +1,171 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<main id="main">
+    <section>
+        <div class="container bg-light service-details align-items-center" style="border:2px solid black">
+            <div class="mt-2 mx-2">
+                <h2 class="mt-4 mx-3 text-center">
+                    How to Import Excel Data in SharePoint List through Power Automate Flow.
+                </h2><hr />
+            </div>
+            <div class="mt-2 mx-3 bg-white pt-1 pb-3">
+                <p class="mt-4 mx-3">In today's digital workplace, businesses often need to streamline data management and automate repetitive tasks to enhance productivity. Microsoft Power Automate, a robust workflow automation tool, empowers users to achieve this by seamlessly integrating various Microsoft services and external applications. In this blog post, we will explore how to leverage Power Automate to import Excel data into a SharePoint list effortlessly.</p>
+                <h4 class="mt-4 mx-3">Why Import Excel Data into SharePoint?</h4>
+                <p class="mt-4 mx-3">SharePoint is a powerful collaboration platform used for document management, data storage, and more. By importing Excel data into a SharePoint list, you can:</p>
+                <ol class="mt-2 mx-3">
+                    <li>Centralize and organize your data.</li>
+                    <li>Facilitate real-time collaboration on data.</li>
+                    <li>Take advantage of SharePoint's security and access control features.</li>
+                    <li>Create interactive dashboards and reports with Power BI.</li>
+                    <li>Automate data synchronization between Excel and SharePoint.</li>
+                </ol>
+                <h5 class="mt-4 mx-3">Prerequisites:</h5>
+                <p class="mt-4 mx-3">Before we begin, ensure you have the following:</p>
+                <ol class="mt-2 mx-3">
+                    <li>A valid office 365 subscription.</li>
+                    <li>Access to both the Excel file containing your data and the SharePoint list where you want to import the data.</li>
+                </ol>
+                <p class="mt-4 mx-3 fw-semibold fs-5 text-center text-secondary">* Steps to Import Excel Data into SharePoint List:</p>
+                <ul class="mt-3 mx-1 fw-semibold">
+                    <li>
+                        Create a New Power Automate Flow:
+                    </li>
+                </ul>
+                <p class="mx-3">Log in to your Power Automate account and click <span class="fw-bold">"Create"</span> to start a new flow.</p>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/importexceldatainsharepoint/screenshot_1.png" class="img-fluid border" /></div>
+                <ul class="mt-3 mx-1 fw-semibold">
+                    <li>
+                        Choose a Trigger:
+                    </li>
+                </ul>
+                <p class="mx-3">Select a trigger for your flow. Common triggers include <span class="fw-bold">"When a file is created or modified (OneDrive for Business)"</span> or <span class="fw-bold">"Recurrence"</span> if you want the import to happen at specific intervals.</p>
+                <p class="mx-3">In this scenario I am choosing Manual Trigger.</p>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/importexceldatainsharepoint/screenshot_2.png" class="img-fluid border" /></div>
+                <ul class="mt-3 mx-1 fw-semibold">
+                    <li>
+                        Add an Action to Get Data from Excel:
+                    </li>
+                </ul>
+                <p class="mx-3">After setting up the trigger, add an action to retrieve data from the Excel file. Search for the <span class="fw-bold">"Excel"</span> connector and choose the appropriate operation, which is <span class="fw-bold">"List rows present in table"</span> for this scenario. </p>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/importexceldatainsharepoint/screenshot_3.png" class="img-fluid border" /></div>
+                <ul class="mt-3 mx-1 fw-semibold">
+                    <li>
+                        Configure the Excel Action:
+                    </li>
+                </ul>
+                <p class="mx-3">Specify the Excel file and sheet from which you want to extract data. You can use dynamic content from the trigger to specify the file path. </p>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/importexceldatainsharepoint/screenshot_4.png" class="img-fluid border" /></div>
+                <ul class="mt-3 mx-1 fw-semibold">
+                    <li>
+                        Add an Action to Create SharePoint List Items:
+                    </li>
+                </ul>
+                <p class="mx-3">After retrieving data from Excel, add an action to create SharePoint list items. Search for the <span class="fw-bold">"SharePoint"</span> connector and select the <span class="fw-bold">"Create item"</span> action. </p>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/importexceldatainsharepoint/screenshot_5.png" class="img-fluid border" /></div>
+                <ul class="mt-3 mx-1 fw-semibold">
+                    <li>
+                        Configure the SharePoint Action:
+                    </li>
+                </ul>
+                <p class="mx-3">Choose the SharePoint site and list where you want to insert the data.</p>
+                <p class="mx-3">Map the Excel data fields to the SharePoint list columns using dynamic content from the Excel step.</p>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/importexceldatainsharepoint/screenshot_5.png" class="img-fluid border" /></div>
+                <ul class="mt-3 mx-1 fw-semibold">
+                    <li>
+                        Save and Test Your Flow:
+                    </li>
+                </ul>
+                <p class="mx-3">Save your flow and run a test by adding a new Excel file to the specified folder. Your flow will automatically retrieve data from the Excel sheet and insert it into the SharePoint list.</p>
+                <div class="container d-flex flex-row justify-content-around mt-4 mb-4 gap-1">
+                    <b>a.</b>
+                    <img src="~/images/blog/power automate/createexcelthroughpowerautomate/screenshot_10.png" class="img-fluid border" width="45%" />
+                    <b>b.</b>
+                    <img src="~/images/blog/power automate/createexcelthroughpowerautomate/screenshot_11.png" class="img-fluid border" width="45%" />
+                </div>
+                <div class="container d-flex flex-row justify-content-around align-content-center mt-4 mb-4 gap-1">
+                    <b>c.</b>
+                    <img src="~/images/blog/power automate/createexcelthroughpowerautomate/screenshot_12.png" class="img-fluid border" width="45%" />
+                    <b>d.</b>
+                    <img src="~/images/blog/power automate/createexcelthroughpowerautomate/screenshot_13.png" class="img-fluid border h-75" width="45%" />
+                </div>
+                <div class="container d-flex flex-row justify-content-around align-content-center mt-4 mb-4 gap-1">
+                    <b>e.</b>
+                    <img src="~/images/blog/power automate/createexcelthroughpowerautomate/screenshot_14.png" class="img-fluid border h-75" width="45%" />
+                    <b>f.</b>
+                    <img src="~/images/blog/power automate/createexcelthroughpowerautomate/screenshot_15.png" class="img-fluid border" width="45%" />
+                </div>
+                <p class="mt-4 mx-3">We've explored how to seamlessly import Excel data into SharePoint lists using Power Automate Flow. This powerful integration simplifies data management, enhances collaboration, and boosts productivity. By automating this process, you can save time and reduce the risk of errors, allowing you to focus on more strategic tasks. Harness the potential of Power Automate Flow to streamline your data workflows and unlock new possibilities for your SharePoint environment. </p>
+                <p class="mt-4 ps-5 pe-5 mt-3 fw-semibold text-center text-secondary">Thank you for joining us on this journey, and stay tuned for more valuable insights and tips!</p>
+            </div>
+            <hr />
+            <div class="row mb-2">
+                <h6 class="text-center text-primary">
+                    If you have any doubts or questions related to this blog, you can Contact us by Email: info@voxtus.com
+                </h6>
+            </div>
+
+            <div class="row">
+                <div class="col-8"></div>
+                <div class="col-4"><p><b>Abhishek Kumar<br />Power Apps Consultant</b></p></div>
+            </div>
+        </div>
+        <div class="container-fluid pt-3"><a style="text-decoration:none" asp-controller="PowerAutomate" asp-action="Index"><h5 class="text-primary"><i class="bi bi-arrow-left-circle"></i> Go back to Power Automate Blogs</h5></a></div>
+ </section>
+</main>
+
+
+<!--Our Links Section Start Here-->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<script src="~/assets/js/main.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
+
+
+
+<!--The End of the Links Section-->
