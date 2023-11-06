@@ -199,7 +199,7 @@
         <button class="navbar-toggler mx-5 mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             &#9776;
         </button>
-        <div class="row flex-column-reverse flex-lg-row">
+        <div class="row flex-column-reverse flex-lg-row d-lg-block">
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Related Post</h5>
@@ -431,5 +431,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+
 </body>
 </html>
