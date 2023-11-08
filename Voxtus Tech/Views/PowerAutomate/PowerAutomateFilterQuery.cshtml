@@ -18,99 +18,254 @@
                 <p class="mt-4 mx-3">Before we dive into the practical steps, let's grasp the basics. Power Automate, formerly known as Microsoft Flow, empowers users to create automated workflows. The filter query acts as a search filter, enabling you to refine a large dataset and extract only the items that meet specific criteria.</p>
                 
             </div>
-            <div class="mt-2 bg-white pt-1 pb-3 d-flex justify-content-center">
-            <table class="mt-4 text-center " style="background-color:#CBE0F5">
-                <tr>
-                    <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke;"><h5 class="text-center">Expression</h5></th>
-                    <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke;"><h5 class="text-center">Description</h5></th>
-                    <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke;"><h5 class="text-center">Example</h5></th>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">eq</td>
-                    <td style="border:1px solid black">Equals</td>
-                    <td style="border:1px solid black">Category eq 'Electronics'</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">ne</td>
-                    <td style="border:1px solid black">Not equals</td>
-                    <td style="border:1px solid black">Status ne 'Inactive'</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">gt</td>
-                    <td style="border:1px solid black">Greater than</td>
-                    <td style="border:1px solid black">Price gt 50</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">ge</td>
-                    <td style="border:1px solid black">Greater than or equal to</td>
-                    <td style="border:1px solid black">TotalAmount ge 100</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">lt</td>
-                    <td style="border:1px solid black">Less than</td>
-                    <td style="border:1px solid black">Price lt 30</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">le</td>
-                    <td style="border:1px solid black">Less than or equal to</td>
-                    <td style="border:1px solid black">Salary le 50000</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">eq</td>
-                    <td style="border:1px solid black">Equals</td>
-                    <td style="border:1px solid black">Category eq 'Electronics'</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">startswith</td>
-                    <td style="border:1px solid black">Field starts with</td>
-                    <td style="border:1px solid black">startswith(Name, 'A')</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">endswith</td>
-                    <td style="border:1px solid black">Field ends with </td>
-                    <td style="border:1px solid black">endswith(Name, 'I')</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">substringof</td>
-                    <td style="border:1px solid black">Field contains the substring</td>
-                    <td style="border:1px solid black">substringof('Laptop', Name)</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">indexof</td>
-                    <td style="border:1px solid black">Name field contains the letter "X" at position 2</td>
-                    <td style="border:1px solid black">indexof(Name, 'X') eq 1</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">replace</td>
-                    <td style="border:1px solid black">Replace  field value</td>
-                    <td style="border:1px solid black">Replace(Name, 'xyz', 'abc') </td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">substring</td>
-                    <td style="border:1px solid black">Returns Boolean value for string containing ‘ABC'.</td>
-                    <td style="border:1px solid black">substring(ProductCode, 2) eq 'ABC'</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">tolower</td>
-                    <td style="border:1px solid black">Change Field to Lowercase</td>
-                    <td style="border:1px solid black">tolower(Name)</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">toupper</td>
-                    <td style="border:1px solid black">Change field to Uppercase</td>
-                    <td style="border:1px solid black">toupper(Name)</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid black">concat</td>
-                    <td style="border:1px solid black">Concatenate fields </td>
-                    <td style="border:1px solid black">concat(Brand, ' ', Model)</td>
-                </tr>
-            </table>
+            <div class="mt-2 mx-3 bg-white pt-1 pb-3 d-flex justify-content-around">
+                <table class="mt-4 text-center" style="background-color:#CBE0F5;">
+                    <tr>
+                        <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke;"><p class="text-center">Expression</p></th>
+                        <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke;"><p class="text-center">Description</p></th>
+                        <th style="border:2px solid black;background-color:#266AAD;color:whitesmoke;"><p class="text-center">Example</p></th>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">eq</td>
+                        <td style="border:1px solid black">Equals</td>
+                        <td style="border:1px solid black">Category eq 'Electronics'</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">ne</td>
+                        <td style="border:1px solid black">Not equals</td>
+                        <td style="border:1px solid black">Status ne 'Inactive'</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">gt</td>
+                        <td style="border:1px solid black">Greater than</td>
+                        <td style="border:1px solid black">Price gt 50</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">ge</td>
+                        <td style="border:1px solid black">Greater than or equal to</td>
+                        <td style="border:1px solid black">TotalAmount ge 100</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">lt</td>
+                        <td style="border:1px solid black">Less than</td>
+                        <td style="border:1px solid black">Price lt 30</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">le</td>
+                        <td style="border:1px solid black">Less than or equal to</td>
+                        <td style="border:1px solid black">Salary le 50000</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">eq</td>
+                        <td style="border:1px solid black">Equals</td>
+                        <td style="border:1px solid black">Category eq 'Electronics'</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">startswith</td>
+                        <td style="border:1px solid black">Field starts with</td>
+                        <td style="border:1px solid black">startswith(Name, 'A')</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">endswith</td>
+                        <td style="border:1px solid black">Field ends with </td>
+                        <td style="border:1px solid black">endswith(Name, 'I')</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">substringof</td>
+                        <td style="border:1px solid black">Field contains the substring</td>
+                        <td style="border:1px solid black">substringof('Laptop', Name)</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">indexof</td>
+                        <td style="border:1px solid black">Name field contains the<br /> letter "X" at position 2</td>
+                        <td style="border:1px solid black">indexof(Name, 'X') eq 1</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">replace</td>
+                        <td style="border:1px solid black">Replace  field value</td>
+                        <td style="border:1px solid black">Replace(Name, 'xyz', 'abc') </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">substring</td>
+                        <td style="border:1px solid black">Returns Boolean value for <br />string containing ‘ABC'.</td>
+                        <td style="border:1px solid black">substring(ProductCode, 2)<br /> eq 'ABC'</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">tolower</td>
+                        <td style="border:1px solid black">Change Field to Lowercase</td>
+                        <td style="border:1px solid black">tolower(Name)</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">toupper</td>
+                        <td style="border:1px solid black">Change field to Uppercase</td>
+                        <td style="border:1px solid black">toupper(Name)</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black">concat</td>
+                        <td style="border:1px solid black">Concatenate fields </td>
+                        <td style="border:1px solid black">concat(Brand, ' ', Model)</td>
+                    </tr>
+                </table>
             </div>
-                </div>
-                </section>
-                </main>
+            <div class="mt-2 mx-3 bg-white pt-1 pb-3">
+                <h4 class="mt-4 mx-3">A Step-by-Step Guide to Filter Queries</h4>
+                <p class="mt-4 mx-3">Here's a simplified step-by-step guide to using filter queries in Power Automate:</p>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Sign In:</span> Begin by logging into Power Automate.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_1.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Create a Flow:</span> Click on <span class="fw-bold">"Create"</span> in the menu.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_2.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Choose Flow Type:</span> Select <span class="fw-bold">"Instant Cloud Flow"</span> from the available options.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_3.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Name Your Flow:</span> Provide a name for your flow and choose a trigger. The trigger determines when the flow will run; for instance, you can opt for <span class="fw-bold">"Manually trigger a flow"</span>.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_4.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Create the Flow:</span> Click <span class="fw-bold">"Create"</span> to set up your flow.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_5.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Add a New Step:</span> In the next step, click <span class="fw-bold">"<i class="bi bi-plus-lg"></i>New step"</span> to add a new action to your flow.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_6.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Select "Get Items":</span> Search for <span class="fw-bold">"Get items"</span> and select this action.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_7.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Specify Site and List:</span> In the <span class="fw-bold">"Site Address"</span> field, select the SharePoint site, and in the <span class="fw-bold">"List Name"</span> field, choose the list from which you want to fetch items.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_8.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Utilize the Filter Query:</span> In the final step, use the <span class="fw-bold">"Filter Query"</span> field to define your filter conditions. This is where the magic happens.</li>
+                </ul>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_9.png" class="img-fluid  border" /></div>
 
+            </div>
+            <div class="mt-2 mx-3 bg-white pt-1 pb-3">
+                <h4 class="mt-4 mx-3">Examples of Filter Queries in Action</h4>
+                <p class="mt-4 mx-3">Let's explore some straightforward examples to illustrate filter queries:</p>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Filter by Single field:</span> If you have a list of Student Details and want to see only Students from particular <span class="fw-bold">"Location"</span>, use this filter query: </li>
+                </ul>
+                <div class="container mt-4 d-flex align-items-center justify-content-between border">
+                    <div class="input-group ms-lg-5 me-lg-5 mt-lg-5 mb-lg-5 mt-2 mb-2 h-50">
+                        <input type="text" id="textToCopy1" class="form-control" value="Location eq 'Mumbai'" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary copy-button" data-clipboard-target="#textToCopy1">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_10.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Multiple Conditions:</span> Suppose we have a <span class="fw-bold">"Class"</span> column and a <span class="fw-bold">"FeeStatus"</span> column and in Student Details. To fetch Students with Fee status with Due Status, use this filter query:</li>
+                </ul>
+                <div class="container mt-4 d-flex align-items-center justify-content-between border">
+                    <div class="input-group ms-lg-5 me-lg-5 mt-lg-5 mb-lg-5 mt-2 mb-2 h-50">
+                        <input type="text" id="textToCopy2" class="form-control" value="Class eq '5' and FeeStatus eq 'Due'" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary copy-button" data-clipboard-target="#textToCopy2">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_11.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Lookup Field:</span> If you have a SharePoint list with a lookup field named <span class="fw-bold">"Department"</span> and you want to retrieve items where the department is <span class="fw-bold">"Marketing"</span>, you can use the following example query:</li>
+                </ul>
+                <div class="container mt-4 d-flex align-items-center justify-content-between border">
+                    <div class="input-group ms-lg-5 me-lg-5 mt-lg-5 mb-lg-5 mt-2 mb-2 h-50">
+                        <input type="text" id="textToCopy3" class="form-control" value="Department/Title eq 'Marketing'" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary copy-button" data-clipboard-target="#textToCopy3">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_11.png" class="img-fluid  border" /></div>
+                <ul class="mx-3">
+                    <li><span class="fw-semibold">Filtering Date Fields:</span> If you have a SharePoint list with date fields <span class="fw-bold">"ProjectStartDate"</span> and <span class="fw-bold">"ProjectEndDate"</span> and you want to fetch items where the project is currently ongoing (i.e., the ProjectStartDate is before or equal to today, and the ProjectEndDate is after or equal to today), you can use the following example query:</li>
+                </ul>
+                <div class="container mt-4 d-flex align-items-center justify-content-between border">
+                    <div class="input-group ms-lg-5 me-lg-5 mt-lg-5 mb-lg-5 mt-2 mb-2 h-50">
+                        <div></div>
+                        <input type="text" id="textToCopy4" class="form-control" value="@Html.Raw("(ProjectStartDate le '@{utcNow()}' and ProjectEndDate ge '@{utcNow()}')")" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary copy-button" data-clipboard-target="#textToCopy4">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/power automate/PowerAutomateFilterQuery/Screenshot_11.png" class="img-fluid  border" /></div>
+                <p class="mt-4 text-center fs-6 fw-bold text-secondary">Note: The filter query should use the field's internal name. If the name contains spaces, replace them with 'x0020'.</p>
+            </div>
+            <div class="mt-2 mx-3 bg-white pt-1 pb-3">
+                <h4 class="mt-4 mx-3">Filter Query Tips</h4>
+                <div class="p-4 mt-4" style="background-color:#CBE0F5;">
+                <ul class="mx-3 border" >
+                    <li>You can use various operators like eq (equals), ne (not equals), gt (greater than), ge (greater than or equal to), lt (less than), and le (less than or equal to).</li>
+                    <li>Functions like startswith(Fieldname, 'string'), endswith(Fieldname, 'string'), and substringof('string', Fieldname) can be used for text fields.</li>
+                    <li>For date and time, functions like day(), month(), year(), hour(), minute(), second(), and now() are available.</li>
+                </ul>
+                </div>
+                <h4 class="mt-4 mx-3">Best Practices for Using Filter Queries in Power Automate</h4>
+                <p class="mt-4 mx-3">Filter queries in Power Automate can significantly enhance the performance and precision of your workflows, particularly when working with data sources like SharePoint. To make the most of this feature, it's essential to follow best practices. Here are some comprehensive guidelines to help you use filter queries effectively:</p>
+                <ol class="mx-3 d-flex flex-column gap-3">
+                    <li><span class="fw-semibold">Understand Data Types Thoroughly:</span> Filter query behavior varies with different data types. For instance, text and choice fields require single quotes around the value, while number and Boolean fields do not. Familiarize yourself with the data types you're working with to apply filter queries correctly.</li>
+                    <li><span class="fw-semibold">Employ Logical Operators:</span> Logical operators like “and” and “or” are your allies for combining multiple conditions in filter queries. Utilize these operators to create intricate filtering logic that matches your specific requirements.</li>
+                    <li><span class="fw-semibold">Leverage OData Functions:</span> OData functions like startswith(), endswith(), and substringof() can be potent allies when crafting complex queries. These functions empower you to filter data with precision, so explore their usage for more refined filtering.</li>
+                    <li><span class="fw-semibold">ISO 8601 Format for Dates:</span> When dealing with Date and Time columns, ensure your date values adhere to the ISO 8601 format (YYYY-MM-DD). This standardized format prevents date-related issues in your filter queries.</li>
+                    <li><span class="fw-semibold">Test Your Queries Vigorously:</span> Always test your filter queries before deploying them in production workflows. Even a small syntax error can lead to unexpected results, so verify that your queries return the expected data.</li>
+                </ol>
+                <h4 class="mt-4 mx-3">Common Mistakes to Avoid</h4>
+                <p class="mt-4 mx-3">As you navigate the world of filter queries in Power Automate, watch out for these common pitfalls:</p>
+                <ol class="mx-3 d-flex flex-column gap-3">
+                    <li><span class="fw-semibold">Case Sensitivity Matters:</span> Remember that Power Automate is case-sensitive when it comes to field names in OData queries. Ensure that your field names match exactly, including capitalization.</li>
+                    <li><span class="fw-semibold">SharePoint's Internal Field Names:</span> SharePoint often assigns internal field names that differ from the field's display name. Ignoring this distinction can lead to filter queries not functioning as anticipated. Always use the correct internal field names.</li>
+                    <li><span class="fw-semibold">Quotes and Data Types:</span> Misusing quotes can lead to issues in filter queries. Apply single quotes around text values and none around numerical or Boolean values. Failing to do so can result in errors.</li>
+                    <li><span class="fw-semibold">Proper Date Formats:</span> Date fields should be formatted correctly in ISO 8601 style (YYYY-MM-DD) in your filter queries. Using an incorrect date format can cause your queries to yield unexpected results.</li>
+                    <li><span class="fw-semibold">Delegation Consideration:</span> If your workflow involves processing a substantial volume of data, pay attention to delegation. Not all filter query operations can be delegated, so be cautious and check for delegation warnings.</li>
+                    <li><span class="fw-semibold">Special Character Escaping:</span> When special characters are present in your filter query, ensure they are escaped correctly to prevent unexpected errors in your workflows.</li>
+                </ol>
+                <p class="mt-5 mx-3 text-center">By following these simplified guidelines, you can effectively use filter queries in Power Automate to streamline your workflows and get the data you need, all while keeping things simple and straightforward.</p>
+            </div>
+            <hr />
+            <div class="row mb-2">
+                <h6 class="text-center text-primary">
+                    If you have any doubts or questions related to this blog, you can Contact us by Email: info@voxtus.com
+                </h6>
+            </div>
+
+            <div class="row">
+                <div class="col-8"></div>
+                <div class="col-4"><p><b>Abhishek Kumar<br />Power Apps Consultant</b></p></div>
+            </div>
+        </div>
+        <div class="container-fluid pt-3"><a style="text-decoration:none" asp-controller="PowerAutomate" asp-action="Index"><h5 class="text-primary"><i class="bi bi-arrow-left-circle"></i> Go back to Power Automate Blogs</h5></a></div>
+    </section>
+ </main>
+<script>
+    document.querySelectorAll(".copy-button").forEach(function (button) {
+        button.addEventListener("click", function () {
+            var textToCopy = this.getAttribute("data-clipboard-target");
+            var input = document.querySelector(textToCopy);
+
+            input.select();
+            document.execCommand("copy");
+
+            // Change the button text to indicate success
+            this.innerHTML = "Copied!";
+
+            // Reset the button text after a short delay
+            setTimeout(function () {
+                button.innerHTML = "Copy";
+            }, 1000);
+        });
+    });
+</script>
 
 <!--Our Links Section Start Here-->
 <link href="~/assets/css/style.css" rel="stylesheet" />

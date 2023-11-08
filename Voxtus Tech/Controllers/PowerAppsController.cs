@@ -124,6 +124,11 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("blog/power-apps/auto-scrollable-gallery-control-in-power-apps")]
+        public ActionResult AutoScrollableGalleryControl()
+        {
+            return View();
+        }
 
     }
 }
