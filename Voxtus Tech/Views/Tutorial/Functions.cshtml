@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_TutorialLayout.cshtml";
+}
+
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container p-3 mt-3 pb-5 mb-4">
+        <h1 class="text-center fs-2 mt-3">Functions</h1>
+        <ul class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li><span class="fw-semibold">Definition:</span> Functions in Power Apps are pre-defined operations or actions that allow you to perform a wide range of tasks within your app. These include mathematical calculations, data manipulation, conditional logic, and more.</li>
+            <li><span class="fw-semibold">Purpose:</span> Functions are used to create dynamic behavior and automate processes in your app. They provide a way to interact with data sources, manipulate data, and control the flow of your app.</li>
+            <li><span class="fw-semibold">Types:</span>
+                <ul>
+                    <li><span class="fw-semibold">Built-in Functions:</span> Power Apps includes a comprehensive set of built-in functions that can be used to perform specific tasks, such as <span class="fw-bold">`Concatenate`</span>, <span class="fw-bold">`Filter`</span>, <span class="fw-bold">`If`</span>, <span class="fw-bold">`Count`</span>, and many more.</li>
+                    <li><span class="fw-semibold">Custom Functions:</span> You can define your own custom functions using the Power Apps formula language. These functions can simplify complex calculations and streamline app logic.</li>
+                    <li><span class="fw-semibold">Context Functions:</span> Context functions are designed to work within the context of a specific control or item, allowing you to reference properties or values related to that context.</li>
+                </ul></li>
+        </ul>
+        <p>Example- we have used <span class="fw-bold">“datediff”</span> and round function to calculate age in this application.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/variables & functions/screenshot_5.png" class="img-fluid" /></div>
+        <p class="text-center mb-4">Both variables and functions play a crucial role in creating dynamic, data-driven, and interactive apps in Power Apps. They provide the flexibility and power to build applications that meet your specific business requirements.</p>
+        <div class="d-flex justify-content-around pb-3">
+            <a asp-controller="Tutorial" asp-action="Variables" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+            <a asp-controller="Tutorial" asp-action="Integratingdatasources" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+        </div>
+    </div>
+</body>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>

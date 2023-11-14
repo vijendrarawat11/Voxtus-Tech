@@ -6,7 +6,7 @@ namespace Voxtus_Tech.Controllers
     public class TeamController : Controller
     {
         // GET: TeamController
-        [Route("teams")]
+        [Route("team")]
         public ActionResult Index()
         {
             return View();

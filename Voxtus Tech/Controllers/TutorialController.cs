@@ -1,5 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Voxtus_Tech.Controllers
 {
@@ -56,6 +60,36 @@ namespace Voxtus_Tech.Controllers
         }
         [Route("learn/canvas-application/build-a-canvas-application-quickly")]
         public IActionResult BuildCanvasAppQuickly()
+        {
+            return View();
+        }
+        [Route("learn/canvas-application/adding-screens")]
+        public IActionResult Addingscreens()
+        {
+            return View();
+        }
+        [Route("learn/canvas-application/customizing-screen-layouts")]
+        public IActionResult Customizingscreenlayouts()
+        {
+            return View();
+        }
+        [Route("learn/canvas-application/navigating-between-screens")]
+        public IActionResult Navigatingbetweenscreens()
+        {
+            return View();
+        }
+        [Route("learn/canvas-application/variables-(set,contex,collection)")]
+        public IActionResult Variables()
+        {
+            return View();
+        }
+        [Route("learn/canvas-application/functions")]
+        public IActionResult Functions()
+        {
+            return View();
+        }
+        [Route("learn/canvas-application/integrating-data-from-various-sources")]
+        public IActionResult Integratingdatasources()
         {
             return View();
         }

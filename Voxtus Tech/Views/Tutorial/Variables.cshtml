@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_TutorialLayout.cshtml";
+}
+
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container p-3 mt-3 pb-5 mb-4">
+        <h1 class="text-center fs-2 mt-3">Variables (Set, Contex, Collection)</h1>
+        <p>In Power Apps, variables and functions are fundamental concepts used to create dynamic and interactive apps. Here's a definition of variables and functions in Power Apps:</p>
+        <p class="fs-4">Variables:</p>
+        <ul class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li><span class="fw-semibold">Definition:</span> Variables in Power Apps are used to store and manage data temporarily within your app. They can hold different types of data, including text, numbers, Boolean values, and more.
+
+                <pre class="fw-semibold mt-3">
+                      Syntax: Local variable-Set(LocalVariableName, Value);
+                              EX-Set(LocalVar, "Hello, Power Apps!")
+                              Global Variable-Set(GlobalVariableName, Value);
+                              EX-Set(GlobalVar, "This is a global variable")</pre>
+            </li>
+            <li><span class="fw-semibold">Purpose:</span> Variables are often used for various purposes such as storing user input, creating calculations, managing app state, or storing intermediate values.</li>
+            <li><span class="fw-semibold">Scope:</span> Power Apps supports two main types of variables:</li>
+            <li><span class="fw-semibold">Local Variables:</span> These are limited in scope to a specific screen or context within the app. They are cleared when you navigate away from the screen.</li>
+            <li><span class="fw-semibold">Context Variables:</span> These have a broader scope and persist across screens within the app. They can be used to store and share data at the app or session level.</li>
+        </ul>
+        <p>So here is the example from app.</p>
+        <p>To implement this functionality, you can follow these steps:</p>
+        <ul>
+            <li>Select the text input within the first name data card and update its OnChange property to: <span class="fw-bold">"Set(VarFirstName, DataCardValue6.Text)"</span>.</li>
+        </ul>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/variables & functions/screenshot_1.png" class="img-fluid" /></div>
+        <ul>
+            <li>Then, choose the text input inside the last name data card and modify its OnChange property to: <span class="fw-bold">"Set(VarLastName, DataCardValue7.Text)"</span>.</li>
+        </ul>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/variables & functions/screenshot_2.png" class="img-fluid" /></div>
+        <ul>
+            <li>Lastly, select the full name data card and adjust its Default property to: <span class="fw-bold">"Concatenate(VarFirstName, " ", VarLastName)"</span>.</li>
+        </ul>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/variables & functions/screenshot_3.png" class="img-fluid" /></div>
+        <p>An example of <span class="fw-bold">“Collection”</span> is collecting data from the gallery is to utilize the <span class="fw-bold">"Collect(ColStudentData, Gallery2.AllItems)"</span> function within the <span class="fw-bold">"OnVisible"</span> property of the detail screen.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/variables & functions/screenshot_4.png" class="img-fluid" /></div>
+        <div class="d-flex justify-content-around pb-3">
+            <a asp-controller="Tutorial" asp-action="Navigatingbetweenscreens" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+            <a asp-controller="Tutorial" asp-action="Functions" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+        </div>
+    </div>
+</body>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>

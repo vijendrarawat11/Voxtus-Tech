@@ -107,3 +107,33 @@ hr.h-color{
     width:100%;
     padding-top:11px;
 }
+/*blog layout*/
+
+@media(max-width:767px) {
+    #blogside {
+        margin-left: -310px;
+        position: fixed;
+        min-height: 100%;
+        z-index: 1;
+    }
+
+        #blogside.active {
+            margin-left: 0;
+        }
+}
+#blogside {
+    background-color: white;
+    min-width: 310px;
+    max-width: 310px;
+    height:100%;
+    /*overflow-y: scroll;*/
+    transition: all 0.2s;
+}
+.sidebar1 {
+    height:100%
+}
+.main-container1 {
+    margin-top: 85px;
+    width: 100%;
+    padding-top: 26px;
+}

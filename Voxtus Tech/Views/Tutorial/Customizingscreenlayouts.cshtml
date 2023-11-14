@@ -1,0 +1,61 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_TutorialLayout.cshtml";
+}
+
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container p-3 mt-3 pb-5 mb-4">
+        <h1 class="text-center fs-2 mt-3">Customizing Screen Layouts</h1>
+        <p>Next, let's focus on the detail screen. Add a gallery to the detail screen and select <span class="fw-bold">"Student info"</span> as its data source. This will allow you to view records from the Dataverse.</p>
+        <ul>
+            <li>In the first screen <span class="fw-bold">(New Student Screen)</span>, add a button that enables navigation from the first screen to the second screen <span class="fw-bold">(Student Preview Screen)</span>.</li>
+        </ul>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/basic app building blocks/screenshot_3.png" class="img-fluid" /></div>
+        <ul>
+            <li>Here I have copied and pasted all the elements of the new student screen so that I don’t have to add containers for the next screen.</li>
+        </ul>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/basic app building blocks/screenshot_4.png" class="img-fluid" /></div>
+        <p>In the detail screen, after copying the data from the first screen, follow these steps:</p>
+        <ul>
+            <li>Select and delete the existing form from the detail screen.</li>
+            <li>Remove one button, and rename the remaining button to <span class="fw-bold">"Back".</span></li>
+            <li>Change the <span class="fw-bold">"OnSelect"</span> property of the <span class="fw-bold">"Back"</span> button to <span class="fw-bold">"Back()"</span>.</li>
+            <li>Modify the text of the header text label as needed.</li>
+        </ul>
+        <p>Now, in the detail screen, access the Insert menu from the top pane and choose the Vertical Gallery option. Select the appropriate data source for the gallery.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/basic app building blocks/screenshot_5.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/basic app building blocks/screenshot_6.png" class="img-fluid" /></div>
+        <p>After adding the gallery, select it, and change its <span class="fw-bold">"Flexible Height"</span> property to <span class="fw-bold">"ON"</span>. This will ensure that the gallery adjusts its height dynamically based on the content it contains.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/basic app building blocks/screenshot_7.png" class="img-fluid" /></div>
+        <p>Within the gallery, select the <span class="fw-bold">"Next"</span> button, and change its <span class="fw-bold">"OnSelect"</span> property to the following: <span class="fw-bold">"Navigate(ScrnEdit)"</span> This action will navigate to the <span class="fw-bold">"ScrnEdit"</span> screen when the button is clicked within the gallery.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/basic app building blocks/screenshot_8.png" class="img-fluid" /></div>
+        <p>In the last Edit screen, you can simplify the process by copying and pasting all the elements from the first screen, which includes the header and footer components. This will save you from having to recreate the header and footer from scratch.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/basic app building blocks/screenshot_9.png" class="img-fluid" /></div>
+        <p>Since you've copied all elements from the first screen to the last Edit screen, you can now make any necessary minor adjustments and customizations as needed to tailor the screen to your requirements. </p>
+        <p>In the last Edit screen, make the following changes:</p>
+        <ul>
+            <li>Change the name of the header as required.</li>
+            <li>Delete one button from the footer.</li>
+            <li>Select the remaining button in the footer and modify its <span class="fw-bold">"OnSelect"</span> property to the following: <span class="fw-bold">'SubmitForm(Form2_1)'</span>.</li>
+        </ul>
+        <p>With these changes, you will be able to update records in the Dataverse when this button is clicked.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/basic app building blocks/screenshot_10.png" class="img-fluid" /></div>
+        <p>
+            After that select the form and change its item property to <span class="fw-bold">
+                “Gallery2.Selected”</span>.
+            <br />
+            And change the default mode of the form new to edit.
+        </p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/basic app building blocks/screenshot_11.png" class="img-fluid" /></div>
+        <div class="d-flex justify-content-around pb-3">
+            <a asp-controller="Tutorial" asp-action="Addingscreens" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+            <a asp-controller="Tutorial" asp-action="Navigatingbetweenscreens" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+        </div>
+    </div>
+</body>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>

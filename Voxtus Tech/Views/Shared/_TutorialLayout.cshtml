@@ -146,7 +146,7 @@
             </div>
             <hr class="h-cloro" />
             <ul class="list-unstyled px-2 mb-2">
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 fs-5"><i class="bi bi-house-fill"></i>Home</a></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="Introduction" class="text-decoration-none px-3 py-2 fs-5"><i class="bi bi-house-fill"></i>Home</a></li>
             </ul>
             <ul class="list-unstyled px-2 mb-2">
                 <li class=""><p class="headp px-3 py-1 d-block">Introduction</p></li>
@@ -167,6 +167,22 @@
                 <li class=""><a asp-controller="Tutorial" asp-action="ControlsandProperties" class="menu-item text-decoration-none px-3 py-2 d-block">Controls and Properties</a></li>
                 <li class=""><a asp-controller="Tutorial" asp-action="BuildCanvasAppQuickly" class="menu-item text-decoration-none px-3 py-2 d-block">Build Canvas Application Quickly</a></li>
             </ul>
+            <ul class="list-unstyled px-2 mb-2">
+                <li class=""><p class="headp px-3 py-1 d-block">Basic App Building Blocks</p></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="Addingscreens" class=" menu-item text-decoration-none px-3 py-2 d-block">Adding screens</a></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="Customizingscreenlayouts" class="menu-item text-decoration-none px-3 py-2 d-block">Customizing screen layouts</a></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="Navigatingbetweenscreens" class="menu-item text-decoration-none px-3 py-2 d-block">Navigating between screens</a></li>
+            </ul>
+            <ul class="list-unstyled px-2 mb-2">
+                <li class=""><p class="headp px-3 py-1 d-block">Variables & Function</p></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="Variables" class=" menu-item text-decoration-none px-3 py-2 d-block">Variables (Set,Contex,Collection)</a></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="Functions" class="menu-item text-decoration-none px-3 py-2 d-block">Function</a></li>
+            </ul>
+            <ul class="list-unstyled px-2 mb-2">
+                <li class=""><p class="headp px-3 py-1 d-block">Connecting to Data Sources</p></li>
+                <li class=""><a asp-controller="Tutorial" asp-action="Integratingdatasources" class=" menu-item text-decoration-none px-3 py-2 d-block">Integrating data from various sources</a></li>
+                @* <li class=""><a asp-controller="Tutorial" asp-action="Functions" class="menu-item text-decoration-none px-3 py-2 d-block">Creating connections and configuring data sources</a></li> *@
+            </ul>
             <hr class="h-cloro" />
             <ul class="list-unstyled px-2">
                 <li class=""><a asp-controller="ContactUs" asp-action="Index" class="text-decoration-none px-3 py-2 fs-5 d-block"><i class="bi bi-headset"></i>Contact Us</a></li>
@@ -182,7 +198,7 @@
        
     <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" class="footert">
 
-        <div class="footer-newsletter">
+        @* <div class="footer-newsletter">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 mt-5">
@@ -190,15 +206,15 @@
                     </div>
                     <div class="col-lg-6">
                         <form action="" method="post">
-                            @*<input type="email" name="email"><input type="submit" value="Subscribe">*@
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
                             <input asp-for="Email" type="email" name="email" placeholder="Enter Your E-mail">
-                            @*<button class="btn-primary rounded-4" type="submit" value="Subscribe">Subscribe</button>*@
+                            <button class="btn-primary rounded-4" type="submit" value="Subscribe">Subscribe</button>
                             <button type="button" class="btn-outline-primary btn-sm rounded-4">Subscribe</button>
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> *@
 
         <div class="footer-top">
             <div class="container">
@@ -306,3 +322,55 @@
     </script> *@
 </body>
 </html>
+<!--Our Links Section Start Here-->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<script src="~/assets/js/main.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
+
+
+
+<!--The End of the Links Section-->

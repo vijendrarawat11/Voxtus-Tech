@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_TutorialLayout.cshtml";
+}
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container p-3 mt-3 pb-5 mb-4">
+        <h1 class="text-center fs-2 mt-3">Integrating Data From Various Sources</h1>
+        <p class="h4">Data Sources</p>
+        <p>Power Apps allows you to connect to various data sources to build custom apps and automate processes. These data sources can be cloud-based or on-premises, and they can include data from Microsoft and non-Microsoft services. Here are some common data sources in Power Apps:</p>
+        <ol class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li><span class="fw-semibold">Common Data Service (CDS):</span> Common Data Service is a cloud-based data storage and modeling platform that is tightly integrated with Power Apps. It provides a standardized schema for your data, making it easy to build apps that work with this data.</li>
+            <li><span class="fw-semibold">SharePoint:</span> You can connect Power Apps to SharePoint lists and libraries to create apps that interact with SharePoint data.</li>
+            <li><span class="fw-semibold">Excel:</span> Power Apps can connect to Excel files stored in OneDrive for Business or SharePoint. This allows you to work with data in Excel spreadsheets.</li>
+            <li><span class="fw-semibold">Microsoft SQL Server:</span> You can connect to on-premises or Azure-based SQL Server databases to access and manipulate data in your Power Apps.</li>
+            <li><span class="fw-semibold">Dynamics 365:</span> Power Apps is integrated with Dynamics 365 applications, such as Dynamics 365 for Sales and Dynamics 365 for Customer Service, allowing you to build custom apps that interact with these platforms.</li>
+            <li><span class="fw-semibold">Office 365:</span> You can connect to various Office 365 services, such as Outlook, OneDrive, and Microsoft 365 users, to incorporate data from these sources into your apps.</li>
+            <li><span class="fw-semibold">Azure services:</span> Power Apps can integrate with Azure services like Azure SQL Database, Azure Blob Storage, and Azure Table Storage to work with data stored in the Azure cloud.</li>
+            <li><span class="fw-semibold">Custom APIs:</span> You can create custom connectors in Power Apps to connect to RESTful web services, allowing you to access data from any service with an exposed API.</li>
+            <li><span class="fw-semibold">Web data sources:</span> Power Apps supports connecting to web services, RSS feeds, and other internet-based data sources using HTTP or HTTPS connections.</li>
+            <li><span class="fw-semibold">On-Premises data gateways:</span> You can use the Power Apps on-premises data gateway to securely connect to data stored in on-premises databases or other data sources behind your organization's firewall.</li>
+            <li><span class="fw-semibold">Custom data sources:</span> Power Apps allows you to build custom connectors for proprietary or less common data sources using the Custom Connector feature.</li>
+        </ol>
+        <p>You can leverage Dataverse without the need for establishing a dedicated connection, whereas with other data sources, it is imperative to establish a connection before accessing their data.</p>
+        <p>To use a Dataverse table in an application:</p>
+        <ol class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li>Access Dataverse and ensure you have permissions.</li>
+            <li>Authenticate with the Dataverse, if required.</li>
+            <li>Refer to the Dataverse API documentation.</li>
+            <li>Make API requests to interact with the data.</li>
+            <li>Retrieve and process the data.</li>
+            <li>Display or use the data in your application as needed.</li>
+        </ol>
+        <p>Here is an illustrative example of how to seamlessly integrate a SharePoint list into your application.</p>
+        <p>In this scenario, you have established a pre-existing connection to SharePoint, which can be seamlessly utilized within your application. To access your data source, simply click on the <span class="fw-bold">"Add Data"</span> option in the top menu and select the desired data source.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/connecting to data sources/screenshot_1.png" class="img-fluid" /></div>
+        <div class="d-flex justify-content-around pb-3">
+            <a asp-controller="Tutorial" asp-action="Functions" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+            <a asp-controller="Tutorial" asp-action="Integratingdatasources" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+        </div>
+    </div>
+</body>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
