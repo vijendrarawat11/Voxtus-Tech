@@ -13,32 +13,32 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
-        [Route("learn/canvas-application/Introduction-to-power-apps")]
+        [Route("learn/canvas-application/introduction-to-power-apps")]
         public IActionResult Introduction()
         {
             return View();	
         }
-        [Route("learn/canvas-application/setting-up-your-power-apps-environment")]
+        [Route("learn/canvas-application/setting-up-power-apps-environment")]
         public IActionResult SettingupEnvironment()
         {
             return View();
         }
-        [Route("learn/canvas-application/exploring-the-Power-Apps")]
+        [Route("learn/canvas-application/exploring-power-apps")]
         public IActionResult ExploringthePowerApps()
         {
             return View();
         }
-        [Route("learn/canvas-application/how-to-create-new(environment,-publisher,-solution)")]
+        [Route("learn/canvas-application/how-to-create-new-environment-publisher-solution")]
         public IActionResult EnvironmentPublisherSolution()
         {
             return View();
         }
-        [Route("learn/canvas-application/understanding-data-source-(dataverse)")]
+        [Route("learn/canvas-application/understanding-dataverse")]
         public IActionResult DataSource()
         {
             return View();
         }
-        [Route("learn/canvas-application/creating-first-canvas-app)")]
+        [Route("learn/canvas-application/creating-first-canvas-app")]
         public IActionResult CreatingCanvasapp()
         {
             return View();
