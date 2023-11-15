@@ -4,6 +4,9 @@
 @{
     ViewData["Title"] = "Create Auto-Scrolling Galleries in PowerApps: Step-by-Step Guide |";
 }
+@{
+    Layout = "~/Views/Shared/_blogLayout.cshtml";
+}
 <meta name="description" content="Learn how to create interactive auto-scrolling gallery controls in PowerApps with our comprehensive step-by-step guide, boosting user engagement and enhancing the user experience." />
 <meta name="keywords" content="PowerApps, Power Platform, Learn PowerApps, scrollable galleries, user engagement, step-by-step guide, Voxtus" />
 <meta name="author" content="Voxtus" />
@@ -12,11 +15,7 @@
 <meta property="og:description" content="Enhance user engagement with interactive auto-scrolling galleries in PowerApps. Follow our step-by-step guide." />
 
 
-<main id="main">
-    <section>
-        <div class="row">
-            <div class=" col-lg-9">
-                <div class="container  text-justify mt-4  bg-light service-details align-content-center" style="border:2px solid black">
+<div class="container  text-justify mt-4  bg-light service-details align-content-center" style="border:2px solid black">
                     <div class="mt-2 mx-3">
                         <h2 class="mt-4 mx-3 text-center">
                             How to make an Auto scrollable Gallery Control in Power Apps
@@ -151,102 +150,7 @@ Set(varStartTimer,true);
                         <div class="col-8"></div>
                         <div class="col-4"><p><b>Sumit Joshi<br />Power Apps Consultant</b></p></div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 sidebar mt-4 bg-light service-details">
-                <h3 class="sidebar-title mt-5 pb-4 text-center">Recent Posts</h3><hr />
-                <div class="row sidebar-item recent-posts mt-3 bg-white">
-                    <div class="col-3">
-                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
-                    </div>
-                    <div class="col-9">
-                        <a asp-controller="PowerApps" asp-action="BarCodeReader" style="text-decoration:none"><p class="text-primary">How to use Barcode Scanner Application in Power Apps.</p></a>
-                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
-                    </div>
-                </div>
-
-                <div class="row sidebar-item recent-posts mt-3 bg-white">
-                    <div class="col-3">
-                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
-                    </div>
-                    <div class="col-9">
-                        <a asp-controller="PowerApps" asp-action="MultipleMakerFeature" style="text-decoration:none"><p class="text-primary">Multiple Makers Feature of Microsoft Power Apps.</p></a>
-                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
-                    </div>
-                </div>
-
-                <div class="row sidebar-item recent-posts mt-3 bg-white">
-                    <div class="post-item clearfix col-3">
-                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
-                    </div>
-                    <div class="col-9">
-                        <a asp-controller="PowerApps" asp-action="CanvasOrModelDrivenApp" style="text-decoration:none"><p class="text-primary">The difference between Canvas Apps, Model driven App and Power Pages.</p></a>
-                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
-                    </div>
-                </div>
-
-                <div class="row sidebar-item recent-posts mt-3 bg-white">
-                    <div class="post-item clearfix col-3">
-                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
-                    </div>
-                    <div class="col-9">
-                        <a asp-controller="PowerApps" asp-action="CustomizingControls" style="text-decoration:none"><p class="text-primary">"Customizing Controls in Power Apps: Hidden Gems You Should Know"</p></a>
-                        @* <time datetime="2020-05-016">September 14, 2023</time> *@
-                    </div>
-                </div>
-
-                <div class="row sidebar-item recent-posts mt-3 bg-white">
-                    <div class="post-item clearfix col-3">
-                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
-                    </div>
-                    <div class="col-9">
-                        <a asp-controller="PowerApps" asp-action="PowerAppsFlow" style="text-decoration:none"><p class="text-primary">What to do when your flow is not working and showing error "Invalid type. Execpted Integer but got null.".</p></a>
-                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
-                    </div>
-                </div>
-
-                <div class="row sidebar-item recent-posts mt-3 bg-white">
-                    <div class="post-item clearfix col-3">
-                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
-                    </div>
-                    <div class="col-9">
-                        <a asp-controller="PowerApps" asp-action="BuildingCustomForms" style="text-decoration:none"><p class="text-primary">Leveraging sharepoint list in Canvas application.</p></a>
-                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
-                    </div>
-                </div>
-
-                <div class="row sidebar-item recent-posts mt-3 bg-white">
-                    <div class="post-item clearfix col-3">
-                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
-                    </div>
-                    <div class="col-9">
-                        <a asp-controller="PowerApps" asp-action="Environment_variables" style="text-decoration:none">
-                            <p class="text-primary">
-                                Environment Variables in Power Platform.
-                            </p>
-                        </a>
-                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
-                    </div>
-                </div>
-
-                <div class="row sidebar-item recent-posts mt-3 bg-white">
-                    <div class="post-item clearfix col-3">
-                        <img src="~/images/logo/powerappslogo.png" width="80" height="60" />
-                    </div>
-                    <div class="col-9">
-                        <a asp-controller="PowerApps" asp-action="Using_Git_for_Version_Control" style="text-decoration:none">
-                            <p class="text-primary">
-                                Using Git for Version Control with Power Apps.
-                            </p>
-                        </a>
-                        @*<time datetime="2020-05-016">September 14, 2023</time>*@
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid pt-3"><a style="text-decoration:none" asp-controller="PowerApps" asp-action="Index"><h5 class="text-primary"><i class="bi bi-arrow-left-circle"></i> Go back to Power Apps Blogs</h5></a></div>
-    </section>
-</main>
+</div>           
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
@@ -254,57 +158,3 @@ Set(varStartTimer,true);
 <script>
     new ClipboardJS('.btn');
 </script>
-
-
-<!--Our Links Section Start Here-->
-<link href="~/assets/css/style.css" rel="stylesheet" />
-<script src="~/assets/js/main.js"></script>
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
-
-<!-- Vendor CSS Files -->
-<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-<link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
-
-
-<!-- Template Main CSS File -->
-<link href="assets/css/style.css" rel="stylesheet">
-
-
-
-
-
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-
-
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-
-<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
-<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
-<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
-
-
-
-<!--The End of the Links Section-->

@@ -93,5 +93,10 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("learn/canvas-application/creating-connections-and-configuring-data-sources")]
+        public IActionResult Creatingconnections()
+        {
+            return View();
+        }
     }
 }
