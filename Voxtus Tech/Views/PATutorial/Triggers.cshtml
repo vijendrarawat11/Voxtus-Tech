@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_PATutorialLayout.cshtml";
+}
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container p-3 mt-3 pb-5 mb-4">
+        <h1 class="text-center fs-2 mt-3">Triggers</h1>
+        <h4 class="mt-4">What are Triggers?</h4>
+        <p>Triggers are events that initiate a flow in Power Automate. They serve as the <span class="fw-bold">"start buttons"</span> for your workflows, specifying when a particular flow should be executed based on specific conditions or events.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-2.png" class="img-fluid" /></div>
+        <h4>Types of Triggers:</h4>
+        <ul>
+            <li><span class="fw-semibold h5">Manual Triggers:</span> These are triggered by manual actions, such as a button press or a user-initiated command. They are suitable for on-demand flows.</li>
+            <li class="list-unstyled mt-3 h6">Example of Manual Trigger:</li>
+            <li class="list-unstyled">
+                <ul>
+                    <li>Flow Button</li>
+                    <li>Approve/Reject Button</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><span class="fw-semibold h5">Automated Triggers:</span> These are triggered by predefined events or conditions, such as a new email arriving, a file being added to a folder, a form submission, or a scheduled time.</li>
+            <li class="list-unstyled mt-3 h6">Example of Automated Trigger:</li>
+            <li class="list-unstyled">
+                <ul>
+                    <li>When a File is Created (OneDrive)</li>
+                    <li>When a New Form Response is Submitted (Microsoft Forms)</li>
+                </ul>
+            </li>
+        </ul>
+        <h4 class="mt-4">Key Points about Triggers:</h4>
+        <ol class="d-flex flex-column pb-3 justify-content-center gap-2 mb-4">
+            <li>Triggers define when a flow begins and set the context for subsequent actions.</li>
+            <li>They determine under what circumstances a flow should be executed, and this can include both internal and external events.</li>
+            <li>Many connectors have specific triggers associated with them, allowing you to respond to events in the integrated service efficiently.</li>
+        </ol>
+        <div class="d-flex justify-content-around pb-3">
+            <a asp-controller="PATutorial" asp-action="AccessingPowerAutomate" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+            <a asp-controller="PATutorial" asp-action="Actions" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+        </div>
+    </div>
+</body>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>

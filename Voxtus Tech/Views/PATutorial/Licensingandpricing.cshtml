@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_PATutorialLayout.cshtml";
+}
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container p-3 mt-3 pb-5 mb-4">
+        <h1 class="text-center fs-2 mt-3">Licensing and Pricing Information</h1>
+        <p class="mt-4">Microsoft offers different licensing options for Power Automate, catering to a variety of needs:</p>
+        <ul class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li><span class="fw-semibold">Power Automate Free:</span> This plan provides basic functionalities, allowing you to create flows with limited capabilities. It's suitable for personal use or to explore the tool.</li>
+            <li><span class="fw-semibold">Power Automate per User Plan:</span> This plan is designed for individual users and offers more advanced features. Users are charged on a per-user basis.</li>
+            <li><span class="fw-semibold">Power Automate per Flow Plan:</span> This is a pay-as-you-go plan that charges based on the number of flows used. It's suitable for organizations with varying automation needs.</li>
+            <li><span class="fw-semibold">Power Automate for Office 365:</span> If you're already using Microsoft 365, Power Automate might be included in your subscription. Check your licensing to see if it's available.</li>
+        </ul>
+        <p class="mt-4 h6">Know more about Power Platform licensing visit: </p>
+        <ol class="mb-4">
+            <li><a href="https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types" target="_blank" class="text-decoration-none">https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types</a></li>
+            <li><a href="https://powerautomate.microsoft.com/en-in/pricing/" target="_blank" class="text-decoration-none">https://powerautomate.microsoft.com/en-in/pricing/</a></li>
+        </ol>
+        <div class="d-flex justify-content-around pb-3">
+            <a asp-controller="PATutorial" asp-action="Introduction" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+            <a asp-controller="PATutorial" asp-action="KeyConceptsandTerminology" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+        </div>
+    </div>
+</body>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>

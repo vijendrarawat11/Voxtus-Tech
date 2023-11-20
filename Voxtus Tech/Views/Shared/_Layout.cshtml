@@ -133,59 +133,56 @@
         </div> *@
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex justify-content-between align-items-center">
-        <div class="logo">
-            @* <h1 class="text-light"><a asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span></a></h1> *@
-            <span class="text-light h2"><a style="text-decoration:none" asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span> <span class="text-light"><b>Voxtus</b></span></a></span>
-        </div>
-        <nav class="navbar navbar-expand-lg bg-transparent p-3">
-        <div class="container">
-            @* <a class="navbar-brand fs-5" href="#">Voxtus</a> *@
-            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="offcanvas offcanvas-start bg-transparent bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="logo">
+                @* <h1 class="text-light"><a asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span></a></h1> *@
+                <span class="text-light h2"><a style="text-decoration:none" asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span> <span class="text-light"><b>Voxtus</b></span></a></span>
+            </div>
+            <nav class="navbar navbar-expand-lg bg-transparent p-3">
+                <div class="container">
+                    @* <a class="navbar-brand fs-5" href="#">Voxtus</a> *@
+                    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start bg-transparent bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header text-white border-bottom justify-content-end">
-                        @* <h5 class="offcanvas-title mx-6" id="offcanvasNavbarLabel">Menu</h5> *@
-                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                <div class="offcanvas-body">
-                    <ul class="d-flex flex-column flex-lg-row justify-content-end align-items-center fs-5 text-white flex-grow-1 pe-5">
-                            <li class="nav-item mx-1">
-                                <a class="nav-link" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
-                            </li>
-                        <li class="nav-item mx-1">
-                            <a class="nav-link" asp-controller="Services" asp-action="Index">Services</a>
-                        </li>
-                        <li class="nav-item mx-1">
-                            <a class="nav-link" asp-controller="Portfolio" asp-action="Index">Portfolio</a>
-                        </li>
-                        <li class="nav-item mx-1">
-                            <a class="nav-link" asp-controller="Team" asp-action="Index">Team</a>
-                        </li>
-                        <li class="nav-item mx-1">
-                            <a class="nav-link" asp-controller="Blog" asp-action="Index">Blog</a>
-                        </li>
+                            @* <h5 class="offcanvas-title mx-6" id="offcanvasNavbarLabel">Menu</h5> *@
+                            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-end align-items-center fs-5 text-white flex-grow-1 pe-5">
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" asp-controller="Services" asp-action="Index">Services</a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" asp-controller="Portfolio" asp-action="Index">Portfolio</a>
+                                </li>
                                 <li class="dropdown">
                                     <a class="text-decoration-none"><span>Learn</span> <i class="bi bi-chevron-down"></i></a>
                                     <ul>
                                         <li><a asp-controller="Tutorial" asp-action="Introduction" class="text-decoration-none">Canvas Application</a></li>
+                                        <li><a asp-controller="PATutorial" asp-action="Introduction" class="text-decoration-none">Power Automate</a></li>
+
+                                        <li class="border-black border-3 border-top">
+                                            <a class="text-decoration-none" asp-controller="Blog" asp-action="Index">Blog</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item mx-1">
                                     <a class="nav-link" asp-controller="About" asp-action="Index">About</a>
                                 </li>
-
-
-                    </ul>
-                        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
-                            <a asp-controller="ContactUs" asp-action="Index" class="btn btn-lg text-black fs-6 pe-4 rounded-4 bg-white" style="text-decoration:none;background-color:whitesmoke">Contact Us</a>
+                            </ul>
+                            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                                <a asp-controller="ContactUs" asp-action="Index" class="btn btn-lg text-black fs-6 pe-4 rounded-4 bg-white" style="text-decoration:none;background-color:whitesmoke">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
         </div>
-</header>
+    </header>
 
     @* </header> *@
     <div class="container-fluid">

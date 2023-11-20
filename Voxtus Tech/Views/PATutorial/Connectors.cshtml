@@ -1,0 +1,56 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_PATutorialLayout.cshtml";
+}
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container p-3 mt-3 pb-5 mb-4">
+        <h1 class="text-center fs-2 mt-3">Exploring Available Connectors</h1>
+        <div class="row flex-column-reverse flex-lg-row py-4 mt-4 justify-content-center align-items-center">
+            <div class="col-lg-6">
+                <h4 class="text-center">What are Connectors?</h4>
+                <p class="text-center my-2">Connectors are the bridges that enable Power Automate (Cloud Flow) to interact with external services, applications, and data sources. They act as the link between your workflows and the services you want to integrate with.</p>
+            </div>
+            <div class="col-lg-6 text-center"><img src="~/images/learn/pa tutorial/PA-1.gif" alt="" class="img-fluid"></div>
+        </div>
+        <ul>
+            <li><span class="fw-semibold h5">Built-in Connectors:</span> These are pre-configured connectors provided by Power Automate for popular Microsoft services like Office 365, SharePoint, OneDrive, and third-party applications such as Twitter, Google Drive, and Dropbox. They are ready to use without additional setup.</li>
+            <li class="list-unstyled mt-3 h6">Example of Built-in Connector:</li>
+            <li class="list-unstyled">
+                <ul>
+                    <li>SharePoint Online</li>
+                    <li>OneDrive for Business</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="fw-semibold h5">
+                    Custom Connectors:</span> Custom connectors allow you to integrate with services not covered by built-in connectors. You can create your own custom connectors to connect with internal systems, proprietary software, or less common external services. They require additional setup and can be used to extend the capabilities of Power Automate.
+                (Will learn more about <span class="fw-bold">Custom Connectors</span> in upcoming section)
+            </li>
+            <li class="list-unstyled mt-3 h6">Example of Custom Connector:</li>
+            <li class="list-unstyled">
+                <ul>
+                    <li>Proprietary HR Database</li>
+                    <li>Custom Marketing Automation System</li>
+                </ul>
+            </li>
+        </ul>
+        <h4 class="mt-4">Key Points about Connectors:</h4>
+        <ol class="d-flex flex-column pb-3 justify-content-center gap-2 mb-4">
+            <li>Connectors can have specific actions and triggers associated with them, which define what you can do with the integrated service.</li>
+            <li>Authentication is often necessary to establish a secure connection between Power Automate and the external service. This authentication can include OAuth, API keys, or other methods to ensure secure data transfer.</li>
+            <li>You can manage, add, and remove connectors from your Power Automate environment as needed.</li>
+            <li>Connectors offer a wide range of integration possibilities, making them a fundamental part of creating automated workflows.</li>
+        </ol>
+        <div class="d-flex justify-content-around pb-3">
+            <a asp-controller="PATutorial" asp-action="AccessingPowerAutomate" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+            <a asp-controller="PATutorial" asp-action="Triggers" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+        </div>
+    </div>
+</body>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>

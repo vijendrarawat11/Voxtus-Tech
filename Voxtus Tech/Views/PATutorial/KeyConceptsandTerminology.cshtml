@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_PATutorialLayout.cshtml";
+}
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container p-3 mt-3 pb-5 mb-4">
+        <h1 class="text-center fs-2 mt-3">Key Concepts and Terminology<span class="fs-6">(flows, connectors, triggers, actions).</span></h1>
+        <p class="mt-4">In your journey with Power Automate, it's essential to grasp key concepts and terminology. </p>
+        <ul class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li><span class="fw-semibold">Flows:</span> These are at the heart of Power Automate, and they define the series of actions that need to be performed automatically. Flows can be as simple as sending a notification or as complex as processing data across multiple systems.</li>
+            <li><span class="fw-semibold">Connectors:</span> Connectors act as bridges between Power Automate and other applications or services. They define how data is exchanged between systems. For example, you can use connectors to link Power Automate with Microsoft 365, Salesforce, or other external platforms.</li>
+            <li><span class="fw-semibold">Triggers:</span> Triggers initiate flows. They are the events that signal the need for automation. Triggers can be manual (initiated by a user), automatic (based on certain conditions), or scheduled.</li>
+            <li><span class="fw-semibold">Actions:</span> Actions are the specific tasks that a flow performs. They can include sending emails, updating records in a database, creating documents, or interacting with various applications.</li>
+        </ul>
+        <p class="mb-4 text-center fw-bold">Note: (We’ll learn more about these in next section of this course)</p>
+        <div class="d-flex justify-content-around pb-3">
+            <a asp-controller="PATutorial" asp-action="Licensingandpricing" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+            <a asp-controller="PATutorial" asp-action="AccessingPowerAutomate" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+        </div>
+    </div>
+        </body>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>

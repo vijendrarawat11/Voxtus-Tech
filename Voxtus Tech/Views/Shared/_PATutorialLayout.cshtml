@@ -85,7 +85,7 @@
 </head>
 <body>
     <header id="header" class="fixed-top d-flex align-items-center">
-         <div class="container d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
                 @* <h1 class="text-light"><a asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span></a></h1> *@
                 <span class="text-light h2"><a style="text-decoration:none" asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span> <span class="text-light"><b>Voxtus</b></span></a></span>
@@ -136,52 +136,34 @@
             </nav>
         </div>
     </header>
-    
+
     <div class="main-container d-flex">
         <div class="sidebar overflow-scroll" id="side_nav">
             <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
-                <h1 class="fs-4"><span class="text-dark fw-semibold px-2">Power Apps <br />(Canvas App)</span></h1>
+                <h1 class="fs-4"><span class="text-dark fw-semibold px-2">Power Automate</span></h1>
                 <button class="btn d-md-none d-block btn-close px-1 py-0 text-white"></button>
             </div>
             @* <hr class="h-cloro" />
             <ul class="list-unstyled px-2 mb-2">
-                <li class=""><a asp-controller="Tutorial" asp-action="Introduction" class="text-decoration-none px-3 py-2 fs-5"><i class="bi bi-house-fill"></i>Home</a></li>
+            <li class=""><a asp-controller="Tutorial" asp-action="Introduction" class="text-decoration-none px-3 py-2 fs-5"><i class="bi bi-house-fill"></i>Home</a></li>
             </ul> *@
             <ul class="list-unstyled px-2 mb-2">
                 <li class=""><p class="headp px-3 py-1 d-block">Introduction</p></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="Introduction" class="menu-item text-decoration-none px-3 py-2 d-block">Intro to Power Apps</a></li>
+                <li class=""><a asp-controller="PATutorial" asp-action="Introduction" class="menu-item text-decoration-none px-3 py-2 d-block">Intro to Power Automate</a></li>
             </ul>
             <ul class="list-unstyled px-2 mb-2">
-                <li class=""><p class="headp px-3 py-1 d-block">Get Started</p></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="SettingupEnvironment" class=" menu-item text-decoration-none px-3 py-2 d-block">Setting Up Power Apps environment</a></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="ExploringthePowerApps" class="menu-item text-decoration-none px-3 py-2 d-block">Exploring the Power Apps Studio</a></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="EnvironmentPublisherSolution" class="menu-item text-decoration-none px-3 py-2 d-block">Creating New <br />(Environment, Publisher, Solution)</a></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="DataSource" class="menu-item text-decoration-none px-3 py-2 d-block">Data Source (Dataverse)</a></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="CreatingCanvasapp" class="menu-item text-decoration-none px-3 py-2 d-block">Creating Canvas app</a></li>
+                <li class=""><p class="headp px-3 py-1 d-block">Getting Started</p></li>
+                <li class=""><a asp-controller="PATutorial" asp-action="Licensingandpricing" class=" menu-item text-decoration-none px-3 py-2 d-block">Licensing and pricing information.</a></li>
+                <li class=""><a asp-controller="PATutorial" asp-action="KeyConceptsandTerminology" class="menu-item text-decoration-none px-3 py-2 d-block">Key Concepts and Terminology</a></li>
+                <li class=""><a asp-controller="PATutorial" asp-action="AccessingPowerAutomate" class="menu-item text-decoration-none px-3 py-2 d-block">Accessing Power Automate</a></li>
             </ul>
             <ul class="list-unstyled px-2 mb-2">
-                <li class=""><p class="headp px-3 py-1 d-block">Canvas App UI Intro</p></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="CanvasAppInterface" class=" menu-item text-decoration-none px-3 py-2 d-block">Canvas App Interface</a></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="Layoutandcomponents" class="menu-item text-decoration-none px-3 py-2 d-block">Layout and Components</a></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="ControlsandProperties" class="menu-item text-decoration-none px-3 py-2 d-block">Controls and Properties</a></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="BuildCanvasAppQuickly" class="menu-item text-decoration-none px-3 py-2 d-block">Build Canvas Application Quickly</a></li>
+                <li class=""><p class="headp px-3 py-1 d-block">Connectors Triggers and Actions</p></li>
+                <li class=""><a asp-controller="PATutorial" asp-action="Connectors" class=" menu-item text-decoration-none px-3 py-2 d-block">Connectors</a></li>
+                <li class=""><a asp-controller="PATutorial" asp-action="Triggers" class="menu-item text-decoration-none px-3 py-2 d-block">Triggers</a></li>
+                <li class=""><a asp-controller="PATutorial" asp-action="Actions" class="menu-item text-decoration-none px-3 py-2 d-block">Actions</a></li>
             </ul>
-            <ul class="list-unstyled px-2 mb-2">
-                <li class=""><p class="headp px-3 py-1 d-block">Basic App Building Blocks</p></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="Addingscreens" class=" menu-item text-decoration-none px-3 py-2 d-block">Adding screens</a></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="Customizingscreenlayouts" class="menu-item text-decoration-none px-3 py-2 d-block">Customizing Screen Layouts</a></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="Navigatingbetweenscreens" class="menu-item text-decoration-none px-3 py-2 d-block">Navigating between Screens</a></li>
-            </ul>
-            <ul class="list-unstyled px-2 mb-2">
-                <li class=""><p class="headp px-3 py-1 d-block">Variables & Function</p></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="Variables" class=" menu-item text-decoration-none px-3 py-2 d-block">Variables (Set, Context, Collection)</a></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="Functions" class="menu-item text-decoration-none px-3 py-2 d-block">Function</a></li>
-            </ul>
-            <ul class="list-unstyled px-2 mb-2">
-                <li class=""><p class="headp px-3 py-1 d-block">Connecting to Data Sources</p></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="Integratingdatasources" class=" menu-item text-decoration-none px-3 py-2 d-block">Integrating Data From Various Sources</a></li>
-                <li class=""><a asp-controller="Tutorial" asp-action="Creatingconnections" class="menu-item text-decoration-none px-3 py-2 d-block">Creating Connections and Configuring Data Sources</a></li>
-            </ul>
+            
             <hr class="h-cloro" />
             <ul class="list-unstyled px-2">
                 <li class=""><a asp-controller="ContactUs" asp-action="Index" class="text-decoration-none px-3 py-2 fs-5 d-block"><i class="bi bi-headset"></i>Contact Us</a></li>
@@ -190,29 +172,29 @@
         </div>
         <div class="d-flex justify-content-between d-md-none d-block"><button class="btn btn-lg px-1 py-0 open-btn shadow-lg border-0 position-fixed"><i class="bi bi-list" style="color:black;font-size:26px;"></i></button></div>
         <div class="content">
-                <!-- Your page content goes here -->
-                @RenderBody()
-            </div>
+            <!-- Your page content goes here -->
+            @RenderBody()
+        </div>
     </div>
-       
+
     <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" class="footert">
 
         @* <div class="footer-newsletter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 mt-5">
-                        <h4>Our Newsletter</h4>
-                    </div>
-                    <div class="col-lg-6">
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                            <input asp-for="Email" type="email" name="email" placeholder="Enter Your E-mail">
-                            <button class="btn-primary rounded-4" type="submit" value="Subscribe">Subscribe</button>
-                            <button type="button" class="btn-outline-primary btn-sm rounded-4">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-6 mt-5">
+        <h4>Our Newsletter</h4>
+        </div>
+        <div class="col-lg-6">
+        <form action="" method="post">
+        <input type="email" name="email"><input type="submit" value="Subscribe">
+        <input asp-for="Email" type="email" name="email" placeholder="Enter Your E-mail">
+        <button class="btn-primary rounded-4" type="submit" value="Subscribe">Subscribe</button>
+        <button type="button" class="btn-outline-primary btn-sm rounded-4">Subscribe</button>
+        </form>
+        </div>
+        </div>
+        </div>
         </div> *@
 
         <div class="footer-top">
@@ -290,8 +272,8 @@
             </div>
         </div>
     </footer>
-    
-      
+
+
     <script>
         $(".sidebar ul li").on('click', function () {
             $(".sidebar ul li.active").removeClass('active');
@@ -307,16 +289,16 @@
         });
     </script>
     @* <script>
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("side_nav");
-        var btns = header.getElementsByClassName("menu-item");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("side_nav");
+    var btns = header.getElementsByClassName("menu-item");
+    for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+    }
     </script> *@
 </body>
 </html>
