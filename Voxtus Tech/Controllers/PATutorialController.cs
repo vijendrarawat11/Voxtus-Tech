@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Voxtus_Tech.Controllers
 {
@@ -40,6 +41,36 @@ namespace Voxtus_Tech.Controllers
         }
         [Route("learn/power-automate/actions")]
         public IActionResult Actions()
+        {
+            return View();
+        }
+        [Route("learn/power-automate/basic-flow-using-template")]
+        public IActionResult BasicFlowusingTemplate()
+        {
+            return View();
+        }
+        [Route("learn/power-automate/automated-trigger-flows")]
+        public IActionResult AutomatedTriggerFlows()
+        {
+            return View();
+        }
+        [Route("learn/power-automate/instant-trigger-flows")]
+        public IActionResult InstantTriggerFlows()
+        {
+            return View();
+        }
+        [Route("learn/power-automate/scheduled-trigger-flows")]
+        public IActionResult ScheduledTriggerFlows()
+        {
+            return View();
+        }
+        [Route("learn/power-automate/expressions-and-variables")]
+        public IActionResult ExpressionsandVariables()
+        {
+            return View();
+        }
+        [Route("learn/power-automate/expressions-&-variables-example")]
+        public IActionResult ExpressionsandVariablesExample()
         {
             return View();
         }
