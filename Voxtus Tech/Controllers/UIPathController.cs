@@ -4,17 +4,17 @@ namespace Voxtus_Tech.Controllers
 {
     public class UIPathController : Controller
     {
-        [Route("blog/ui-path")]
+        [Route("blogs/ui-path")]
         public IActionResult Index()
         {
             return View();
         }
-        [Route("blog/ui-path/ui-path-vs-power-automate")]
+        [Route("blogs/ui-path/ui-path-vs-power-automate")]
         public IActionResult UiPathVsPowerAutomate()
         {
             return View();
         }
-        [Route("blog/ui-path/ui-path-orchestrator")]
+        [Route("blogs/ui-path/ui-path-orchestrator")]
         public IActionResult UiPathOrchestrator()
         {
             return View();

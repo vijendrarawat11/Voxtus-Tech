@@ -74,5 +74,15 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("learn/power-automate/using-conditions-and-switches")]
+        public IActionResult ConditionsandSwitches()
+        {
+            return View();
+        }
+        [Route("learn/power-automate/creating-loops-and-iterations")]
+        public IActionResult LoopsandIterations()
+        {
+            return View();
+        }
     }
 }

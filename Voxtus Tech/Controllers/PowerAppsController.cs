@@ -7,7 +7,7 @@ namespace Voxtus_Tech.Controllers
     public class PowerAppsController : Controller
     {
         // GET: PowerAppsController
-        [Route("blog/power-apps")]
+        [Route("blogs/power-apps")]
         public ActionResult Index()
         {
             return View();
@@ -82,49 +82,49 @@ namespace Voxtus_Tech.Controllers
             }
         }
 
-        [Route("blog/power-apps/bar-code-reader")]
+        [Route("blogs/power-apps/bar-code-reader")]
         public ActionResult BarCodeReader()
         {
             return View();
         }
-        [Route("blog/power-apps/multiple-maker-feature")]
+        [Route("blogs/power-apps/multiple-maker-feature")]
         public ActionResult MultipleMakerFeature()
 		{
 			return View();
 		}
-        [Route("blog/power-apps/canvas-app-vs-model-driven-app")]
+        [Route("blogs/power-apps/canvas-app-vs-model-driven-app")]
         public ActionResult CanvasOrModelDrivenApp()
         {
             return View();
         }
-        [Route("blog/power-apps/customizing-controls")]
+        [Route("blogs/power-apps/customizing-controls")]
         public ActionResult CustomizingControls()
         {
             return View();
         }
         
-        [Route("blog/power-apps/building-custom-forms")]
+        [Route("blogs/power-apps/building-custom-forms")]
         public ActionResult BuildingCustomForms()
         {
             return View();
         }
 
-        [Route("blog/power-apps/environment-variables")]
+        [Route("blogs/power-apps/environment-variables")]
         public ActionResult Environment_variables()
         {
             return View();
         }
-        [Route("blog/power-apps/using-git-for-version-control")]
+        [Route("blogs/power-apps/using-git-for-version-control")]
         public ActionResult Using_Git_for_Version_Control()
         {
             return View();
         }
-        [Route("blog/power-apps/using-with-function")]
+        [Route("blogs/power-apps/using-with-function")]
         public ActionResult Using_with_function()
         {
             return View();
         }
-        [Route("blog/power-apps/auto-scrollable-gallery-control-in-power-apps")]
+        [Route("blogs/power-apps/auto-scrollable-gallery-control-in-power-apps")]
         public ActionResult AutoScrollableGalleryControl()
         {
             return View();
