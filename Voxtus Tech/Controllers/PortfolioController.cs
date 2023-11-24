@@ -126,5 +126,15 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("portfolio/canvas-app/jimenez-wood-products")]
+        public ActionResult Jimenez_Wood_Products()
+        {
+            return View();
+        }
+        [Route("portfolio/canvas-app/cylinder-monitoring-app")]
+        public ActionResult Cylinder_Monitoring_App()
+        {
+            return View();
+        }
     }
 }
