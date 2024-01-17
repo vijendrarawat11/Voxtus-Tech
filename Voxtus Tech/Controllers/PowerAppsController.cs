@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 using System;
 
 namespace Voxtus_Tech.Controllers
@@ -126,6 +127,11 @@ namespace Voxtus_Tech.Controllers
         }
         [Route("blogs/power-apps/auto-scrollable-gallery-control-in-power-apps")]
         public ActionResult AutoScrollableGalleryControl()
+        {
+            return View();
+        }
+        [Route("blogs/power-apps/mastering-multi-value-dropdown-in-power-apps")]
+        public ActionResult MasteringMultiValueDropdown()
         {
             return View();
         }
