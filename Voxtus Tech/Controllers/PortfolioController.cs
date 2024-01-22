@@ -136,5 +136,10 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("portfolio/canvas-app/abg-mold-app")]
+        public ActionResult ABG_Mold_App()
+        {
+            return View();
+        }
     }
 }
