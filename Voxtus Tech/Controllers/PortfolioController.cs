@@ -141,5 +141,10 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("portfolio/canvas-app/abg-quality-report-app")]
+        public ActionResult ABG_Quality_Report_App()
+        {
+            return View();
+        }
     }
 }
