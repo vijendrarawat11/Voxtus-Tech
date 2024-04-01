@@ -98,5 +98,15 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("learn/canvas-application/working-with-controls-in-power-apps-canvas-apps")]
+        public IActionResult WorkingwithControls()
+        {
+            return View();
+        }
+        [Route("learn/canvas-application/responsive-design-and-layout-techniques")]
+        public IActionResult Responsivedesignandlayouttechniques()
+        {
+            return View();
+        }
     }
 }
