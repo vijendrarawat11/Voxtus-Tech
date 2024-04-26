@@ -5,7 +5,7 @@
 }
 
 @{
-    ViewData["Title"] = "Our Portfolio |";
+    ViewData["Title"] = "Our Projects | IT & Software Solutions |";
 }
  
 <!-- ======= Meta Desctiption ======= -->
@@ -15,6 +15,15 @@
 <meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1MBFHK5D1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z1MBFHK5D1');
+</script>
 
 
 <main id="main">
@@ -24,7 +33,7 @@
         <div class="container">
 
             <div class="d-flex justify-content-between align-items-center">
-                <h2>Our Portfolio</h2>
+                <h1 class="h2 fw-light">Our Portfolio</h1>
                 @*<ol>
                     <li><a href="index.html">Home</a></li>
                     <li>Our Portfolio</li>
@@ -54,7 +63,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="HealthManagementSystemApp"><img src="~/images/portfolio/health management system app/home1.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="HealthManagementSystemApp"><img src="~/images/portfolio/health management system app/home1.jpg" class="img-fluid w-100 h-75" alt="Health Management System"></a>
                         <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="HealthManagementSystemApp" style="text-decoration:none"><h5 class="card-body text-success">Health Management System</h5></a>*@
                             @*<div>
@@ -70,7 +79,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-web" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="StudentManagementApplicationApp"><img src="~/images/portfolio/student management application app/dashboard.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="StudentManagementApplicationApp"><img src="~/images/portfolio/student management application app/dashboard.jpg" class="img-fluid w-100 h-75" alt="Student Management Application"></a>
                         <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="StudentManagementApplicationApp" style="text-decoration:none"><h5 class="card-body text-success">Student Management Application</h5></a>*@
                             @*<div>
@@ -86,7 +95,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="OrderTrackingApplication"><img src="~/images/portfolio/order tracking application app/dashboard.png" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="OrderTrackingApplication"><img src="~/images/portfolio/order tracking application app/dashboard.png" class="img-fluid w-100 h-75" alt="Order Tracking Application"></a>
                         <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="OrderTrackingApplication" style="text-decoration:none"><h5 class="card-body text-success">Order Tracking Application</h5></a>*@
                             @*<div>
@@ -102,7 +111,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="EmployeePerformanceReviewingSystemApp"><img src="~/images/portfolio/employee performance reviewing system/fill up kra.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="EmployeePerformanceReviewingSystemApp"><img src="~/images/portfolio/employee performance reviewing system/fill up kra.jpg" class="img-fluid w-100 h-75" alt="Employee Performance Reviewing System"></a>
                         <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="EmployeePerformanceReviewingSystemApp" style="text-decoration:none"><h5 class="card-body text-success">Employee Performance Reviewing System</h5></a>*@
                             @*<div>
@@ -118,7 +127,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-web" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="EmployeeOnboardingApp"><img src="~/assets/img/portfolio/staff.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="EmployeeOnboardingApp"><img src="~/assets/img/portfolio/staff.jpg" class="img-fluid w-100 h-75" alt="Employee Onboarding App"></a>
                         <div class="portfolio-info">
                             @*  <a asp-controller="Portfolio" asp-action="EmployeeOnboardingApp" style="text-decoration:none"><h5 class="card-body text-success">Employee Onboarding App</h5></a>
                             <div>
@@ -134,7 +143,7 @@
                 
                     <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
                         <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="InspectionApp"><img src="~/images/portfolio/inspection app/inspection app.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="InspectionApp"><img src="~/images/portfolio/inspection app/inspection app.jpg" class="img-fluid w-100 h-75" alt="Inspection App"></a>
                             <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="InspectionApp" style="text-decoration:none"><h5 class="card-body text-success">Inspection App</h5></a>*@
                                 @*<div>
@@ -150,7 +159,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="LeaveManagementApplicationApp"><img src="~/images/portfolio/leave management application app/home.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="LeaveManagementApplicationApp"><img src="~/images/portfolio/leave management application app/home.jpg" class="img-fluid w-100 h-75" alt="Leave Management Application"></a>
                         <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="LeaveManagementApplicationApp" style="text-decoration:none"><h5 class="card-body text-success">Leave Management Application</h5></a>*@
                             @*<div>
@@ -166,7 +175,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-rpa" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="BillingProcessAutomation"><img src="~/images/portfolio/billing process automation/img1.jpg" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="BillingProcessAutomation"><img src="~/images/portfolio/billing process automation/img1.jpg" class="img-fluid w-100 h-75" alt="Billing Process Automation"></a>
                         <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="BillingProcessAutomation" style="text-decoration:none"><h5 class="card-body text-success">Billing Process Automation</h5></a>*@
                             @*<div>
@@ -182,7 +191,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-card" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="Web_Scraping_for_Data_Retrieval"><img src="~/images/portfolio/web scraping for data retrieval/image1.png" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="Web_Scraping_for_Data_Retrieval"><img src="~/images/portfolio/web scraping for data retrieval/image1.png" class="img-fluid w-100 h-75" alt="Web Scraping for Data Retrieval"></a>
                         <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="BillingProcessAutomation" style="text-decoration:none"><h5 class="card-body text-success">Billing Process Automation</h5></a>*@
                             @*<div>
@@ -202,7 +211,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="Jimenez_Wood_Products"><img src="~/images/portfolio/Jimenez Wood Products Invoicing System/JWP-1.png" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="Jimenez_Wood_Products"><img src="~/images/portfolio/Jimenez Wood Products Invoicing System/JWP-1.png" class="img-fluid w-100 h-75" alt="Jimenez Wood Products Invoicing System"></a>
                         <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="HealthManagementSystemApp" style="text-decoration:none"><h5 class="card-body text-success">Health Management System</h5></a>*@
                             @*<div>
@@ -218,7 +227,7 @@
                 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="Cylinder_Monitoring_App"><img src="~/images/portfolio/Cylinder Monitoring App/Screenshot_3.png" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="Cylinder_Monitoring_App"><img src="~/images/portfolio/Cylinder Monitoring App/Screenshot_3.png" class="img-fluid w-100 h-75" alt="Cylinder Monitoring App"></a>
                         <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="HealthManagementSystemApp" style="text-decoration:none"><h5 class="card-body text-success">Health Management System</h5></a>*@
                             @*<div>
@@ -234,7 +243,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="ABG_Mold_App"><img src="~/images/portfolio/abg mold app/abg1.png" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="ABG_Mold_App"><img src="~/images/portfolio/abg mold app/abg1.png" class="img-fluid w-100 h-75" alt="ABG Mold App"></a>
                         <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="HealthManagementSystemApp" style="text-decoration:none"><h5 class="card-body text-success">Health Management System</h5></a>*@
                             @*<div>
@@ -250,7 +259,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-wrap filter-PBI" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
-                        <a asp-controller="Portfolio" asp-action="ABG_Quality_Report_App"><img src="~/images/portfolio/abg mold app/abg3.png" class="img-fluid w-100 h-75" alt=""></a>
+                        <a asp-controller="Portfolio" asp-action="ABG_Quality_Report_App"><img src="~/images/portfolio/abg mold app/abg3.png" class="img-fluid w-100 h-75" alt="ABG Weekly Quality Report App"></a>
                         <div class="portfolio-info">
                             @*<a asp-controller="Portfolio" asp-action="HealthManagementSystemApp" style="text-decoration:none"><h5 class="card-body text-success">Health Management System</h5></a>*@
                             @*<div>

@@ -7,6 +7,15 @@
 @{
     Layout = "~/Views/Shared/_blogLayout.cshtml";
 }
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1MBFHK5D1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z1MBFHK5D1');
+</script>
 <meta name="description" content="Explore advanced techniques for optimizing multi-value dropdowns in PowerApps Canvas Apps. Learn how to implement dynamic selections based on user choices and elevate your app development skills." />
 <meta name="keywords" content="PowerApps, Canvas Apps, Dropdowns, Multi-Value Dropdown, App Development, Power Platform, DataVerse, Combo Boxes, User Experience" />
 <meta name="author" content="Voxtus" />
@@ -15,21 +24,21 @@
 
 <div class="container  text-justify mt-4  bg-light service-details align-content-center" style="border:2px solid black">
     <div class="mt-2 mx-3">
-        <h2 class="mt-4 mx-3 text-center">
+        <h1 class="mt-4 mx-3 text-center">
             Mastering Multi-Value Dropdown in PowerApps
-        </h2><hr />
+        </h1><hr />
     </div>
     <div class="mt-3 mx-3 bg-white pt-1 pb-2">
         <p class="mt-3 mx-3">Explore the intricacies of multi-select functionality in PowerApps Canvas Apps. Learn how to optimize combo boxes for a seamless user experience. Dive into advanced Power Platform techniques and elevate your app development skills.</p>
         <p class="mt-3 mx-3">In a Power Apps Canvas App scenario with two combo boxes, where the first combo box displays distinct values from a DataVerse table using the formula:</p>
         <p class="mt-3 mx-3 px-lg-5 fw-semibold">“Distinct(recurrences, RecurrenceDays)”</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown1.png" class="img-fluid  border" /></div>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown2.png" class="img-fluid  border" /></div>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown3.png" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown1.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown2.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown3.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
         <p class="mt-3 mx-3">And the second combo box is populated with choices from a 'DaysOfWeek Choice' table using:</p>
         <pre class="mt-3 mx-3 px-lg-5 fw-semibold">“Choices('DaysOfWeek Choice')” </pre>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown4.png" class="img-fluid  border" /></div>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown5.png" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown4.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown5.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
         <p class="mt-3 mx-3">Now, let's consider a requirement: If "Weekly" is selected in the first combo box, the second combo box should automatically select all weekdays, excluding weekends.</p>
         <p class="mt-3 mx-3">To implement this functionality, adjust the second combo box's DefaultSelectedItems property using the following formula:</p>
         <pre class="mt-3 mx-3 px-lg-5 fw-semibold">
@@ -46,7 +55,7 @@ Filter
 (Choices('DaysOfWeek Choice'),
 And( Value <> 471010006,Value <> 471010000)),[])"</pre>
         <p class="mt-3 mx-3">"If the value of the first data card is 'Weekly,' the second data card will automatically select five weekdays by default; otherwise, it will remain blank."</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown6.png" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown6.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
     </div>
     <hr />
     <div class="row mb-2">
