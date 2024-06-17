@@ -4,8 +4,17 @@
 @{
     Layout = "~/Views/Shared/_PATutorialLayout.cshtml";
 }
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1MBFHK5D1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z1MBFHK5D1');
+</script>
 <body style="background-color:ghostwhite;">
-    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" class="img-fluid mx-1" height="50" width="50" /></div>
     <div class="container p-3 mt-3 pb-5 mb-4">
         <h1 class="text-center fs-2 mt-3">Instant Trigger Flows</h1>
         <h4 class="mt-4">Instant Trigger Flows (Manual Trigger)</h4>
@@ -26,12 +35,12 @@
             <li>Navigate to the <span class="fw-bold">"My Flows"</span> and Look for <span class="fw-bold">"New flow"</span> option.</li>
             <li>Select the <span class="fw-bold">"Instant cloud flow"</span> trigger type. </li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-20.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-20.png" alt="Instant Trigger Flows" class="img-fluid" /></div>
         <h6>Step 3: Configure the Instant Flow Trigger</h6>
         <ul>
             <li>Once you've selected the <span class="fw-bold">"Instant cloud flow"</span> trigger, you can configure it to your specific requirements, how someone wants to trigger that flow and Name your flow.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-21.gif" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-21.gif" alt="Instant Trigger Flows" class="img-fluid" /></div>
         <h6>Step 4: Add Actions to the Instant Flow</h6>
         <ul>
             <li>After configuring the trigger, you can start adding actions to your instant flow. These actions are the specific tasks your flow will perform when triggered manually.</li>
@@ -41,21 +50,21 @@
             <li>For each action in the instant flow, configure the settings as needed. Specify data sources, recipients, message content, or other relevant parameters.</li>
         </ul>
         <p>For example we’ve added <span class="fw-bold">‘Outlook send email’</span> action.</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-22.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-22.png" alt="Instant Trigger Flows" class="img-fluid" /></div>
         <h6>Step 6: Save Your Instant Flow</h6>
         <ul>
             <li>Once you've configured your instant flow, save it. </li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-23.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-23.png" alt="Instant Trigger Flows" class="img-fluid" /></div>
         <h6>Step 7: Activate and Trigger the Instant Flow</h6>
         <ul>
             <li>To initiate your instant flow, navigate to the <span class="fw-bold">“My flows”</span> and click the <span class="fw-bold">"Run"</span> or <span class="fw-bold">"Trigger"</span> button. This will execute the flow immediately.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-24.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-24.png" alt="Instant Trigger Flows" class="img-fluid" /></div>
         <ul>
             <li>Once flow is triggred and runs successfuly you’ll receive an email on the provided email address.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-25.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-25.png" alt="Instant Trigger Flows" class="img-fluid" /></div>
         <p class="mb-4">By following these detailed steps, you will have a solid grasp of how to create instant flows in Power Automate for manual, on-demand automation tasks. This flexibility allows you to automate your work precisely when and how you need it.</p>
         <div class="d-flex justify-content-around pb-3">
             <a asp-controller="PATutorial" asp-action="AutomatedTriggerFlows" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>

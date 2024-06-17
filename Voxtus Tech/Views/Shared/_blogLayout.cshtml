@@ -96,13 +96,23 @@
         }
     </style>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1MBFHK5D1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z1MBFHK5D1');
+    </script>
+
 </head>
 <body>
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
                 @* <h1 class="text-light"><a asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span></a></h1> *@
-                <span class="text-light h2"><a style="text-decoration:none" asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" /></span> <span class="text-light"><b>Voxtus</b></span></a></span>
+                <span class="text-light h2"><a style="text-decoration:none" asp-controller="Home" asp-action="Index"><span><img src="~/images/v1.png" alt="Voxtus" /></span> <span class="text-light"><b>Voxtus</b></span></a></span>
             </div>
             <nav class="navbar navbar-expand-lg bg-transparent p-3">
                 <div class="container">
@@ -450,11 +460,11 @@
             @RenderBody()
         </div>
                 <div class="col-lg-3 bg-light mt-4 service-details">
-                    <h4 class="sidebar-title mt-5 text-center">Power Apps Related Posts</h4><center><img src="~/images/logo/PowerApps_scalable.svg" width="150px" /></center>
+                    <h4 class="sidebar-title mt-5 text-center">Power Apps Related Posts</h4><center><img src="~/images/logo/PowerApps_scalable.svg" alt="PowerApps" width="150px" /></center>
                <div class="m-2">
                     <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="col-3">
-                            <img src="~/images/logo/PowerApps_scalable.svg" width="80" height="60" />
+                                <img src="~/images/logo/PowerApps_scalable.svg" alt="PowerApps" width="80" height="60" />
                     </div>
                     <div class="col-9">
                         <a asp-controller="PowerApps" asp-action="BarCodeReader" style="text-decoration:none"><p class="text-primary">How to use Barcode Scanner Application in Power Apps.</p></a>
@@ -464,7 +474,7 @@
 
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="col-3">
-                            <img src="~/images/logo/PowerApps_scalable.svg" width="80" height="60" />
+                                <img src="~/images/logo/PowerApps_scalable.svg" alt="PowerApps" width="80" height="60" />
                     </div>
                     <div class="col-9">
                             <a asp-controller="PowerApps" asp-action="MultipleMakerFeature" style="text-decoration:none"><p class="text-primary">Multiple Makers Feature of Microsoft Power Apps.</p></a>
@@ -474,7 +484,7 @@
 
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="post-item clearfix col-3">
-                            <img src="~/images/logo/PowerApps_scalable.svg" width="80" height="60" />
+                                <img src="~/images/logo/PowerApps_scalable.svg" alt="PowerApps" width="80" height="60" />
                     </div>
                     <div class="col-9">
                         <a asp-controller="PowerApps" asp-action="CanvasOrModelDrivenApp" style="text-decoration:none"><p class="text-primary">The difference between Canvas Apps, Model driven App and Power Pages.</p></a>
@@ -484,7 +494,7 @@
 
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="post-item clearfix col-3">
-                            <img src="~/images/logo/PowerApps_scalable.svg" width="80" height="60" />
+                                <img src="~/images/logo/PowerApps_scalable.svg" alt="PowerApps" width="80" height="60" />
                     </div>
                     <div class="col-9">
                         <a asp-controller="PowerApps" asp-action="CustomizingControls" style="text-decoration:none"><p class="text-primary">"Customizing Controls in Power Apps: Hidden Gems You Should Know"</p></a>
@@ -494,7 +504,7 @@
 
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="post-item clearfix col-3">
-                            <img src="~/images/logo/PowerApps_scalable.svg" width="80" height="60" />
+                                <img src="~/images/logo/PowerApps_scalable.svg" alt="PowerApps" width="80" height="60" />
                     </div>
                     <div class="col-9">
                         <a asp-controller="PowerApps" asp-action="BuildingCustomForms" style="text-decoration:none"><p class="text-primary">Leveraging sharepoint list in Canvas application.</p></a>
@@ -504,7 +514,7 @@
 
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="post-item clearfix col-3">
-                            <img src="~/images/logo/PowerApps_scalable.svg" width="80" height="60" />
+                                <img src="~/images/logo/PowerApps_scalable.svg" alt="PowerApps" width="80" height="60" />
                     </div>
                     <div class="col-9">
                         <a asp-controller="PowerApps" asp-action="Environment_variables" style="text-decoration:none">
@@ -518,7 +528,7 @@
 
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="post-item clearfix col-3">
-                            <img src="~/images/logo/PowerApps_scalable.svg" width="80" height="60" />
+                                <img src="~/images/logo/PowerApps_scalable.svg" alt="PowerApps" width="80" height="60" />
                     </div>
                     <div class="col-9">
                         <a asp-controller="PowerApps" asp-action="Using_Git_for_Version_Control" style="text-decoration:none">
@@ -532,7 +542,7 @@
 
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="post-item clearfix col-3">
-                            <img src="~/images/logo/PowerApps_scalable.svg" width="80" height="60" />
+                                <img src="~/images/logo/PowerApps_scalable.svg" alt="PowerApps" width="80" height="60" />
                     </div>
                     <div class="col-9">
                         <a asp-controller="PowerApps" asp-action="Using_with_function" style="text-decoration:none">
@@ -545,7 +555,7 @@
                 </div>
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="col-3">
-                            <img src="~/images/logo/PowerApps_scalable.svg" width="80" height="60" />
+                                <img src="~/images/logo/PowerApps_scalable.svg" alt="PowerApps" width="80" height="60" />
                     </div>
                     <div class="col-9">
                             <a asp-controller="PowerApps" asp-action="AutoScrollableGalleryControl" style="text-decoration:none"><p class="text-primary">How to make an Auto scrollable Gallery Control in Power Apps.</p></a>
@@ -554,7 +564,7 @@
                 </div>
                 <div class="row sidebar-item recent-posts mt-3 bg-white">
                     <div class="col-3">
-                            <img src="~/images/logo/PowerApps_scalable.svg" width="80" height="60" />
+                                <img src="~/images/logo/PowerApps_scalable.svg" alt="PowerApps" width="80" height="60" />
                     </div>
                     <div class="col-9">
                                 <a asp-controller="PowerApps" asp-action="MasteringMultiValueDropdown" style="text-decoration:none"><p class="text-primary">Mastering Multi-Value Dropdown in PowerApps.</p></a>
@@ -617,6 +627,7 @@
                             <li><i class="bx bx-chevron-right"></i> <a style="text-decoration:none" asp-controller="Services" asp-action="Dynamics365Development">Dynamics 365 Development</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a style="text-decoration:none" asp-controller="Services" asp-action="DOTNETDevelopment">.NET Development</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a style="text-decoration:none" asp-controller="Services" asp-action="RPADevelopment">RPA Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a style="text-decoration:none" asp-controller="Services" asp-action="SearchEngineOptimization">Search Engine Optimization (SEO)</a></li>
                         </ul>
                     </div>
 
@@ -639,9 +650,9 @@
                         <div class="social-links mt-3">
                             <a href="https://www.linkedin.com/company/voxtus/?viewAsMember=true" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                             <a href="@encodedUrl" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
-                            @*  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> *@
+                            <a href="https://twitter.com/VoxtusTech" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="https://business.facebook.com/latest/home?asset_id=313949898459824" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            @* <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> *@
 
                         </div>
 

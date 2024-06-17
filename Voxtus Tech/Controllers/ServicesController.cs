@@ -106,6 +106,11 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
-        
+        [Route("our-services/search-engine-optimization")]
+        public ActionResult SearchEngineOptimization()
+        {
+            return View();
+        }
+
     }
 }

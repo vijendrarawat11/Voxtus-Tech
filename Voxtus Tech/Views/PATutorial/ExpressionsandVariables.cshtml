@@ -4,8 +4,17 @@
 @{
     Layout = "~/Views/Shared/_PATutorialLayout.cshtml";
 }
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1MBFHK5D1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z1MBFHK5D1');
+</script>
 <body style="background-color:ghostwhite;">
-    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" class="img-fluid mx-1" height="50" width="50" /></div>
     <div class="container p-3 mt-3 pb-5 mb-4">
         <h1 class="text-center fs-2 mt-3">Introduction to Expressions and Variables</h1>
         <h4 class="mt-4">Expressions</h4>
@@ -134,10 +143,10 @@ Results in:
         </ul>
         <h6>Step 2: Initializing Variables</h6>
         <p>Variables can be initialized with an initial value, which can be a static value or data from a previous step in your flow.</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-32.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-32.png" alt="Expressions" class="img-fluid" /></div>
         <h6>Step 3: Updating Variables</h6>
         <p>Variables can be updated at any point in your flow by assigning new values to them using <span class="fw-bold">"Set variable"</span> action. This allows for dynamic data manipulation and adaptation to changing conditions.</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-33.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-33.png" alt="Expressions" class="img-fluid" /></div>
         <h6>Step 4: Using Variables in Expressions</h6>
         <p class="mb-4">Variables can be integrated into expressions to perform calculations or transformations. When creating expressions, you can reference variables by their names.</p>
         <div class="d-flex justify-content-around pb-3">

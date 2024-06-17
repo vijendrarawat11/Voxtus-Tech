@@ -4,8 +4,17 @@
 @{
     Layout = "~/Views/Shared/_PATutorialLayout.cshtml";
 }
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1MBFHK5D1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z1MBFHK5D1');
+</script>
 <body style="background-color:ghostwhite;">
-    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" class="img-fluid mx-1" height="50" width="50" /></div>
     <div class="container p-3 mt-3 pb-5 mb-4">
         <h1 class="text-center fs-2 mt-3">Expressions & Variables Example</h1>
         <h4 class="mt-4">Expression and Variable in Real world Example</h4>
@@ -14,14 +23,14 @@
         <p>Create a new flow with any trigger that suits your scenario. We have taken manual trigger for this example.</p>
         <h6>Step 2: Get the Current Date and Time</h6>
         <p>Add an action to initialize a variable with String type and set it to the current date and time using the <span class="fw-bold">"utcNow()"</span> expression.</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-34.png" class="img-fluid" /></div>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-35.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-34.png" alt="Expressions & Variables Example" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-35.png" alt="Expressions & Variables Example" class="img-fluid" /></div>
         <h6>Step 3: Format the Date and Time</h6>
         <p>To make the date and time more user-friendly, add a <span class="fw-bold">"Compose"</span> action to format the stored date and time variable. Use the expression <span class="fw-bold border-2 border" style="background-color:#9fa0a1">formatDateTime(variables('varCurrentDateTime'),'YYYY-MM-DD HH:mm:ss')</span> to format the date and time in the desired way.</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-36.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-36.png" alt="Expressions & Variables Example" class="img-fluid" /></div>
         <h6>Step 4: You can test this flow to see output or directly Use the Formatted Data</h6>
         <p>Now that you have a nicely formatted date and time, you can use this data in subsequent actions. For example, you might want to send an email with the formatted date and time or update a record in a data source.</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-37.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-37.png" alt="Expressions & Variables Example" class="img-fluid" /></div>
         <div class="d-flex justify-content-around pb-3">
             <a asp-controller="PATutorial" asp-action="ExpressionsandVariables" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
 

@@ -4,11 +4,20 @@
 @{
     Layout = "~/Views/Shared/_PATutorialLayout.cshtml";
 }
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1MBFHK5D1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z1MBFHK5D1');
+</script>
 <body style="background-color:ghostwhite;">
-    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" class="img-fluid mx-1" height="50" width="50" /></div>
     <div class="container p-3 mt-3 pb-5 mb-4">
         <h1 class="text-center fs-2 mt-3">Creating Flows from Scratch using Different Types of Triggers</h1>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-10.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-10.png" alt="Creating Flows from Scratch using Different Types of Triggers" class="img-fluid" /></div>
         <h4>Automated Trigger Flows</h4>
         <ul>
             <li>Initiated by specific events or triggers.</li>
@@ -25,24 +34,24 @@
         <ul>
             <li>Navigate to the <span class="fw-bold">"My Flows"</span> section, Look for <span class="fw-bold">"New flow”</span> option.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-11.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-11.png" alt="Creating Flows from Scratch using Different Types of Triggers" class="img-fluid" /></div>
         <h6>Step 3: Select a Trigger</h6>
         <ul>
             <li>Choose a trigger for your flow.  A trigger is the event or condition that initiates your automation. There are various types of triggers, including manual, automated, and scheduled.</li>
             <li>In this example we have selected <span class="fw-bold">Dataverse trigger</span> When a row Added Modified or Deleted.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-12.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-12.png" alt="Creating Flows from Scratch using Different Types of Triggers" class="img-fluid" /></div>
         <h6>Step 4: Configure the Trigger</h6>
         <ul>
             <li>After selecting your trigger, you will be prompted to configure it. </li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-13.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-13.png" alt="Creating Flows from Scratch using Different Types of Triggers" class="img-fluid" /></div>
         <h6>Step 5: Add Actions</h6>
         <ul>
             <li>Once your trigger is set up, you can start adding actions to your flow. Actions are the specific tasks your flow will perform when the trigger condition is met.</li>
             <li>Action can be added by clicking on <i class="bi bi-plus-circle"></i> Icon.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-14.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-14.png" alt="Creating Flows from Scratch using Different Types of Triggers" class="img-fluid" /></div>
         <h6>Step 6: Configure Actions</h6>
         <ul>
             <li>For each action, you'll need to configure its settings. This typically involves specifying data sources, recipients, message content, or other parameters.
@@ -52,22 +61,22 @@
                 </ul>
             </li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-15.png" class="img-fluid" /></div>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-16.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-15.png" alt="Creating Flows from Scratch using Different Types of Triggers" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-16.png" alt="Creating Flows from Scratch using Different Types of Triggers" class="img-fluid" /></div>
         <p>To Add Dynamic Content:</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-17.gif" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-17.gif" alt="Creating Flows from Scratch using Different Types of Triggers" class="img-fluid" /></div>
         <h6>Step 7: Test and Save Your Flow</h6>
         <ul>
             <li>It's a good practice to test your flow before finalizing it. Once satisfied, save your flow</li>
             <li>To test this flow we have deleted a row from our <span class="fw-bold">“Books”</span> table so that flow will get triggered.</li>
             <li>Once the flow has successfully run, you will receive an email at the owner's email address.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-18.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-18.png" alt="Creating Flows from Scratch using Different Types of Triggers" class="img-fluid" /></div>
         <h6>Step 8: Activate the Flow</h6>
         <ul>
             <li>You can activate and deactivate your flow. Once activated, it will respond to the trigger events as defined.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-19.png" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-19.png" alt="Creating Flows from Scratch using Different Types of Triggers" class="img-fluid" /></div>
         <div class="d-flex justify-content-around pb-3">
             <a asp-controller="PATutorial" asp-action="Actions" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
 

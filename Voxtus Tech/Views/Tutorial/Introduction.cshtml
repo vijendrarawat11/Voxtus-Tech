@@ -4,8 +4,17 @@
 @{
     Layout = "~/Views/Shared/_TutorialLayout.cshtml";
 }
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1MBFHK5D1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z1MBFHK5D1');
+</script>
 <body style="background-color:ghostwhite;">
-    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" class="img-fluid mx-1" height="50" width="50" /></div>
     <div class="container p-3 mt-3 pb-5 mb-4">
         <h1 class="mx-5 px-4">Introduction to Power Apps</h1>
         <div class="row flex-column-reverse flex-lg-row py-4">
@@ -13,7 +22,7 @@
                 <h4 class="text-center mt-4">Introduction</h4>
                 <p class="text-center my-2">Power Apps is a low-code/no-code application development platform developed by Microsoft. It empowers users to create custom business applications and solutions without extensive coding. Power Apps is part of the Microsoft Power Platform, which also includes Power BI for business intelligence and Power Automate (formerly known as Flow) or workflow automation.</p>
             </div>
-            <div class="col-lg-4 text-center"><img src="~/images/logo/PowerApps_scalable.svg" alt="" class="img-fluid" height="160" width="160"></div>
+            <div class="col-lg-4 text-center"><img src="~/images/logo/PowerApps_scalable.svg" alt="Introduction to Power Apps" class="img-fluid" height="160" width="160"></div>
         </div>
      <h4>What is Power Apps?(Canvas App)  </h4>
         <span class="fs-5 fw-semibold ms-3">Canvas app: -</span>
