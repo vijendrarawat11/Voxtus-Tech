@@ -4,15 +4,17 @@
 @{
     Layout = "~/Views/Shared/_PATutorialLayout.cshtml";
 }
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1MBFHK5D1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+@{
+    ViewData["Title"] = "Power Automate: Streamline Workflows Effortlessly |";
+}
+@section MetaTags{
+    <meta name="title" content="Power Automate: Streamline Workflows Effortlessly">
+    <meta name="description" content="Automate workflows effortlessly with Power Automate. Streamline tasks and boost efficiency with our intuitive service." />
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+}
 
-    gtag('config', 'G-Z1MBFHK5D1');
-</script>
 <body style="background-color:ghostwhite;">
     <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" class="img-fluid mx-1" height="50" width="50" /></div>
     <div class="container p-3 mt-3 pb-5 mb-4">

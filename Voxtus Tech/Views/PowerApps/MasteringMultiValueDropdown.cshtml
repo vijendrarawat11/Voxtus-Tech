@@ -7,20 +7,13 @@
 @{
     Layout = "~/Views/Shared/_blogLayout.cshtml";
 }
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1MBFHK5D1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-Z1MBFHK5D1');
-</script>
+@section MetaTags{
 <meta name="description" content="Explore advanced techniques for optimizing multi-value dropdowns in PowerApps Canvas Apps. Learn how to implement dynamic selections based on user choices and elevate your app development skills." />
 <meta name="keywords" content="PowerApps, Canvas Apps, Dropdowns, Multi-Value Dropdown, App Development, Power Platform, DataVerse, Combo Boxes, User Experience" />
 <meta name="author" content="Voxtus" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta property="og:title" content="Mastering Multi-Value Dropdown in PowerApps: Advanced Techniques for Seamless User Experience" />
+}
 
 <div class="container  text-justify mt-4  bg-light service-details align-content-center" style="border:2px solid black">
     <div class="mt-2 mx-3">
