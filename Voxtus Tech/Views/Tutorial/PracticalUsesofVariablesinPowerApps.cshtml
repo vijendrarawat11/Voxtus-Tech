@@ -1,0 +1,172 @@
+﻿@{
+    ViewData["Title"] = "Practical Uses of Variables in Power Apps Explained |";
+}
+
+<!-- ======= Meta Desctiption ======= -->
+@section MetaTags {
+    <meta name="title" content="Practical Uses of Variables in Power Apps Explained">
+    <meta name="description" content="Discover the practical uses of variables in Power Apps. Learn how to use them to store, manage, and manipulate data efficiently in your applications.">
+    <meta name="keywords" content="Variables in Power Apps, Power Apps variables, use of variables, manage data Power Apps, variables tutorial Power Apps, practical Power Apps guide, store data Power Apps, manipulate data Power Apps, Power Apps development, app variables usage, Power Apps features, variable examples Power Apps, data management Power Apps, Power Apps tips, Power Apps tools.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_TutorialLayout.cshtml";
+}
+
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container p-3 mt-3 pb-5 mb-4">
+        <h5>Practical Uses of Variables in Power Apps</h5>
+        <p class="mt-3">Here are some common scenarios where variables are used effectively:</p>
+        <h6>i. Navigating Between Screens</h6>
+        <p class="mt-3">You can use a global variable to keep track of which screen the user is currently on, allowing you to control navigation.</p>
+        <div class=" d-flex justify-content-between">
+            <h6>Example:</h6>
+            <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code1">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <pre id="code1" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">Set(gblCurrentScreen, "HomeScreen");
+Navigate(scrHomeScreen);</pre>
+        <h6>ii. Storing User Inputs</h6>
+        <p class="mt-3">Context variables are great for storing the value of a form field or other user input temporarily, which you can then use to patch to a data source or process further.</p>
+        <div class=" d-flex justify-content-between">
+            <h6>Example:</h6>
+            <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code2">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <pre id="code2" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">UpdateContext({locUserInput: txtUserInput.Text});</pre>
+        <h6>iii. Handling Conditional Visibility</h6>
+        <p class="mt-3">Variables can control the visibility of elements on the screen based on user actions. For example, you can hide or show elements based on whether a checkbox is selected.</p>
+        <div class=" d-flex justify-content-between">
+            <h6>Example:</h6>
+            <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code3">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <pre id="code3" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">UpdateContext({locShowPanel: tglShowPanel.Value});</pre>
+        <p>Set the visibility property of the panel to:</p>
+        <div class=" d-flex justify-content-between">
+            <h6></h6>
+            <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code4">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <pre id="code4" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">locShowPanel</pre>
+        <h6>iv. Storing and Displaying Lists</h6>
+        <p class="mt-3">Collections allow you to temporarily store and manipulate lists of data without needing to update your data source constantly. For instance, you can use collections to store a list of items that will later be saved to a database.</p>
+        <div class=" d-flex justify-content-between">
+            <h6>Example:</h6>
+            <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code5">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <pre id="code5" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">Collect(colShoppingCart, {ProductID: 1, ProductName: "Laptop", Quantity: 1});</pre>
+        <h6>v. User Session Data</h6>
+        <p class="mt-3">You might use a global variable to store the logged-in user’s role or other details so that you can display personalized information or control which features are accessible.</p>
+        <div class=" d-flex justify-content-between">
+            <h6>Example:</h6>
+            <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code6">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <pre id="code6" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">Set(gblCurrentUser, User());</pre>
+        <h5>3. Best Practices for Using Variables</h5>
+        <ul class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li>
+                <span class="fw-semibold">Limit Global Variables:</span> Avoid using too many global variables, as they can make your app more difficult to debug and maintain. Use context variables for screen-specific data.
+            </li>
+            <li>
+                <span class="fw-semibold">Use Collections for Tables:</span> If you're working with lists or tables, collections are a better choice than trying to store lists in global or context variables.
+            </li>
+            <li>
+                <span class="fw-semibold">Scope Awareness:</span> Be mindful of the scope of your variables. Use global variables (gbl) when the data needs to persist across screens, and use context variables (loc) when data is specific to a single screen.
+            </li>
+        </ul>
+        <p>By following these Power Apps coding standards and practices, your app will be more maintainable, readable, and efficient.</p>
+        <p>Here’s how we’re applying various Power Apps features—global variables, context variables, and collections—in our application with specific examples:</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_1.png" alt="Practical Uses of Variables in Power Apps 1" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_2.jpg" alt="Practical Uses of Variables in Power Apps 2" class="img-fluid" /></div>
+        <h5>1. Using a Global Variable</h5>
+        <p class="mt-3">To manage data accessible throughout the app, we initialize a global variable in the App OnStart property. Here’s an example:</p>
+        <div class=" d-flex justify-content-between">
+            <h6></h6>
+            <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code7">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <pre id="code7" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">Set(gblCurrentUser, User().FullName)</pre>
+        <p>This variable, <span class="fw-bold">gblCurrentUser</span>, stores the full name of the currently logged-in user. We then use this variable on the app’s home screen, specifically in the left navigation panel, to display the user’s name.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_3.png" alt="Practical Uses of Variables in Power Apps 3" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_4.png" alt="Practical Uses of Variables in Power Apps 4" class="img-fluid" /></div>
+        <h5>2. Using a Context Variable for Pop-Up Screens</h5>
+        <p class="mt-3">Context variables are local to each screen, making them ideal for managing pop-ups or temporary elements. Here’s how we use a context variable for a delete confirmation popup:</p>
+        <ul class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li>
+                <span class="fw-semibold">Step 1:</span> On the detail screen, the user clicks the delete icon, where the OnSelect property is set as follows:
+                <div class=" d-flex justify-content-between">
+                    <h6></h6>
+                    <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code8">
+                        <i class="bi bi-clipboard"></i>
+                    </button>
+                </div>
+                <pre id="code8" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">UpdateContext({locDeletePopup: true})</pre>
+                <p>This action sets <span class="fw-bold">locDeletePopup</span> to true, triggering the visibility of the popup screen.</p>
+            </li>
+            <li>
+                <span class="fw-semibold">Step 2:</span> On the popup screen, the <span class="fw-bold">Visible</span> property is set to check <span class="fw-bold">locDeletePopup</span>. When <span class="fw-bold">locDeletePopup</span> is true, the popup becomes visible. The user can then proceed with the deletion or cancel the operation.
+            </li>
+        </ul>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_5.png" alt="Practical Uses of Variables in Power Apps 5" class="img-fluid" /></div>
+        <h5>3. Using a Collection to Handle Multiple Selections</h5>
+        <p class="mt-3">Collections are used to manage and manipulate data locally in the app. Here’s how we use a collection for batch deletion:</p>
+        <ul class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li>
+                <span class="fw-semibold">Step 1:</span> On the detail screen, we add a checkbox in each item within the gallery, allowing the user to select multiple items for deletion.
+            </li>
+            <li>
+                <span class="fw-semibold">Step 2:</span> The delete icon triggers a popup screen asking the user to confirm the deletion. If the user clicks "Yes," the app executes the following code:
+                <div class=" d-flex justify-content-between">
+                    <h6></h6>
+                    <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code9">
+                        <i class="bi bi-clipboard"></i>
+                    </button>
+                </div>
+                <pre id="code9" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">UpdateContext({locDeletePopup: false}); 
+Collect(colGallery2data, Filter(galDetailscrn.AllItems, ChbGalDetails.Value = true));
+ForAll(colGallery2data, Remove('Student Infos', ThisRecord));
+</pre>
+                <ul>
+                    <li>
+                        Explanation:
+                        <ul>
+                            <li>UpdateContext({locDeletePopup: false}) closes the popup.</li>
+                            <li>Collect(colGallery2data, Filter(Gallery2.AllItems, Checkbox1.Value = true)) creates a collection (colGallery2data) that stores all gallery items where the checkbox is selected (Checkbox1.Value = true).</li>
+                            <li>ForAll(colGallery2data, Remove('Student Infos', ThisRecord)) iterates over colGallery2data and removes each selected record from the 'Student Infos' data source.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="d-flex justify-content-around pb-3">
+            <a asp-controller="Tutorial" asp-action="UnderstandingVariablesinPowerApps" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+            <a asp-controller="Tutorial" asp-action="ConfiguringAppPermissions" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+        </div>
+    </div>
+</body>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+<script>
+    new ClipboardJS('.btn');
+</script>

@@ -11,14 +11,11 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Voxtus_Tech.styles.css" asp-append-version="true" />
 
-
+    <!--For MetaTags-->
+    @RenderSection("MetaTags", required: false)
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    @*<title>Voxtus Technologies Pvt. Ltd.</title>*@
-    <title>Voxtus:Software development Company | IT Company</title>
-    <meta name="description" content="Voxtus Technologies: Expertise in software Development, driving digital innovation, delivers innovative software solutions and transforming IT visions to reality." />
-    <meta name=keywords content="Voxtus Technology, IT services, Software development, App development, RPA Power Apps, .NET development, Digital innovation, Business IT solutions, Custom software, IT consultancy">
-    <link rel="canonical" href="https://www.voxtus.com/" />
+   <link rel="canonical" href="https://www.voxtus.com/" />
     <script type="application/ld+json">
         {
           "context": "https://schema.org/",
@@ -223,6 +220,16 @@
                             </div>
                         </div>
 
+                        <div class="row sidebar-item recent-posts mt-3 bg-white">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <img src="~/images/logo/PowerAutomate.webp" alt="PowerAutomate" width="120" height="100" />
+                            </div>
+                            <div class="col-9 d-flex justify-content-center align-items-center">
+                                <a asp-controller="PowerAutomate" asp-action="ExportSharepointToExcel" style="text-decoration:none"><p class="text-primary">Using Power Automate to Export Data to Excel from SharePoint</p></a>
+                                @*<time datetime="2020-05-016">September 14, 2023</time>*@
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="container-fluid pt-3 mx-4"><a style="text-decoration:none" asp-controller="PowerAutomate" asp-action="Index"><h5 class="text-primary"><i class="bi bi-arrow-left-circle"></i> Go back to Power Automate Blogs</h5></a></div>
@@ -289,6 +296,7 @@
                             Lane No 5F, Shivraj Nagar, <br>
                             Badonwala, Uttarakhand, 248007<br>
                             India <br><br> *@
+                            @* <strong>Phone (USA):</strong> +1 (213) 269‑4912<br> *@
                             <strong>Phone:</strong> +918630235507<br>
                             <strong>Email:</strong> info@voxtus.com<br>
                         </p>

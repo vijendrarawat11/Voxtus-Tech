@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Implement Role-Based Access Control (RBAC) Effectively |";
+}
+
+<!-- ======= Meta Desctiption ======= -->
+@section MetaTags {
+    <meta name="title" content="Implement Role-Based Access Control (RBAC) Effectively">
+    <meta name="description" content="Learn how to implement Role-Based Access Control (RBAC) to enhance security, manage user permissions, and streamline access control within your systems.">
+    <meta name="keywords" content="Role-Based Access Control, RBAC implementation, RBAC tutorial, access control systems, RBAC guide, role-based security, user permissions management, RBAC best practices, access management, RBAC configuration, security roles setup, user roles control, implement RBAC, RBAC for applications, secure access systems.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_TutorialLayout.cshtml";
+}
+
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container p-3 mt-3 pb-5 mb-4">
+        <h5>Implementing Role-Based Access Control (RBAC)</h5>
+        <p class="mt-3">Role-Based Access Control (RBAC) is a system where access is assigned based on the user’s role within the organization. This approach ensures that users only have access to the data and features that are relevant to their role.</p>
+        <h6>i. Assigning User Roles in Power Apps</h6>
+        <p class="mt-3">Power Apps can identify the user currently interacting with the app through the User() function, which returns the current user's email, full name, and image. Based on this, you can assign roles and show/hide controls accordingly.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_7.png" alt="Implementing Role-Based Access Control 1" class="img-fluid" /></div>
+        <div class=" d-flex justify-content-between">
+            <h6>Example:</h6>
+            <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code1">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <pre id="code1" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">If(User().Email = "LearnWithVoxtus@53ldh0.onmicrosoft.com", "Manager", "User")</pre>
+        <h6>ii. Creating Role-Based Access Logic</h6>
+        <p>You can implement role-based access by creating collections or variables that store the roles and permissions for each user. Based on these values, you can dynamically show or hide elements or restrict actions within your app.</p>
+        <div class=" d-flex justify-content-between">
+            <h6>Example:</h6>
+            <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code2">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <pre id="code2" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">Set(gblCurrentUserRole, 
+    LookUp(colUserRoles, Email = User().Email, Role)
+);
+</pre>
+        <p>In this example, the <span class="fw-bold">colUserRoles</span> collection contains a list of users and their respective roles. The <span class="fw-bold">LookUp</span> function checks the user's email and assigns the corresponding role to the <span class="fw-bold">gblCurrentUserRole</span> variable.</p>
+        <h6>iii. Controlling Visibility Based on Roles</h6>
+        <p>Once roles are assigned, you can control the visibility of controls and screens using the Visible property based on the role.</p>
+        <p>Example: To hide certain buttons or screens from non-admin users:</p>
+        <div class=" d-flex justify-content-between">
+            <h6>Code:</h6>
+            <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code3">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <pre id="code3" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">'Created By'.'Full Name'=User().FullName</pre>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_8.png" alt="Implementing Role-Based Access Control 2" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_9.png" alt="Implementing Role-Based Access Control 3" class="img-fluid" /></div>
+        <p>As here we have two different users and user can see only there data the detail gallery.</p>
+        <p>You can apply similar conditions to enable or disable controls, buttons, and even data submission functionality.</p>
+        <h6>iv. Example of Role-Based Filtering in Galleries</h6>
+        <p>You might want to show specific records to certain roles. For example, managers can view all records, while regular users can only view their own. Use the following logic to filter the gallery data based on roles:</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_10.png" alt="Implementing Role-Based Access Control 4" class="img-fluid" /></div>
+        <div class=" d-flex justify-content-between">
+            <h6></h6>
+            <button class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="#code4">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <pre id="code4" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">Sort(
+    Filter(
+        'Student Infos', 
+        (IsBlank(TextInput1.Text) || StartsWith('Full Name', TextInput1.Text)) && 
+        (IsBlank(cmbSearchAge.Selected.Value) || Age = cmbSearchAge.Selected.Value) && 'Created By'.'Full Name'=User().FullName
+    ),
+    'Full Name',
+    SortOrder.Ascending
+)
+</pre>
+        <p>This logic ensures that the gallery shows all items for managers and filters the items for regular users based on their email address.</p>
+        <div class="d-flex justify-content-around pb-3">
+            <a asp-controller="Tutorial" asp-action="ConfiguringAppPermissions" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+            <a asp-controller="Tutorial" asp-action="ImplementingRoleBasedAccessControl" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+        </div>
+    </div>
+</body>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+<script>
+    new ClipboardJS('.btn');
+</script>

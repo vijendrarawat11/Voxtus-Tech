@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Buffers.Text;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
 using static System.Net.Mime.MediaTypeNames;
@@ -105,6 +106,26 @@ namespace Voxtus_Tech.Controllers
         }
         [Route("learn/canvas-application/responsive-design-and-layout-techniques")]
         public IActionResult Responsivedesignandlayouttechniques()
+        {
+            return View();
+        }
+        [Route("learn/canvas-application/understanding-variables-in-power-apps")]
+        public IActionResult UnderstandingVariablesinPowerApps()
+        {
+            return View();
+        }
+        [Route("learn/canvas-application/practical-uses-of-variables-in-power-apps")]
+        public IActionResult PracticalUsesofVariablesinPowerApps()
+        {
+            return View();
+        }
+        [Route("learn/canvas-application/configuring-app-permissions")]
+        public IActionResult ConfiguringAppPermissions()
+        {
+            return View();
+        }
+        [Route("learn/canvas-application/implementing-role-based-access-control")]
+        public IActionResult ImplementingRoleBasedAccessControl()
         {
             return View();
         }

@@ -46,5 +46,10 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("blogs/power-automate/export-sharePoint-to-excel")]
+        public ActionResult ExportSharepointToExcel()
+        {
+            return View();
+        }
     }
 }

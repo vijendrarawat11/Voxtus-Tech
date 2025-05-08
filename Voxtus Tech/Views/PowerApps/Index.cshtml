@@ -1,4 +1,18 @@
-﻿<main id="main">
+﻿@{
+    ViewData["Title"] = "Microsoft Power Apps Blogs| Voxtus Technologies. |";
+}
+
+<!-- ======= Meta Desctiption ======= -->
+@section MetaTags {
+    <meta name="title" content="Microsoft Power Apps Blogs| Voxtus Technologies">
+    <meta name="description" content="Explore the latest blogs on Microsoft Power Platform here. Stay updated with insights, trends, and tips to maximize efficiency with Power Apps, SharePoint, and more!">
+    <meta name="keywords" content="Variables in power Apps, Power Apps Gallery, Auto Scrollable Gallery, Power Apps solutions, Power app functions, power fx, No code low code power apps,power apps controls">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+}
+
+<main id="main">
 
     <!-- ======= Our Portfolio Section ======= -->
     <section class="breadcrumbs">
@@ -109,7 +123,7 @@
                             </div>*@
                         </div>
                         <div class="text-justify">
-                            <a style="text-decoration:none" class="text-dark" asp-controller="PowerApps" asp-action="PowerAppsFlow">
+                            <a style="text-decoration:none" class="text-dark" asp-controller="PowerApps" asp-action="CustomizingControls">
                                 <h6 class="text-center">Customizing Controls in Power Apps: Hidden Gems You Should Know.<br /><br /></h6>
                             </a>
                         </div>
@@ -250,6 +264,21 @@
                             <a style="text-decoration:none" class="text-dark" asp-controller="PowerApps" asp-action="MasteringMultiValueDropdown">
                                 <h6 class="text-center p-3">
                                     Mastering Multi-Value Dropdown in PowerApps.
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+                    <div class="portfolio-item bg-white" style="height:260px">
+                        <a asp-controller="PowerApps" asp-action="UnderstandingVariablesinPowerApps">
+                            <center><img src="~/images/blog/powerapps/understandingvariablesinpowerapps/1.png" class="img-fluid w-100 h-100 rounded mx-auto d-block" alt="UnderstandingVariablesinPowerApps"></center>
+                        </a>
+                        <div class="text-justify">
+                            <a style="text-decoration:none" class="text-dark" asp-controller="PowerApps" asp-action="UnderstandingVariablesinPowerApps">
+                                <h6 class="text-center p-3">
+                                    Understanding Variables in Power Apps: A Comprehensive Guide
                                 </h6>
                             </a>
                         </div>

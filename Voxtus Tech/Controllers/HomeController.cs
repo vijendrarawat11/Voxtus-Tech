@@ -17,6 +17,34 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        // GET: Account/Login
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        // POST: Account/Login
+        [HttpPost]
+        public ActionResult Login(LoginModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                // Replace this with your own user authentication logic
+                if (model.Username == "admin" && model.Password == "password123")
+                {
+                    // Redirect to a different page upon successful login
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    // Show an error message
+                    ModelState.AddModelError("", "Invalid username or password."); 
+                }
+            }
+
+            // If we got this far, something failed, redisplay form
+            return View(model);
+        }
 
         public IActionResult Privacy()
         {

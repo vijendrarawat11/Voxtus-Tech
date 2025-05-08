@@ -135,6 +135,11 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("blogs/power-apps/understanding-variables-in-power-apps-a-comprehensive-guide")]
+        public ActionResult UnderstandingVariablesinPowerApps()
+        {
+            return View();
+        }
 
     }
 }

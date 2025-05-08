@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Set Up Permissions in Power Apps: Role-Based Access |";
+}
+
+<!-- ======= Meta Desctiption ======= -->
+@section MetaTags {
+    <meta name="title" content="Set Up Permissions in Power Apps: Role-Based Access">
+    <meta name="description" content="Learn how to set up permissions in Power Apps and manage access for different roles in your application with this step-by-step guide to secure your apps.">
+    <meta name="keywords" content="Power Apps permissions, role-based access, manage access Power Apps, set up permissions, Power Apps security, application roles Power Apps, user roles Power Apps, Power Apps guide, access control Power Apps, permissions tutorial, secure Power Apps, Power Apps roles management, role-based permissions, app security guide, Power Apps configuration.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_TutorialLayout.cshtml";
+}
+
+<body style="background-color:ghostwhite;">
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container p-3 mt-3 pb-5 mb-4">
+        <h5>Introduction:</h5>
+        <p class="mt-3">Security is a critical consideration when building any app, and Power Apps is no exception. Whether you're working with sensitive data or building applications for multiple user roles, understanding how to configure permissions and implement role-based access control (RBAC) is vital. In this post, we’ll discuss how to set up permissions in Power Apps and explore how to manage access for different roles within your application.</p>
+        <h5>1. Configuring App Permissions</h5>
+        <p class="mt-3">Power Apps allows you to control who can view, edit, or contribute to your app by configuring permissions through Power Apps’ environment settings and by integrating with external services like Microsoft Dataverse or SharePoint.</p>
+        <h6>i. Setting Permissions at the App Level</h6>
+        <p class="mt-3">Power Apps uses Azure Active Directory (AAD) to manage user permissions. You can define different permission levels, including:</p>
+        <ul class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li>
+                <span class="fw-semibold">User:</span> Allows users to run the app and interact with it.
+            </li>
+            <li>
+                <span class="fw-semibold">Co-owner:</span> Grants permission to edit the app.
+            </li>
+            <li>
+                <span class="fw-semibold">Admin:</span> Full control over the app, including permissions to share and manage access.
+            </li>
+        </ul>
+        <p>Permissions can be managed via the Share button in the Power Apps Studio, where you can add users or groups and assign appropriate roles.</p>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_6.png" alt="Configuring App Permissions 1" class="img-fluid" /></div>
+        <h6>To configure app-level permissions:</h6>
+        <ol class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li>Open Power Apps Studio.</li>
+            <li>Select the app you want to configure.</li>
+            <li>Click on <span class="fw-bold">Share</span>.</li>
+            <li>Add users or groups and assign the required permission level.</li>
+        </ol>
+        <h6>b) Data Source Permissions</h6>
+        <p>In addition to app-level permissions, you need to ensure proper access control at the data source level. For example, if you're using a SharePoint list or Dataverse as the backend, make sure that only authorized users have access to the underlying data.</p>
+        <h6>For SharePoint:</h6>
+        <ol class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li>Go to the SharePoint site containing the list or library.</li>
+            <li>Set item-level permissions by adjusting the list settings.</li>
+            <li>Use column-level security to restrict visibility of sensitive columns.</li>
+        </ol>
+        <h6>For Dataverse:</h6>
+        <ol class="d-flex flex-column pb-3 justify-content-center gap-2">
+            <li>Go to the Power Platform admin center.</li>
+            <li>Navigate to the Dataverse table and configure access settings.</li>
+            <li>Use <span class="fw-bold">Security Roles</span> to restrict access based on users’ roles in the app.</li>
+        </ol>
+        <div class="d-flex justify-content-around pb-3">
+            <a asp-controller="Tutorial" asp-action="PracticalUsesofVariablesinPowerApps" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
+
+            <a asp-controller="Tutorial" asp-action="ImplementingRoleBasedAccessControl" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad">Next <i class="bi bi-arrow-bar-right"></i></a>
+        </div>
+    </div>
+</body>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
