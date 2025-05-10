@@ -51,5 +51,10 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("blogs/power-automate/zoom-meeting-via-power-automate")]
+        public ActionResult ZoomMeetingViaPowerAutomate()
+        {
+            return View();
+        }
     }
 }
