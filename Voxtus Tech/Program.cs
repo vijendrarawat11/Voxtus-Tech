@@ -8,6 +8,26 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options=>options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
     ));
+
+builder.Services.AddSession();
+builder.Services.AddAuthentication("MyCookieAuth")
+    .AddCookie("MyCookieAuth", options =>
+    {
+        options.LoginPath = "/Account/Login"; // Redirect here if not logged in
+        options.LogoutPath = "/Account/Logout";
+        options.AccessDeniedPath = "/Account/AccessDenied";
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // Cookie expires in 30 min
+        options.SlidingExpiration = true; // Renew cookie on activity
+        options.Cookie.HttpOnly = true; // Prevent JavaScript access (more secure)
+        options.Cookie.SecurePolicy = CookieSecurePolicy.Always; // Use only HTTPS
+        options.Cookie.SameSite = SameSiteMode.Strict; // Prevent cross-site acces
+    });
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("AuthorOnly", policy => policy.RequireRole("Author"));
+});
+
 //builder.Services.AddRazorPages();
 var app = builder.Build();
 
@@ -23,8 +43,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
+app.UseSession();
 
 //app.MapRazorPages();
 

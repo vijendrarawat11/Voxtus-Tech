@@ -15,5 +15,6 @@ namespace Voxtus_Tech.Data
         public DbSet<ContactUs> ContactUsTable { get; set; }
 
         public DbSet<Newsletter> Newsletters { get; set; }
+        public DbSet<LoginModel> LoginModel { get; set; }
     }
 }
