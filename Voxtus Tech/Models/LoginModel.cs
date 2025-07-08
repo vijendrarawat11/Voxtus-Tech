@@ -5,7 +5,7 @@ namespace Voxtus_Tech.Models
     public class LoginModel
     {
         [Key]
-        public int Id { get; set; }
+        public int LoginId { get; set; }
         [Required]
         public string Username { get; set; }
 

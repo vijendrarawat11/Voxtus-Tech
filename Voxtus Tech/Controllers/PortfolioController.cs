@@ -146,5 +146,10 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("portfolio/canvas-app/avfs-expense-management")]
+        public ActionResult AVFSExpenseManagement()
+        {
+            return View();
+        }
     }
 }

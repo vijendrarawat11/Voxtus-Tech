@@ -105,7 +105,7 @@
                     <article class="entry">
 
                         <div class="entry-img">
-                            <a asp-controller="PowerAutomate" asp-action="Index"><center><img src="~/images/logo/powerautomate.webp" alt="Power Automate" class="img-fluid"></center></a>
+                            <a asp-controller="PowerAutomate" asp-action="Index"><center><img src="~/images/logo/PowerAutomateLogo.png" alt="Power Automate" class="img-fluid"></center></a>
                             @* <img src="~/images/logo/uipath.png" />*@
                         </div>
 
@@ -128,7 +128,36 @@
                             </div>
                         </div>
 
-                    </article><!-- End blog entry -->
+                    </article>
+                    
+                    <article class="entry">
+
+                        <div class="entry-img">
+                            <a asp-controller="PowerPages" asp-action="Index"><center><img src="~/images/logo/PowerPagesLogo.png" alt="Power Pages" class="img-fluid"></center></a>
+                            @* <img src="~/images/logo/uipath.png" />*@
+                        </div>
+
+                        <h2 class="entry-title">
+                            <a asp-controller="PowerAutomate" asp-action="Index">Power Pages Blogs</a>
+                        </h2>
+
+                        @*<div class="entry-meta">
+                        <ul>
+                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">Sumit</a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">May 20, 2023</time></a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">0 Comments</a></li>
+                        </ul>
+                        </div>*@
+
+                        <div class="entry-content">
+                            <p>Welcome to Power Pages blogs section of Voxtus.</p>
+                            <div class="read-more">
+                                <a asp-controller="PowerPages" asp-action="Index">Read More</a>
+                            </div>
+                        </div>
+
+                    </article>
+                    <!-- End blog entry -->
 
 
 
@@ -160,6 +189,7 @@
                                 <li><a asp-controller="PowerApps" asp-action="Index">Power Apps <span>(10)</span></a></li>
                                 <li><a asp-controller="UIPath" asp-action="Index">Ui Path <span>(2)</span></a></li>
                                 <li><a asp-controller="PowerAutomate" asp-action="Index">Power Automate <span>(9)</span></a></li>
+                                <li><a asp-controller="PowerPages" asp-action="Index">Power Pages <span>(1)</span></a></li>
                             </ul>
                         </div><!-- End sidebar categories-->
 
@@ -174,6 +204,11 @@
                                 <img src="~/images/logo/powerautomate.webp" alt="PowerAutomate">
                                 <h4><a asp-controller="PowerAutomate" asp-action="ExportSharepointToExcel">Using Power Automate to Export Data to Excel from SharePoint</a></h4>
                                 <time datetime="2020-05-016">May 7, 2025</time>
+                            </div>
+                            <div class="post-item clearfix">
+                                <img src="~/images/Services/PowerPages.svg" alt="PowerPages">
+                                <h4><a asp-controller="PowerPages" asp-action="EnableSharePointIntegration">How to Add a Document Location Subgrid in a Form with SharePoint Integration.</a></h4>
+                                <time datetime="2020-05-016">February 16, 2025</time>
                             </div>
                             <div class="post-item clearfix">
                                 <img src="images/logo/PowerAppsIcon1.jpg" alt="PowerApps">

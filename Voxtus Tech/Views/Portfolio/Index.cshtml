@@ -57,11 +57,27 @@
                         <li data-filter=".filter-card" class="col-lg-2 col-sm-12">Power Automate</li>
                         <li data-filter=".filter-rpa" class="col-lg-1 col-sm-12">Ui Path</li>
                         <li data-filter=".filter-PBI" class="col-lg-1 col-sm-12">Power BI</li>
+                        <li data-filter=".filter-PP" class="col-lg-1 col-sm-12">Power Pages</li>
                     </ul>
                 </div>
             </div>
 
             <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" @*style="background-color:aliceblue"*@ >
+
+                <div class="col-lg-6 col-md-6 portfolio-wrap filter-PP" style="background-color:white">
+                    <div class="portfolio-item" style="background-color:aliceblue;">
+                        <a asp-controller="Portfolio" asp-action="AVFSExpenseManagement"><img src="~/images/portfolio/avfs expense management/avfs1.png" class="img-fluid" style="height:250px; width:100%" alt="AVFSExpenseManagement" title="AVFSExpenseManagement"></a>
+                        <div class="portfolio-info">
+                        </div>
+                        <div class="card-footer mt-3 text-center">
+                            <a asp-controller="Portfolio" asp-action="AVFSExpenseManagement" style="text-decoration:none">
+                                <h5 class="text-dark">AVFS Expense Management</h5>
+                                <p class="text-dark">The AVFS Expense Management system is an advanced solution designed to streamline expense reporting, approval, and document management processes for organizations.</p>
+                                <div class="read-more justify-content-between pb-3"><i class="bi bi-arrow-right"></i> Read More</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-lg-6 col-md-6 portfolio-wrap filter-app" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue;">
@@ -298,7 +314,8 @@
                         </div>
                     </div>
                 </div>
-
+                
+                
                 @* <div class="col-lg-4 col-md-6 portfolio-wrap filter-PBI" style="background-color:white">
                     <div class="portfolio-item" style="background-color:aliceblue; height:200px">
                         <a asp-controller="Portfolio" asp-action="ABG_Quality_Report_App"><img src="~/images/portfolio/abg mold app/abg3.png" class="img-fluid w-100 h-75" alt="ABG Weekly Quality Report App"></a>
