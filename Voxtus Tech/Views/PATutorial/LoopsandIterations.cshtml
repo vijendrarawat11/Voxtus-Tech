@@ -19,7 +19,7 @@
 }
 
 <body style="background-color:ghostwhite;">
-    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" title="Voxtus" loading="lazy" class="img-fluid mx-1" height="50" width="50" /></div>
     <div class="container p-3 mt-3 pb-5 mb-4">
         <h1 class="text-center fs-2 mt-3">Creating Loops and Iterations</h1>
         <h4 class="mt-4">Understanding Loops and Iterations</h4>
@@ -35,33 +35,33 @@
         <ul>
             <li>Add an action to initialize a variable. Let's call it <span class="fw-bold">"NameList"</span> and set its value to an array of names. For example, <span class="fw-bold">["Alice", "Bob", "Charlie"]</span>.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-42.png" alt="Creating Loops and Iterations" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-42.webp" alt="Creating Loops and Iterations" title="Creating Loops and Iterations" loading="lazy" class="img-fluid" /></div>
         <h5>3.	Apply to Each:</h5>
         <ul>
             <li>Add the <span class="fw-bold">"Apply to Each"</span> action. </li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-43.png" alt="Creating Loops and Iterations" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-43.webp" alt="Creating Loops and Iterations" title="Creating Loops and Iterations" loading="lazy" class="img-fluid" /></div>
         <ul>
             <li>Choose the <span class="fw-bold">"NameList"</span> variable as the input array.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-44.png" alt="Creating Loops and Iterations" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-44.webp" alt="Creating Loops and Iterations" title="Creating Loops and Iterations" loading="lazy" class="img-fluid" /></div>
         <h5>4.	Compose:</h5>
         <ul>
             <li>Inside the <span class="fw-bold">"Apply to Each"</span> loop, add the <span class="fw-bold">"Compose"</span> action.</li>
             <li>Use an expression to create a greeting for each name. For example, use the expression <span class="fw-bold">concat('Hello ', items('Apply_to_each'))</span>.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-45.png" alt="Creating Loops and Iterations" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-45.webp" alt="Creating Loops and Iterations" title="Creating Loops and Iterations" loading="lazy" class="img-fluid" /></div>
         <h5>5.	Compose (Outside the Loop):</h5>
         <ul>
             <li>Add another <span class="fw-bold">"Compose"</span> action outside the loop to join the individual greetings into a single string.</li>
             <li>Use the expression <span class="fw-bold">join(outputs('Compose'), ', ')</span> to create a comma-separated string.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-46.png" alt="Creating Loops and Iterations" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-46.webp" alt="Creating Loops and Iterations" title="Creating Loops and Iterations" loading="lazy" class="img-fluid" /></div>
         <h5>6.	Save and Test:</h5>
         <ul>
             <li>Save your flow and manually trigger it. Check the output to see the generated greetings.</li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-47.png" alt="Creating Loops and Iterations" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/pa tutorial/PA-47.webp" alt="Creating Loops and Iterations" title="Creating Loops and Iterations" loading="lazy" class="img-fluid" /></div>
         <div class="d-flex justify-content-around pb-3">
             <a asp-controller="PATutorial" asp-action="ConditionsandSwitches" class="btn btn-primary fw-semibold" type="submit" style="background-color:#266aad"><i class="bi bi-arrow-bar-left"></i> Previous</a>
 

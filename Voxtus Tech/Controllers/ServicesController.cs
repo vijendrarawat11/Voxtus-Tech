@@ -111,6 +111,11 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("our-services/power-platform-development/microsoft-powerapps")]
+        public ActionResult MicrosoftPowerApps()
+        {
+            return View();
+        }
 
     }
 }

@@ -25,13 +25,13 @@
         <p class="mt-3 mx-3">Explore the intricacies of multi-select functionality in PowerApps Canvas Apps. Learn how to optimize combo boxes for a seamless user experience. Dive into advanced Power Platform techniques and elevate your app development skills.</p>
         <p class="mt-3 mx-3">In a Power Apps Canvas App scenario with two combo boxes, where the first combo box displays distinct values from a DataVerse table using the formula:</p>
         <p class="mt-3 mx-3 px-lg-5 fw-semibold">“Distinct(recurrences, RecurrenceDays)”</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown1.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown2.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown3.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown1.webp" alt="multivaluedropdown" title="multivaluedropdown" loading="lazy" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown2.webp" alt="multivaluedropdown" title="multivaluedropdown" loading="lazy" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown3.webp" alt="multivaluedropdown" title="multivaluedropdown" loading="lazy" class="img-fluid  border" /></div>
         <p class="mt-3 mx-3">And the second combo box is populated with choices from a 'DaysOfWeek Choice' table using:</p>
         <pre class="mt-3 mx-3 px-lg-5 fw-semibold">“Choices('DaysOfWeek Choice')” </pre>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown4.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown5.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown4.webp" alt="multivaluedropdown" title="multivaluedropdown" loading="lazy" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown5.webp" alt="multivaluedropdown" title="multivaluedropdown" loading="lazy" class="img-fluid  border" /></div>
         <p class="mt-3 mx-3">Now, let's consider a requirement: If "Weekly" is selected in the first combo box, the second combo box should automatically select all weekdays, excluding weekends.</p>
         <p class="mt-3 mx-3">To implement this functionality, adjust the second combo box's DefaultSelectedItems property using the following formula:</p>
         <pre class="mt-3 mx-3 px-lg-5 fw-semibold">
@@ -48,12 +48,12 @@ Filter
 (Choices('DaysOfWeek Choice'),
 And( Value <> 471010006,Value <> 471010000)),[])"</pre>
         <p class="mt-3 mx-3">"If the value of the first data card is 'Weekly,' the second data card will automatically select five weekdays by default; otherwise, it will remain blank."</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown6.png" alt="multivaluedropdown" class="img-fluid  border" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/blog/powerapps/multivaluedropdown/multivaluedropdown6.png" alt="multivaluedropdown" title="multivaluedropdown" loading="lazy" class="img-fluid  border" /></div>
     </div>
     <hr />
     <div class="row mb-2">
         <h6 class="text-center text-primary">
-            If you have any doubts or questions related to this blog, you can Contact us by Email: info@voxtus.com
+            If you have any doubts or questions related to this blog, you can Contact us by Email: <a href="mailto:info@voxtus.com" target="_blank" class="text-decoration-none">info@voxtus.com</a>
         </h6>
     </div>
     <div class="row">

@@ -19,7 +19,7 @@
 }
 
 <body style="background-color:ghostwhite;">
-    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" class="img-fluid mx-1" height="50" width="50" /></div>
+    <div class="container border border-1 rounded-pill shadow-lg d-flex justify-content-center flex-lg-row  mt-3  p-sm-3" style="width:45%;background-color:#CBE0F5;"><h1 class="my-auto ps-3" style="color:#266aad">Learn with</h1><img src="~/images/v1.png" alt="Voxtus" title="Voxtus" loading="lazy" class="img-fluid mx-1" height="50" width="50" /></div>
     <div class="container p-3 mt-3 pb-5 mb-4">
         <h5>Practical Uses of Variables in Power Apps</h5>
         <p class="mt-3">Here are some common scenarios where variables are used effectively:</p>
@@ -91,8 +91,8 @@ Navigate(scrHomeScreen);</pre>
         </ul>
         <p>By following these Power Apps coding standards and practices, your app will be more maintainable, readable, and efficient.</p>
         <p>Here’s how we’re applying various Power Apps features—global variables, context variables, and collections—in our application with specific examples:</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_1.png" alt="Practical Uses of Variables in Power Apps 1" class="img-fluid" /></div>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_2.jpg" alt="Practical Uses of Variables in Power Apps 2" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_1.webp" alt="Practical Uses of Variables in Power Apps 1" title="Practical Uses of Variables in Power Apps 1" loading="lazy" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_2.webp" alt="Practical Uses of Variables in Power Apps 2" title="Practical Uses of Variables in Power Apps 2" loading="lazy" class="img-fluid" /></div>
         <h5>1. Using a Global Variable</h5>
         <p class="mt-3">To manage data accessible throughout the app, we initialize a global variable in the App OnStart property. Here’s an example:</p>
         <div class=" d-flex justify-content-between">
@@ -103,8 +103,8 @@ Navigate(scrHomeScreen);</pre>
         </div>
         <pre id="code7" class="border px-5 pt-3 pb-3" style="background-color:whitesmoke">Set(gblCurrentUser, User().FullName)</pre>
         <p>This variable, <span class="fw-bold">gblCurrentUser</span>, stores the full name of the currently logged-in user. We then use this variable on the app’s home screen, specifically in the left navigation panel, to display the user’s name.</p>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_3.png" alt="Practical Uses of Variables in Power Apps 3" class="img-fluid" /></div>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_4.png" alt="Practical Uses of Variables in Power Apps 4" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_3.webp" alt="Practical Uses of Variables in Power Apps 3" title="Practical Uses of Variables in Power Apps 3" loading="lazy" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_4.webp" alt="Practical Uses of Variables in Power Apps 4" title="Practical Uses of Variables in Power Apps 4" loading="lazy" class="img-fluid" /></div>
         <h5>2. Using a Context Variable for Pop-Up Screens</h5>
         <p class="mt-3">Context variables are local to each screen, making them ideal for managing pop-ups or temporary elements. Here’s how we use a context variable for a delete confirmation popup:</p>
         <ul class="d-flex flex-column pb-3 justify-content-center gap-2">
@@ -123,7 +123,7 @@ Navigate(scrHomeScreen);</pre>
                 <span class="fw-semibold">Step 2:</span> On the popup screen, the <span class="fw-bold">Visible</span> property is set to check <span class="fw-bold">locDeletePopup</span>. When <span class="fw-bold">locDeletePopup</span> is true, the popup becomes visible. The user can then proceed with the deletion or cancel the operation.
             </li>
         </ul>
-        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_5.png" alt="Practical Uses of Variables in Power Apps 5" class="img-fluid" /></div>
+        <div class="container d-flex justify-content-center mt-4 mb-4"><img src="~/images/learn/working with variables/screenshot_5.webp" alt="Practical Uses of Variables in Power Apps 5" title="Practical Uses of Variables in Power Apps 5" loading="lazy" class="img-fluid" /></div>
         <h5>3. Using a Collection to Handle Multiple Selections</h5>
         <p class="mt-3">Collections are used to manage and manipulate data locally in the app. Here’s how we use a collection for batch deletion:</p>
         <ul class="d-flex flex-column pb-3 justify-content-center gap-2">
