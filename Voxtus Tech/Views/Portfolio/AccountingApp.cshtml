@@ -1,0 +1,222 @@
+﻿@{
+    ViewData["Title"] = "Comprehensive PowerApps Accounting App for Client Finance |";
+}
+
+<!-- ======= Meta Desctiption ======= -->
+@section MetaTags {
+    <meta name="title" content="Comprehensive PowerApps Accounting App for Client Finance">
+    <meta name="description" content="Track clients, accounts, transactions, vendors, and fiscal years with a dynamic PowerApps Canvas Accounting App featuring dashboards and detailed client views.">
+    <meta name="keywords" content="PowerApps Accounting App, Canvas App Finance Management, Client Accounting System, PowerApps Dashboard, Fiscal Year Management, Chart of Accounts, Transaction Tracking, Vendor Customer Management, Power Platform Accounting, Microsoft PowerApps Portfolio">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+}
+@* @{
+    ViewData["Title"] = "ABG Mold App |";
+} *@
+
+<main id="main">
+    @* <section> *@
+    <div class="container-fluid">
+        <h1 class="text-center pt-5 ">
+            Accounting App
+        </h1><hr />
+        <div style="border:3px solid Black" class=" mt-4"><img src="~/images/portfolio/accounting app/dashboard.webp" alt="Accounting App" title="Accounting App" loading="lazy" class="img-fluid w-100 d-block img-thumbnail" /></div>
+    </div>
+    <div class="container-fluid mt-3">
+        <div class="row mt-5 mx-2">
+            <div class="col-lg-9 p-3 mt-4 d-flex flex-column justify-content-center align-items-center" style="background-color:aliceblue">
+                <div class="mt-4 p-3 mb-4 bg-white">
+                    <h4 class="mt-4 m-3">Overview</h4>
+                    <p class="m-3">
+                        At Voxtus, we partnered with accounting professionals to build a robust, modular, and intelligent <span class="fw-semibold">Accounting App</span> using <span class="fw-semibold">Microsoft Power Platform’s Canvas App framework</span>. This enterprise-grade application is tailored for accountants and financial advisors who manage multiple clients and need a centralized digital platform to handle every aspect of their accounting workflows.
+                        <br />
+                        The solution replaces traditional spreadsheets and disconnected tools with a modern, cloud-based system that enables client-centric financial management, real-time transaction tracking, chart of accounts, GST compliance, customer/vendor handling, and fiscal year control — all embedded in a consistent, user-friendly experience.
+                    </p>
+                    <h5 class="mt-4 m-3">Dashboard Screen (Landing Page):</h5>
+                    <p class="m-3">
+                        The landing screen features a modern layout with a <span class="fw-semibold">left-side navigation menu</span> consisting of three key sections: Dashboard (default), Clients, and GST Management.
+                        The main area displays <span class="fw-semibold">recent clients</span> and <span class="fw-semibold">recent transactions</span>, along with summary cards showing <span class="fw-semibold">total clients</span> and <span class="fw-semibold">active vendors</span> for a quick overview.
+                    </p>
+                    <img src="~/images/portfolio/accounting app/dashboard.webp" alt="Dashboard" title="Dashboard" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <h5 class="mt-4 m-3">Client Screen:</h5>
+                    <p class="m-3">When the user navigates to the <span class="fw-semibold">Client</span> module, they can:</p>
+                    <ul class="m-3">
+                        <li>View all clients in a <span class="fw-semibold">scrollable, searchable gallery</span></li>
+                        <li>Use a <span class="fw-semibold">Search Bar</span> to quickly locate clients by Client Name or Company</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/Client.webp" alt="Client" title="Client" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <ul class="m-3">
+                        <li>Click <span class="fw-semibold">"Add Client"</span> to open a popup form for adding a new client</li>
+                        <li>Use the <span class="fw-semibold">"View"</span> option for any client to access their complete profile and financial setup</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/AddClient.webp" alt="Add Client" title="Add Client" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <h5 class="mt-4 m-3">Client Details Screen:</h5>
+                    <p class="m-3">Upon clicking “View” on any client, the app navigates to the <span class="fw-semibold">Client Details Screen</span>, which features a <span class="fw-semibold">tabbed interface</span>. Each tab corresponds to a core accounting module for that specific client:</p>
+                    <h6 class="mt-4 m-3">Client Tab:</h6>
+                    <ul class="m-3">
+                        <li>Displays client’s core data: company name, address, GST number, status, fiscal year, and more</li>
+                        <li><span class="fw-semibold">Edit icon</span> at the top right to update data inline</li>
+                        <li>Client form updates reflect throughout the system in real-time</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/ClientDetails.webp" alt="Client Details" title="Client Details" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <h6 class="mt-4 m-3">Chart of Accounts Tab:</h6>
+                    <ul class="m-3">
+                        <li>Displays a gallery of all financial accounts linked to the selected client</li>
+                        <li>A <span class="fw-semibold">dropdown filter</span> allows users to search accounts by type (e.g., Assets, Expenses)</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/ChartsOfAccount.webp" alt="Charts Of Account" title="Charts Of Account" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <ul class="m-3">
+                        <li>Users can <span class="fw-semibold">Add Account</span> using a popup form</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/AddAccount.webp" alt="Add Account" title="Add Account" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <ul class="m-3">
+                        <li><span class="fw-semibold">Edit</span> – Opens a popup to modify account data</li>
+                        <li><span class="fw-semibold">View Transactions</span> – Displays a transaction gallery filtered by the selected account</li>
+                        <li>When viewing transactions:</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/AccountTransaction.webp" alt="Account Transaction" title="Account Transaction" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <ul class="m-3">
+                        <li>A <span class="fw-semibold">Transaction Type filter</span> enables narrowing results</li>
+                        <li>Top-right account info displays <span class="fw-semibold">Account Name, Type, and Balance</span></li>
+                        <li>Clicking on a transaction navigates to a <span class="fw-semibold">Transaction Details screen</span></li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/TransactionDetails.webp" alt="Transaction Details" title="Transaction Details" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <h6 class="mt-4 m-3">Transaction Tab:</h6>
+                    <ul class="m-3">
+                        <li>Shows <span class="fw-semibold">all transactions</span> linked to the client, regardless of account</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/TransactionTab.webp" alt="Transaction Tab" title="Transaction Tab" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <ul class="m-3">
+                        <li>Top bar includes a <span class="fw-semibold">New Transaction</span> button that opens a data entry form</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/NewTransaction.webp" alt="New Transaction" title="New Transaction" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <ul class="m-3">
+                        <li>Fields include Date, transaction No., Client, Vendor, Account Involved, Type (Credit/Debit), Amount, Currency, and Description</li>
+                        <li>Each transaction can be viewed in detail via a dedicated <span class="fw-semibold">Transaction Details Screen</span></li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/ViewTransaction.webp" alt="View Transaction" title="View Transaction" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <h6 class="mt-4 m-3">Customer Tab:</h6>
+                    <ul class="m-3">
+                        <li>Gallery of all customers tied to the selected client</li>
+                        <li>Includes both Active and Inactive customers</li>
+                        <li><span class="fw-semibold">Add Customer</span> button and edit functionality</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/CustomerTab.webp" alt="Customer Tab" title="Customer Tab" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <h6 class="mt-4 m-3">Vendor Tab:</h6>
+                    <ul class="m-3">
+                        <li>Similar layout and features as Customer Tab</li>
+                        <li>Manage vendor-specific data, including status and updates</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/VendorTab.webp" alt="Vendor Tab" title="Vendor Tab" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <h6 class="mt-4 m-3">GST Tab:</h6>
+                    <ul class="m-3">
+                        <li>Display and manage GST data and compliance information</li>
+                    </ul>
+                    <h6 class="mt-4 m-3">Fiscal Year Tab Tab:</h6>
+                    <ul class="m-3">
+                        <li>Lists all fiscal years associated with the client</li>
+                        <li>Each entry includes a status: Active or Inactive</li>
+                        <li>When a <span class="fw-semibold">new fiscal year</span> is added, the app:</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/FiscalYear.webp" alt="FiscalYear" title="FiscalYear" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <ul class="m-3">
+                        <li>Automatically deactivates the previous year</li>
+                        <li>Marks the new year as Active</li>
+                        <li>Reflects the active year in client forms and transactions</li>
+                    </ul>
+                    <img src="~/images/portfolio/accounting app/AddFiscalYear.webp" alt="Add FiscalYear" title="Add FiscalYear" loading="lazy" class="img-fluid w-100 img-thumbnail rounded mx-auto d-block" />
+                    <hr />
+                    <h5 class="m-3">Explore More:</h5>
+                    <p class="m-3">
+                        This is just one of the many solutions we’ve developed on the Microsoft Power Platform.
+                        If you're looking to digitize operations, improve data control, and simplify complex workflows — we can help.
+                    </p>
+                    <p class="m-3"> <a asp-controller="Portfolio" asp-action="Index" class="text-decoration-none">Explore Our Full Portfolio</a></p>
+                    <hr />
+                    <div>
+                        <h5>Contact Information:</h5>
+                        <ul>
+                            <li>Email: <a href="mailto:info@voxtus.com" target="_blank" class="text-decoration-none">info@voxtus.com</a></li>
+                            <li>Phone:+91-8630235507</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="mt-4 p-3" style="background-color:ghostwhite">
+                    <h4 class="mt-3">Project information</h4><hr />
+                    <h6 class="mt-3">Category: App Design</h6>
+                    <h6 class="mt-3">Client: Accountable Value Financial Services</h6>
+                    <h6 class="mt-3">Project date: 28 July, 2025</h6>
+                    <h6 class="mt-3">
+                        Information Technology:
+                    </h6>
+                    <ul>
+                        <li>Canvas App</li>
+                        <li>Microsoft Dataverse</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* </section> *@
+</main>
+
+
+
+
+
+
+<!--Our Links Section Start Here-->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<script src="~/assets/js/main.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />
+
+
+
+<!--The End of the Links Section-->

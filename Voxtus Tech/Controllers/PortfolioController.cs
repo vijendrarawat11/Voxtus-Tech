@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Azure.Core;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -153,6 +154,16 @@ namespace Voxtus_Tech.Controllers
         }
         [Route("portfolio/canvas-app/ticket-management-application")]
         public ActionResult TicketManagementApp()
+        {
+            return View();
+        }
+        [Route("portfolio/canvas-app/accounting-app")]
+        public ActionResult AccountingApp()
+        {
+            return View();
+        }
+        [Route("portfolio/canvas-app/leave-request-management-app")]
+        public ActionResult LeaveRequestManagementApp()
         {
             return View();
         }
