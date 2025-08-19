@@ -2,10 +2,41 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Microsoft Power Apps Services |";
+}
+@section MetaTags {
+    <meta name="title" content="Microsoft Power Apps Services">
+    <meta name="description" content="Build custom business apps with Voxtus Power Apps services. Create canvas and model-driven apps with Dataverse to streamline workflows and boost productivity." />
+    <meta name="keywords" content="Voxtus Power Apps services, Microsoft Power Apps, canvas apps, model-driven apps, Dataverse solutions, low-code development, business apps, workflow automation">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
 }
 <!--Power Platform start-->
 <main id="main">
-    <div class="w-100 algin-item-center" style="border-bottom-right-radius: 150px; border-top-left-radius:150px; background-color:#F2E6FF;"><center><img src="~/images/Logo/PowerApps_scalable.svg" alt="Microsoft Power Platform Development" class="img-fluid p-3" height="100" width="110" /></center></div>
+    <section class="services"  style="background-color:#F2F7F9; background-image: linear-gradient(to bottom right, #101B35,#1E3A8A, rgba(29, 55, 129,0.5), #1E3A8A,#101B35);">
+    <div class="container">
+    <div class="row flex-column-reverse flex-lg-row mb-3 d-flex justify-content-center align-items-center">
+        <div class="col-lg-7 px-lg-5 px-sm-4 pb-4 text-center text-white">
+            @* <h1 class="text-center">Microsoft PowerApps</h1> *@
+            <h3 class="">Microsoft Power Apps Services by Voxtus</h3>
+            <p class="mt-3">
+                At Voxtus, we help businesses unlock their potential through the power of Microsoft Power Apps. As a leader in low-code development, Power Apps enables you to build custom business applications that are powerful, scalable, and aligned with your specific needs. Whether you're looking to streamline processes, enhance productivity, or centralize your data, our team at Voxtus is equipped to deliver end-to-end Power Apps solutions tailored to your requirements.
+            </p>
+            <button class="btn border border-1 border-primary btn-light">
+                <a asp-controller="ContactUs" asp-action="Index" class="text-decoration-none text-primary">
+                    Get Started
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg>
+                </a>
+            </button>
+        </div>
+        <div class="col-lg-5 pb-4"><center><img src="~/images/Logo/PowerApps_scalable.svg" alt="Power Apps" title="Power Apps" loading="lazy" class="img-fluid" height="220" width="230" /></center></div>
+    </div>
+    </div>
+    </section>
+    @* <div class="w-100 algin-item-center" style="border-bottom-right-radius: 150px; border-top-left-radius:150px; background-color:#D1E6F7;"><center><img src="~/images/Logo/PowerApps_scalable.svg" alt="Microsoft Power Platform Development" class="img-fluid p-3" height="100" width="110" /></center></div>
     <div class="container-fluid p-5 shadow">
         <div class="section-title">
             <h1 class="text-center">Microsoft PowerApps Services by Voxtus</h1>
@@ -18,18 +49,24 @@
             </div>
             <div class="col-lg-4 pb-3"><center><img src="~/images/Logo/PowerAppsIcon1.jpg" alt="Microsoft Power Platform Development" class="img-fluid p-3" /></center></div>
         </div>
-    </div>
+    </div> *@
 
     <div class="section-title mt-5">
-        <h2>Our PowerApps Offerings</h2>
+        <h2>Our Power Apps Offerings</h2>
     </div>
-    <div class="row mt-3 mb-3 d-flex justify-content-center align-items-center features">
-        <div class="col-lg-4 pb-3 h-100">
-            <a asp-controller="Services" asp-action="PowerPlatformDevelopment" class="text-decoration-none">
-            <div class="shadow p-4 h-100">
-                    <div class="text-center"><img src="~/images/services/microsoft powerapps/canvasapp.png" alt="canvasapp" title="canvasapp" loading="lazy" class="w-50" /></div>
+    <section class="services">
+    <div class="container">
+    <div class="row mt-3 mb-3 features">
+        <div class="col-md-6 col-lg-4 pb-3">
+            <a asp-controller="Services" asp-action="CanvasApp" class="text-decoration-none">
+            <div class="p-4 h-100 shadow">
+                    <div class="text-center">@* <img src="~/images/services/microsoft powerapps/canvasapp.png" alt="canvasapp" title="canvasapp" loading="lazy" class="w-50" /> *@
+                        <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="#e8ebf3" class="bi bi-file border border-2 p-3 rounded-2" viewBox="0 0 16 16" style="background-color:#1e3a8a">
+                            <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1" />
+                        </svg>
+                    </div>
                     <h5 class="text-black mt-4 text-center">Canvas Apps Development</h5>
-                <p class="description text-black mt-3">
+                <p class="description text-black mt-3 text-center">
                     Our Canvas Apps development services are designed to give you complete flexibility and control over your app design.
                 </p>
                 <ul class="text-start text-black">
@@ -49,16 +86,21 @@
                         <i class="bi bi-check"></i> <b>Integration-Ready:</b> Easily integrate Canvas Apps with other Microsoft tools like SharePoint, Teams, and Dynamics 365 for a seamless experience.
                     </li>
                 </ul>
-                <div class="read-more text-end"><a asp-controller="Services" asp-action="PowerPlatformDevelopment" class="text-decoration-none text-primary"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                <div class="read-more text-end"><a asp-controller="Services" asp-action="CanvasApp" class="text-decoration-none text-primary"><i class="bi bi-arrow-right"></i> Read More</a></div>
             </div>
             </a>
         </div>
-        <div class="col-lg-4 pb-3 h-100">
-            <a asp-controller="Services" asp-action="PowerPlatformDevelopment" class="text-decoration-none">
-                <div class="shadow p-4 h-100">
-                    <div class="text-center"><img src="~/images/services/microsoft powerapps/ModelDrivenApp.png" alt="ModelDrivenApp" title="ModelDrivenApp" loading="lazy" class="w-50" /></div>
+        <div class="col-md-6 col-lg-4 pb-3">
+            <a asp-controller="Services" asp-action="ModelDrivenApp" class="text-decoration-none">
+                <div class="p-4 h-100 shadow">
+                    <div class="text-center">@* <img src="~/images/services/microsoft powerapps/ModelDrivenApp.png" alt="ModelDrivenApp" title="ModelDrivenApp" loading="lazy" class="w-50" /> *@
+                        <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="#e8ebf3" class="bi bi-gear border border-2 p-3 rounded-2" viewBox="0 0 16 16" style="background-color:#1e3a8a">
+                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                        </svg>
+                    </div>
                     <h5 class="text-black mt-4 text-center">Model-Driven Apps Development</h5>
-                    <p class="description text-black mt-3">
+                    <p class="description text-black mt-3 text-center">
                         Leverage the power of data-driven applications to solve business challenges efficiently. With Model-Driven Apps, you focus on the logic and functionality while we take care of the rest.
                     </p>
                     <ul class="text-start text-black">
@@ -78,24 +120,28 @@
                             <i class="bi bi-check"></i> <b>Enhanced Productivity:</b> Automate processes, reduce manual effort, and let your team focus on high-value tasks.
                         </li>
                     </ul>
-                    <div class="read-more text-end"><a asp-controller="Services" asp-action="PowerPlatformDevelopment" class="text-decoration-none text-primary"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                    <div class="read-more text-end"><a asp-controller="Services" asp-action="ModelDrivenApp" class="text-decoration-none text-primary"><i class="bi bi-arrow-right"></i> Read More</a></div>
                 </div>
             </a>
         </div>
-        <div class="col-lg-4 pb-3 h-100">
-            <a asp-controller="Services" asp-action="PowerPlatformDevelopment" class="text-decoration-none">
-                <div class="shadow p-4 h-100">
-                    <div class="text-center"><img src="~/images/services/microsoft powerapps/MicrosoftDataverse.png" alt="MicrosoftDataverse" title="MicrosoftDataverse" loading="lazy" class="w-50" /></div>
+        <div class="col-md-6 col-lg-4 pb-3">
+            <a asp-controller="Services" asp-action="Dataverse" class="text-decoration-none">
+                <div class="p-4 h-100 shadow">
+                    <div class="text-center">@* <img src="~/images/services/microsoft powerapps/MicrosoftDataverse.png" alt="MicrosoftDataverse" title="MicrosoftDataverse" loading="lazy" class="w-50" /> *@
+                        <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="#e8ebf3" class="bi bi-database border border-2 p-3 rounded-2" viewBox="0 0 16 16" style="background-color:#1e3a8a">
+                            <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313M13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A5 5 0 0 0 13 5.698M14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A5 5 0 0 0 13 8.698m0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525" />
+                        </svg>
+                    </div>
                     <h5 class="text-black mt-4 text-center">Microsoft Dataverse Solutions</h5>
-                    <p class="description text-black mt-3">
-                        At the heart of PowerApps is Microsoft Dataverse, a powerful data platform designed to centralize your business data and make it actionable. Our expertise ensures you get the most out of Dataverse:
+                    <p class="description text-black mt-3 text-center">
+                        At the heart of Power Apps is Microsoft Dataverse, a powerful data platform designed to centralize your business data and make it actionable. Our expertise ensures you get the most out of Dataverse:
                     </p>
                     <ul class="text-start text-black">
                         <li>
                             <i class="bi bi-check"></i> <b>Centralized Data Management:</b> Store all your business-critical data in one place with enterprise-grade security and compliance.
                         </li>
                         <li>
-                            <i class="bi bi-check"></i> <b>Seamless Integration:</b> Connect Dataverse to PowerApps, Power Automate, and other Microsoft 365 applications for unified operations.
+                            <i class="bi bi-check"></i> <b>Seamless Integration:</b> Connect Dataverse to Power Apps, Power Automate, and other Microsoft 365 applications for unified operations.
                         </li>
                         <li>
                             <i class="bi bi-check"></i> <b>Data Intelligence:</b> Build smarter apps that leverage AI-driven insights and enable informed decision-making.
@@ -107,135 +153,105 @@
                             <i class="bi bi-check"></i> <b>Custom Entities and Relationships:</b> Define and manage custom tables, fields, and relationships to align Dataverse with your business structure.
                         </li>
                     </ul>
-                    <div class="read-more text-end"><a asp-controller="Services" asp-action="PowerPlatformDevelopment" class="text-decoration-none text-primary"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                    <div class="read-more text-end"><a asp-controller="Services" asp-action="Dataverse" class="text-decoration-none text-primary"><i class="bi bi-arrow-right"></i> Read More</a></div>
                 </div>
             </a>
         </div>
     </div>
-    <div class="section-title mt-5">
-        <h2>Why Choose Voxtus for PowerApps?</h2>
-        <p class="p-5">At Voxtus, we understand that every business is unique. That’s why we go beyond out-of-the-box solutions to create apps that truly reflect your goals and challenges.</p>
     </div>
-    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-                <div class="icon-box">
-                    @*<div class="icon"><i class="bx bx-gift"></i></div>*@
-                    <div class="icon"><i class="bi bi-buildings-fill"></i></div>
-                    <h4 class="title">Expertise You Can Trust:</h4>
-                    <p class="description">
-                        Our team has years of experience in PowerApps development and is well-versed in Microsoft’s ecosystem.
-                    </p>
-                </div>
-                <div class="icon-box">
-                    @*<div class="icon"><i class="bx bx-gift"></i></div>*@
-                    @*<div class="icon"><i class="bi bi-airplane-engines-fill"></i></div>*@
-                    <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
-                    <h4 class="title">Scalable and Future-Ready:</h4>
-                    <p class="description">
-                        Whether you're a small business or a large enterprise, our solutions grow with your business needs.
-                    </p>
-                </div>
-                <div class="icon-box">
-                    @*<div class="icon"><i class="bx bx-gift"></i></div>*@
-                    @*<div class="icon"><i class="bi bi-align-end"></i></div>*@
-                    <div class="icon"><i class="bi bi-headset"></i></div>
-                    <h4 class="title">End-to-End Support:</h4>
-                    <p class="description">
-                        From strategy and development to deployment and ongoing maintenance, we’re with you every step of the way.
-                    </p>
+    </section>
+    <section class="services" style="background-color: #F2F7F9;">
+    <div class="container pt-4 pb-4">
+        <div class="mt-5 text-center">
+            <h2>Why Choose Voxtus for Power Apps?</h2>
+            <p class="p-lg-5 p-sm-3">At Voxtus, we understand that every business is unique. That’s why we go beyond out-of-the-box solutions to create apps that truly reflect your goals and challenges.</p>
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="col-md-6 col-lg-4 pb-3">
+                <div class="p-4 h-100 shadow bg-white btn btn-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#F2F7F9" class="bi bi-sliders border-1 border p-2 rounded-2 bg-opacity-25" viewBox="0 0 16 16" style="background-color:#1e3a8a;">
+                        <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+                    </svg>
+                    <h5 class="mt-3 text-black">Expertise You Can Trust</h5>
+                    <p class="mt-3 text-black">Our team has years of experience in Power Apps development and is well-versed in Microsoft’s ecosystem.</p>
                 </div>
             </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-                <div class="icon-box">
-                    @*<div class="icon"><i class="bx bx-gift"></i></div>*@
-                    <div class="icon"><i class="bi bi-file-bar-graph"></i></div>
-                    <h4 class="title">Tailored to Your Business:</h4>
-                    <p class="description">
-                        We take the time to understand your needs, ensuring the solutions we create are perfectly aligned with your objectives.
-                    </p>
+            <div class="col-md-6 col-lg-4 pb-3">
+                <div class="p-4 h-100 shadow bg-white btn btn-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#F2F7F9" class="bi bi-gem border-1 border p-2 rounded-2 bg-opacity-25" viewBox="0 0 16 16" style="background-color:#1e3a8a;">
+                        <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z" />
+                    </svg>
+                    <h5 class="mt-3 text-black">Tailored to Your Business</h5>
+                    <p class="mt-3 text-black">We take the time to understand your needs, ensuring the solutions we create are perfectly aligned with your objectives.</p>
                 </div>
-                <div class="icon-box">
-                    @*<div class="icon"><i class="bx bx-gift"></i></div>*@
-                    @*<div class="icon"><i class="bi bi-airplane-engines-fill"></i></div>*@
-                    <div class="icon"><i class="bi bi-diagram-3"></i></div>
-                    <h4 class="title">Rapid Development:</h4>
-                    <p class="description">
-                        With PowerApps’ low-code platform and our agile development approach, we deliver solutions quickly without compromising on quality.
-                    </p>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-3">
+                <div class="p-4 h-100 shadow bg-white btn btn-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#F2F7F9" class="bi bi-globe2 border-1 border p-2 rounded-2 bg-opacity-25" viewBox="0 0 16 16" style="background-color:#1e3a8a;">
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                    </svg>
+                    <h5 class="mt-3 text-black">Scalable and Future-Ready</h5>
+                    <p class="mt-3 text-black">Whether you're a small business or a large enterprise, our solutions grow with your business needs.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-3">
+                <div class="p-4 h-100 shadow bg-white btn btn-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#F2F7F9" class="bi bi-palette border-1 border p-2 rounded-2 bg-opacity-25" viewBox="0 0 16 16" style="background-color:#1e3a8a;">
+                        <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                        <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8m-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7" />
+                    </svg>
+                    <h5 class="mt-3 text-black">Rapid Development</h5>
+                    <p class="mt-3 text-black">With Power Apps’ low-code platform and our agile development approach, we deliver solutions quickly without compromising on quality.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-3">
+                <div class="p-4 h-100 shadow bg-white btn btn-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#F2F7F9" class="bi bi-headset border-1 border p-2 rounded-2 bg-opacity-25" viewBox="0 0 16 16" style="background-color:#1e3a8a;">
+                        <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
+                    </svg>
+                    <h5 class="mt-3 text-black">End-to-End Support</h5>
+                    <p class="mt-3 text-black">From strategy and development to deployment and ongoing maintenance, we’re with you every step of the way.</p>
                 </div>
             </div>
         </div>
+       @*  <section class="facts section-bg" data-aos="fade-up">
+        <div class="container">
+
+            <div class="row counters">
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="2" class="purecounter"></span>
+                    <p>Clients</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="2" class="purecounter"></span>
+                    <p>Projects</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="2" class="purecounter"></span>
+                    <p>Hours Of Support</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2" class="purecounter"></span>
+                    <p>Hard Workers</p>
+                </div>
+
+            </div>
+
+        </div>
+        </section> *@
     </div>
     </section>
-    <div class="section-title mt-5">
-        <h2>The Voxtus Advantage</h2>
-        <p class="p-5">By choosing Voxtus for your PowerApps development, you gain a trusted partner who is committed to driving your success. Whether you need a simple app to streamline a specific process or a comprehensive system to manage your entire business, we ensure your journey with PowerApps is seamless and impactful.</p>
+    <section class="services" style="background-color:#F2F7F9;">
+    <div class="container pb-4">
+        <div class="container-fluid bg-white p-4 ">
+            <h2>The Voxtus Advantage</h2>
+            <p>By choosing Voxtus for your Power Apps development, you gain a trusted partner who is committed to driving your success. Whether you need a simple app to streamline a specific process or a comprehensive system to manage your entire business, we ensure your journey with Power Apps is seamless and impactful.</p>
+        </div>
     </div>
+    </section>
+    @await Html.PartialAsync("_FooterCardComponent")
 </main>
-
-
-<!--Our Links Section Start Here-->
-<link href="~/css/flex.css" rel="stylesheet" />
-<link href="~/assets/css/style.css" rel="stylesheet" />
-<script src="~/assets/js/main.js"></script>
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
-
-<!-- Vendor CSS Files -->
-<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-@* <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap.rtl.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" />*@
-<link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
-@*<link href="~/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-grid.css" rel="stylesheet" /> *@
-@* <link href="~/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" rel="stylesheet" />
-<link href="~/assets/vendor/bootstrap/css/bootstrap-utilities.css" rel="stylesheet" /> *@
-<!-- Template Main CSS File -->
-<link href="assets/css/style.css" rel="stylesheet">
-
-
-
-
-
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-
-
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-<link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-<link href="~/assets/vendor/boxicons/css/animations.css" rel="stylesheet" />
-<link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-<link href="~/assets/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
-<link href="~/assets/vendor/boxicons/css/transformations.css" rel="stylesheet" />

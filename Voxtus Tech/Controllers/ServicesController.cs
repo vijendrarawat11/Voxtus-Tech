@@ -116,6 +116,51 @@ namespace Voxtus_Tech.Controllers
         {
             return View();
         }
+        [Route("our-services/power-platform-development/microsoft-powerapps/canvas-app")]
+        public ActionResult CanvasApp()
+        {
+            return View();
+        }
+        [Route("our-services/power-platform-development/microsoft-powerapps/model-driven-app")]
+        public ActionResult ModelDrivenApp()
+        {
+            return View();
+        }
+        [Route("our-services/power-platform-development/microsoft-powerapps/dataverse")]
+        public ActionResult Dataverse()
+        {
+            return View();
+        }
+        [Route("our-services/power-platform-development/power-pages")]
+        public ActionResult PowerPages()
+        {
+            return View();
+        }
+        [Route("our-services/power-platform-development/power-bi")]
+        public ActionResult PowerBI()
+        {
+            return View();
+        }
+        [Route("our-services/power-platform-development/copilot-studio")]
+        public ActionResult CopilotStudio()
+        {
+            return View();
+        }
+        [Route("our-services/power-platform-development/power-automate")]
+        public ActionResult PowerAutomate()
+        {
+            return View();
+        }
+        [Route("our-services/power-platform-development/power-automate/power-automate-cloud")]
+        public ActionResult PowerAutomateCloud()
+        {
+            return View();
+        }
+        [Route("our-services/power-platform-development/power-automate/power-automate-desktop")]
+        public ActionResult PowerAutomateDesktop()
+        {
+            return View();
+        }
 
     }
 }
